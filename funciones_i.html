@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Funciones I </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-35"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li class="current-page-parent"><a href="mdulo_4_robo_aprende_a_programar.html" class="current-page-parent daddy">Módulo 4: Robo aprende a programar</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li id="active"><a href="funciones_i.html" class="active no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="decisiones_con_if_y_else.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funciones_ii_y_variables.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Funciones I</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id807">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">CONCEPTOS TEÓRICOS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta807_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>¿QUÉ SON LAS FUNCIONES?</h2>
+<ul>
+<li>Una función es un bloque de código reutilizable que realiza una tarea específica.</li>
+<li>Las funciones ayudan a organizar y simplificar el código, permitiendo la reutilización y evitando la repetición.</li>
+</ul>
+<h2>CÓMO DEFINIR LAS FUNCIONES</h2>
+<p>Para definir una función se utiliza la palabra clave <strong>def</strong>, seguida del nombre de la función, paréntesis y dos puntos. El bloque de código de la función se escribe con sangría.</p>
+<p><img src="FUNCIONES01.png" alt="" width="618" height="127"></p>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id808">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">ACTIVIDADES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta808_130_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>FUNCIONES SIMPLES SIN ARGUMENTO</h2>
+<p><strong>Crear una función que imprima un mensaje de bienvenida.</strong></p>
+<p><strong><img src="FUNCIONES03.png" alt="" width="649" height="177"></strong></p>
+<h3>Explicación:</h3>
+<ol>
+<li>
+<p><strong>Definición de la función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">saludar</span>():
+</code></div>
+</div>
+<ul>
+<li>La palabra clave <code>def</code> se usa para definir una nueva función en Python.</li>
+<li><code>saludar</code> es el nombre de la función. Este nombre se usa para identificar y llamar a la función más tarde.</li>
+<li>Los paréntesis <code>()</code> indican que esta función no toma ningún argumento.</li>
+<li>Los dos puntos <code>:</code> indican el comienzo del bloque de código que pertenece a la función.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cuerpo de la función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"¡Hola! Bienvenido a aprender Python."</span>)
+</code></div>
+</div>
+<ul>
+<li>Este es el código que se ejecutará cuando se llame a la función <code>saludar</code>.</li>
+<li><code>print</code> es una función integrada en Python que imprime el texto entre comillas en la consola.</li>
+<li>En este caso, imprimirá el mensaje <code>"¡Hola! Bienvenido a aprender Python."</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamada a la función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar()
+</code></div>
+</div>
+<ul>
+<li>Aquí es donde la función <code>saludar</code> es llamada.</li>
+<li>Cuando se llama a la función, el flujo del programa se transfiere a la función <code>saludar</code>, y el código dentro de esa función se ejecuta.</li>
+<li>Como resultado, el mensaje <code>"¡Hola! Bienvenido a aprender Python."</code> se imprimirá en la consola.</li>
+</ul>
+</li>
+</ol>
+<h3>Resumen</h3>
+<ul>
+<li>Primero defines una función llamada <code>saludar</code> que no toma argumentos y tiene una sola línea de código que imprime un mensaje.</li>
+<li>Luego, llamas a la función <code>saludar</code>, lo que hace que el mensaje sea impreso en la consola.</li>
+</ul>
+<p style="text-align: justify;">Este es un ejemplo básico pero fundamental en Python para entender cómo funcionan las funciones y la estructura básica de un programa. Las funciones son bloques de código reutilizables que permiten organizar y modularizar el código para hacerlo más legible y manejable.</p>
+<h2>FUNCIONES SIMPLES CON ARGUMENTO</h2>
+<p style="text-align: justify;">Cuando una función toma argumentos, significa que la función puede recibir valores al ser llamada, lo cual permite que la función procese esos valores y realice acciones basadas en ellos. Aquí tienes un ejemplo para ilustrar esto:</p>
+<p>Ejemplo de una función con argumentos:</p>
+<p><img src="FUNCIONES04.png" alt="" width="646" height="172"></p>
+<h3>Explicación:</h3>
+<ol>
+<li>
+<p><strong>Definición de la función con un argumento:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">saludar</span>(<span class="hljs-params">nombre</span>):
+</code></div>
+</div>
+<ul>
+<li><code>def</code> se usa para definir una función.</li>
+<li><code>saludar</code> es el nombre de la función.</li>
+<li><code>nombre</code> es un argumento de la función. Esto significa que cuando se llama a la función <code>saludar</code>, se espera que se le proporcione un valor para <code>nombre</code>.</li>
+<li>Los dos puntos <code>:</code> indican el comienzo del bloque de código que pertenece a la función.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cuerpo de la función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">f"¡Hola, <span class="hljs-subst">{nombre}</span>! Bienvenido a aprender Python."</span>)
+</code></div>
+</div>
+<ul>
+<li>Aquí, la función usa el valor del argumento <code>nombre</code> dentro del mensaje que imprime.</li>
+<li><code>f</code> antes de las comillas convierte la cadena en una "f-string", lo que permite insertar valores de variables dentro de la cadena usando llaves <code>{}</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamada a la función con un argumento:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar(<span class="hljs-string">"Juan"</span>)
+</code></div>
+</div>
+<ul>
+<li>Aquí se llama a la función <code>saludar</code> y se pasa el valor <code>"Juan"</code> como argumento.</li>
+<li>El flujo del programa se transfiere a la función <code>saludar</code>, donde <code>nombre</code> toma el valor <code>"Juan"</code>, y la función imprime el mensaje: <code>"¡Hola, Juan! Bienvenido a aprender Python."</code>.</li>
+</ul>
+</li>
+</ol>
+<h2>FUNCIONES SIMPLES CON MÚLTIPLES ARGUMENTOS</h2>
+<p><img src="FUNCIONES05.png" alt="" width="651" height="193"></p>
+<h3>Explicación:</h3>
+<ol>
+<li>
+<p><strong>Definición de la función con dos argumentos:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">sumar</span>(<span class="hljs-params">a, b</span>):
+</code></div>
+</div>
+<ul>
+<li><code>sumar</code> es el nombre de la función.</li>
+<li><code>a</code> y <code>b</code> son los argumentos de la función.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cuerpo de la función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">resultado = a + b
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"La suma de <span class="hljs-subst">{a}</span> y <span class="hljs-subst">{b}</span> es <span class="hljs-subst">{resultado}</span>."</span>)
+</code></div>
+</div>
+<ul>
+<li>La función suma los valores de <code>a</code> y <code>b</code> y guarda el resultado en la variable <code>resultado</code>.</li>
+<li>Luego, imprime el resultado de la suma usando una f-string.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamada a la función con dos argumentos:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">sumar(<span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
+</code></div>
+</div>
+<ul>
+<li>Aquí se llama a la función <code>sumar</code> y se pasan los valores <code>3</code> y <code>5</code> como argumentos.</li>
+<li>La función imprime: <code>"La suma de 3 y 5 es 8."</code>.</li>
+</ul>
+</li>
+</ol>
+<h3>Resumen</h3>
+<ul>
+<li>Las funciones pueden tomar uno o más argumentos, lo que les permite ser más flexibles y reutilizables.</li>
+<li>Los argumentos se especifican dentro de los paréntesis al definir la función.</li>
+<li>Cuando se llama a la función, se deben proporcionar los valores correspondientes para esos argumentos.</li>
+<li>Los valores de los argumentos se usan dentro de la función para realizar operaciones o cálculos y producir resultados basados en ellos.</li>
+</ul>
+<h2>FUNCIÓN input()&nbsp;</h2>
+<p style="text-align: justify;">La función&nbsp;input()&nbsp;en Python se utiliza para obtener datos del usuario a través del teclado. Cuando se llama a esta función, el programa se detiene y espera a que el usuario escriba algo y presione Enter. El texto ingresado se devuelve como una cadena (string) y se puede almacenar en una variable para su uso posterior.</p>
+<p>Aquí tienes un ejemplo sencillo:</p>
+<p>nombre = input("¿Cómo te llamas? ")<br>print(f"Hola, {nombre}!")</p>
+<p>En este ejemplo, el programa le pide al usuario que ingrese su nombre y luego imprime un saludo personalizado.</p>
+<p><strong>Ejemplo 1: Función con un argumento usando input</strong></p>
+<p><img src="FUNCIONES06.png" alt="" width="651" height="243"></p>
+<h3>Explicación:</h3>
+<ol>
+<li>
+<p><strong>Definición de la función:</strong></p>
+<ul>
+<li>La función <code>saludar</code> toma un argumento <code>nombre</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pedir entrada al usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">nombre_usuario = <span class="hljs-built_in">input</span>(<span class="hljs-string">"Por favor, introduce tu nombre: "</span>)
+</code></div>
+</div>
+<ul>
+<li><code>input("Por favor, introduce tu nombre: ")</code> muestra un mensaje al usuario y espera a que el usuario introduzca un valor.</li>
+<li>El valor introducido se guarda en la variable <code>nombre_usuario</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la función con la entrada del usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar(nombre_usuario)
+</code></div>
+</div>
+<ul>
+<li>La función <code>saludar</code> se llama con el valor proporcionado por el usuario.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Ejemplo 2: Función con múltiples argumentos usando <code>input</code></strong></p>
+<p><strong><img src="FUNCIONES07.png" alt="" width="649" height="276"></strong></p>
+<h3>Explicación:</h3>
+<ol>
+<li>
+<p><strong>Definición de la función:</strong></p>
+<ul>
+<li>La función <code>sumar</code> toma dos argumentos <code>a</code> y <code>b</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pedir entrada al usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">numero1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Introduce el primer número: "</span>))
+numero2 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Introduce el segundo número: "</span>))
+</code></div>
+</div>
+<ul>
+<li><code>input("Introduce el primer número: ")</code> muestra un mensaje al usuario y espera a que el usuario introduzca un valor.</li>
+<li><code>float</code> se usa para convertir la entrada del usuario a un número decimal, ya que <code>input</code> devuelve una cadena por defecto.</li>
+<li>Los valores introducidos se guardan en las variables <code>numero1</code> y <code>numero2</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la función con la entrada del usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">sumar(numero1, numero2)
+</code></div>
+</div>
+<ul>
+<li>La función <code>sumar</code> se llama con los valores proporcionados por el usuario.</li>
+</ul>
+</li>
+</ol>
+<h3>Resumen:</h3>
+<ul>
+<li style="text-align: justify;">Usar <code>input</code> permite que los usuarios introduzcan datos mientras el programa se está ejecutando.</li>
+<li style="text-align: justify;">Los valores proporcionados por los usuarios pueden ser usados como argumentos en funciones para hacer el programa interactivo y dinámico.</li>
+</ul>
+<p><strong><code></code></strong></p>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><h3>Programa para determinar si es mayor de edad</h3>
+<p><img src="EDAD01.png" alt="" width="651" height="171"></p>
+<p><strong>1. Entrada de datos:</strong></p>
+<p><strong><img src="EDAD02.png" alt="" width="616" height="86"></strong></p>
+<ul>
+<li><code>input("Ingresa tu edad: ")</code> muestra un mensaje al usuario para que ingrese su edad.</li>
+<li><code>int(...)</code> convierte la entrada del usuario de una cadena de texto (<code>str</code>) a un número entero (<code>int</code>).</li>
+</ul>
+<p><strong>2. Condicional</strong> <code>if-else</code>:</p>
+<p><img src="EDAD03.png" alt="" width="620" height="153"></p>
+<ul style="list-style-type: square;">
+<li>La sentencia if verifica si la edad ingresada es mayor o igual a 18.</li>
+<li>Si la condición edad >= 18 es verdadera, se ejecuta print("Eres mayor de edad.").</li>
+<li>Si la condición es falsa, se ejecuta el bloque else, que imprime print("Eres menor de edad.").</li>
+</ul>
+<h4>Funcionamiento</h4>
+<ul>
+<li>El usuario ingresa su edad.</li>
+<li>El programa determina si la persona es mayor o menor de edad y muestra el mensaje correspondiente.</li>
+</ul>
+<p><img src="EDAD06.png" alt="" width="344" height="197" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h3>Programa para determinar la calificación basada en la nota</h3>
+<p><img src="NOTA01.png" alt="" width="652" height="252"></p>
+<p><strong>1. Asignación de la variable <code>nota</code>:</strong></p>
+<p><strong><img src="NOTA02.png" alt="" width="617" height="85"></strong><strong></strong></p>
+<ul>
+<li><strong>Aquí se asigna directamente el valor 85 a la variable <code>nota</code>.</strong><strong></strong></li>
+</ul>
+<p><strong>2. Condicional</strong> <code>if-elif-else</code>:</p>
+<p><img src="NOTA03.png" alt="" width="623" height="239"></p>
+<ul>
+<li>La sentencia if verifica si la nota es mayor o igual a 90.</li>
+<li>Si la condición nota >= 90 es verdadera, se ejecuta print("Tienes una A.").</li>
+<li>Si no, se evalúa la siguiente condición elif, que verifica si la nota es mayor o igual a 80.</li>
+<li>Si nota >= 80 es verdadera, se ejecuta print("Tienes una B.").</li>
+<li>Si ninguna de las condiciones anteriores es verdadera, se evalúa la siguiente condición elif, que verifica si la nota es mayor o igual a 70.</li>
+<li>Si nota >= 70 es verdadera, se ejecuta print("Tienes una C."). Si ninguna de las condiciones anteriores es verdadera, se ejecuta el bloque else, que imprime print("Necesitas mejorar.").</li>
+</ul>
+<h4>Funcionamiento</h4>
+<ul>
+<li>El valor de la nota se evalúa para determinar la calificación.</li>
+<li>Dependiendo del valor de la nota, se imprime un mensaje que indica la calificación (A, B, C) o la necesidad de mejorar.</li>
+</ul>
+<h3>Resumen</h3>
+<ul>
+<li><strong><code>if</code></strong>: Ejecuta un bloque de código si la condición es verdadera.</li>
+<li><strong><code>elif</code></strong>: Proporciona condiciones adicionales si la condición <code>if</code> original es falsa.</li>
+<li><strong><code>else</code></strong>: Captura todos los demás casos cuando ninguna de las condiciones anteriores es verdadera.</li>
+</ul>
+<p>Estas estructuras se utilizan en conjunto para permitir que el programa tome decisiones y ejecute diferentes bloques de código basados en diferentes condiciones.</p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_interactivo" id="id809">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_interactivo.svg)"><h1 class="iDeviceTitle">ASIGNACIÓN DE TAREAS Y CIERRE</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta809_128_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Escribir un programa que convierta una cantidad de metros a centímetros.</li>
+</ul>
+</li>
+<li><strong>Cierre</strong>:
+<ul>
+<li>Resumir, en el cuaderno y a mano,  los puntos clave de la sesión</li>
+</ul>
+</li>
+</ul>
+<p><img src="escribe.png" width="401" height="229" style="display: block; margin-left: auto; margin-right: auto;" /></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><h3>Objetivo</h3>
+<p>Crea un programa en Python que:</p>
+<ol>
+<li>Solicite una cantidad en metros al usuario.</li>
+<li>Convierta esa cantidad a centímetros.</li>
+<li>Imprima el resultado de la conversión.</li>
+</ol>
+<h3>Instrucciones</h3>
+<ol>
+<li>
+<p><strong>Define una función para convertir metros a centímetros:</strong></p>
+<ul>
+<li>La función debe tomar una cantidad en metros como argumento.</li>
+<li>Debe devolver la cantidad equivalente en centímetros.</li>
+</ul>
+</li>
+<li>
+<p><strong>Solicita la cantidad en metros al usuario:</strong></p>
+<ul>
+<li>Usa <code>input</code> para solicitar la cantidad al usuario.</li>
+<li>Convierte la entrada del usuario a un número de punto flotante (<code>float</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Llama a la función de conversión y muestra el resultado:</strong></p>
+<ul>
+<li>Usa la función <code>print</code> para mostrar el resultado de la conversión.</li>
+</ul>
+</li>
+</ol>
+<h3>Ejemplo de Código</h3>
+<p><img src="FUNCIONES08.png" alt="" width="645" height="274" /></p>
+<h3>Explicación Detallada</h3>
+<h4>Paso 1: Definir una función para convertir metros a centímetros</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">convertir_metros_a_centimetros</span>(<span class="hljs-params">metros</span>):
+    centimetros = metros * <span class="hljs-number">100</span>
+    <span class="hljs-keyword">return</span> centimetros
+</code></div>
+</div>
+<ul>
+<li><code>def convertir_metros_a_centimetros(metros):</code> define una función llamada <code>convertir_metros_a_centimetros</code> que toma un argumento <code>metros</code>.</li>
+<li>Dentro de la función, se realiza la conversión multiplicando <code>metros</code> por <code>100</code> para obtener la cantidad en centímetros.</li>
+<li>La función devuelve el valor calculado en centímetros con <code>return centimetros</code>.</li>
+</ul>
+<h4>Paso 2: Solicitar la cantidad en metros al usuario</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">metros = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Ingresa la cantidad en metros: "</span>))
+</code></div>
+</div>
+<ul>
+<li><code>input("Ingresa la cantidad en metros: ")</code> muestra un mensaje al usuario pidiéndole que ingrese una cantidad en metros.</li>
+<li><code>float(...)</code> convierte la entrada del usuario (que es una cadena de texto) en un número de punto flotante y lo almacena en la variable <code>metros</code>.</li>
+</ul>
+<h4>Paso 3: Llamar a la función de conversión y mostrar el resultado</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(metros, <span class="hljs-string">"metros son"</span>, convertir_metros_a_centimetros(metros), <span class="hljs-string">"centímetros."</span>)
+</code></div>
+</div>
+<ul>
+<li><code>convertir_metros_a_centimetros(metros)</code> llama a la función definida anteriormente, pasando la cantidad en metros ingresada por el usuario como argumento.</li>
+<li>La función devuelve la cantidad en centímetros, que luego se imprime junto con el mensaje <code>metros, "metros son", ... , "centímetros."</code>.</li>
+</ul>
+<h3>Funcionamiento</h3>
+<ol>
+<li>
+<p><strong>El usuario ingresa una cantidad en metros:</strong></p>
+<ul>
+<li>El usuario ve el mensaje <code>Ingresa la cantidad en metros:</code> y escribe un número, por ejemplo, <code>2.5</code>.</li>
+<li>El programa convierte esta entrada a un número de punto flotante y la almacena en la variable <code>metros</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>El programa llama a la función para convertir la cantidad a centímetros:</strong></p>
+<ul>
+<li>La función <code>convertir_metros_a_centimetros</code> toma el valor de <code>metros</code> (2.5) y lo convierte a centímetros multiplicando por 100.</li>
+<li>La función devuelve el valor <code>250.0</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>El programa imprime el resultado de la conversión:</strong></p>
+<ul>
+<li>El programa usa <code>print</code> para mostrar el mensaje <code>2.5 metros son 250.0 centímetros.</code>.</li>
+</ul>
+</li>
+</ol>
+<h3>Resultado Esperado</h3>
+<p>Cuando ejecutes el programa, deberías ver algo similar a esto en la pantalla:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-attr">Ingresa la cantidad en metros:</span> <span class="hljs-number">2.5</span>
+</code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-number">2.5</span> <span class="hljs-string">metros</span> <span class="hljs-string">son</span> <span class="hljs-number">250.0</span> <span class="hljs-string">centímetros.</span>
+</code></div>
+</div>
+<h3>Consejos</h3>
+<ul>
+<li>Asegúrate de ingresar un número válido cuando el programa te lo solicite.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que las variables y funciones estén correctamente definidas.</li>
+</ul>
+<p>¡Diviértete programando y aprendiendo a usar funciones y la función <code>print</code> en Python!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="decisiones_con_if_y_else.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funciones_ii_y_variables.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

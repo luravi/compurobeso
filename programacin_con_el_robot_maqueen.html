@@ -1,0 +1,1755 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Programación con el Robot Maqueen </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-46"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li><a href="mdulo_4_robo_aprende_a_programar.html" class="daddy">Módulo 4: Robo aprende a programar</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="current-page-parent daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li id="active"><a href="programacin_con_el_robot_maqueen.html" class="active no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="programacin_avanzada_con_microbit.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Programación con el Robot Maqueen</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id850">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">1. Primeros pasos con Maqueen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta850_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">El objetivo de este programa es controlar un robot Maqueen utilizando la micro para que realice una secuencia específica de movimientos. El robot debe avanzar hacia adelante a máxima velocidad durante 1 segundo, detenerse por medio segundo, luego retroceder a máxima velocidad durante 1 segundo, y finalmente detenerse nuevamente. Esta secuencia de movimientos puede utilizarse para realizar maniobras simples, como simular un movimiento de ida y vuelta.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<p><img src="MODULO5_49.png" alt="" width="573" height="441"></p>
+<h3><span style="font-size: 14pt;">Explicación del Código:</span></h3>
+<ol>
+<li>
+<p><strong>Mover hacia adelante a velocidad máxima</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, <span class="hljs-number">255</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea hace que el robot avance hacia adelante a su velocidad máxima.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_run</code>: Esta función se utiliza para activar los motores del robot.</li>
+<li><code>maqueen.Motors.ALL</code>: Este parámetro indica que ambos motores, izquierdo (<code>M1</code>) y derecho (<code>M2</code>), deben activarse.</li>
+<li><code>maqueen.Dir.CW</code>: Este parámetro indica la dirección en la que deben girar los motores, <code>CW</code> significa "Clockwise" (en sentido horario), lo que hace que el robot avance.</li>
+<li><code>255</code>: Este es el valor de la velocidad, donde 255 es la velocidad máxima.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Espera 1 segundo</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">1000</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 1000 milisegundos (1 segundo).</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>basic.pause(1000)</code>: Esta función detiene temporalmente el programa, permitiendo que el robot avance durante 1 segundo antes de realizar la siguiente acción.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Detener los motores</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea detiene ambos motores del robot.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_stop</code>: Esta función se usa para detener los motores.</li>
+<li><code>maqueen.Motors.ALL</code>: Detiene ambos motores del robot, dejando el robot inmóvil.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Espera medio segundo</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">500</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 500 milisegundos (medio segundo).</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>basic.pause(500)</code>: Esta función detiene temporalmente el programa durante medio segundo, permitiendo que el robot permanezca quieto antes de ejecutar el siguiente movimiento.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Mover hacia atrás a velocidad máxima</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CCW, <span class="hljs-number">255</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Hace que el robot retroceda a su velocidad máxima.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_run</code>: Activa los motores del robot.</li>
+<li><code>maqueen.Motors.ALL</code>: Este parámetro indica que ambos motores deben activarse.</li>
+<li><code>maqueen.Dir.CCW</code>: Este parámetro indica la dirección en la que deben girar los motores, <code>CCW</code> significa "Counterclockwise" (en sentido antihorario), lo que hace que el robot retroceda.</li>
+<li><code>255</code>: Es la velocidad máxima a la que el robot se moverá hacia atrás.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Espera 1 segundo</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">1000</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 1 segundo.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>basic.pause(1000)</code>: Esta función detiene temporalmente el programa, permitiendo que el robot retroceda durante 1 segundo antes de detenerse.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Detener los motores</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Detiene ambos motores del robot.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_stop</code>: Detiene los motores del robot.</li>
+<li><code>maqueen.Motors.ALL</code>: Detiene ambos motores, dejando el robot inmóvil después de completar el movimiento hacia atrás.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ol>
+<li style="list-style-type: none;"></li>
+</ol>
+<h2>Solución con MAKECODE</h2>
+<p><strong>Instrucciones para Implementar el Programa en MakeCode:</strong></p>
+<ol>
+<li>
+<p><strong>Instalar la extensión Maqueen</strong>:</p>
+<ul>
+<li><strong>Paso 1</strong>: Abre MakeCode para micro.</li>
+<li><strong>Paso 2</strong>: Ve a "Avanzado" -&gt; "Extensiones".</li>
+<li><strong>Paso 3</strong>: En la barra de búsqueda, escribe "Maqueen" y selecciona la extensión correspondiente para agregarla a tu proyecto.</li>
+</ul>
+</li>
+<li>
+<p><strong>Estructura de bloques en MakeCode:</strong></p>
+</li>
+</ol>
+<p><img src="MODULO5_50.png" alt="" width="644" height="238"></p>
+<p><strong>Construcción de los bloques</strong>:</p>
+<div class="flex max-w-full flex-col flex-grow">
+<div data-message-author-role="assistant" data-message-id="d60d3341-6acc-44bb-8229-ff5a32eb0504" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 break-words [.text-message+&amp;]:mt-5 overflow-x-auto whitespace-pre-wrap">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<ul>
+<li>
+<p><strong>Bloque "para siempre"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>para siempre</strong>.</li>
+<li><strong>Función</strong>: Este bloque ejecuta continuamente los bloques dentro de él. Sin embargo, dado que el código que implementa solo se ejecuta una vez de principio a fin y no tiene un bucle, este bloque es más una envoltura para asegurarse de que cualquier código dentro de él se ejecute de manera continua si se agregaran más acciones.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: ambos, sentido avanzar, velocidad 255"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Hace que el robot avance a la velocidad máxima.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>ambos</code> para activar tanto el motor izquierdo como el derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para mover el robot hacia adelante (en sentido horario, <code>CW</code>).</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>255</code> para que el robot avance a la velocidad máxima.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 1000"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución del programa durante 1000 milisegundos (1 segundo), permitiendo que el robot avance durante ese tiempo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Parar motor: ambos"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Parar motor</strong>.</li>
+<li><strong>Función</strong>: Detiene ambos motores, haciendo que el robot se detenga por completo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 500"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución durante 500 milisegundos (medio segundo), permitiendo que el robot permanezca quieto antes de ejecutar el siguiente movimiento.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: ambos, sentido retroceder, velocidad 255"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Hace que el robot retroceda a la velocidad máxima.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>ambos</code> para activar tanto el motor izquierdo como el derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>retroceder</code> para mover el robot hacia atrás (en sentido antihorario, <code>CCW</code>).</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>255</code> para que el robot retroceda a la velocidad máxima.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 1000"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución del programa durante 1000 milisegundos (1 segundo), permitiendo que el robot retroceda durante ese tiempo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Parar motor: ambos"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Parar motor</strong>.</li>
+<li><strong>Función</strong>: Detiene ambos motores del robot, completando así la secuencia de movimientos.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="MODULO5_51.png" alt="" width="370" height="287"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id851">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">2. Luces y música con Maqueen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta851_828_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">El objetivo del programa es controlar un robot Maqueen para que realice una serie de acciones de forma repetitiva. El programa hará que el robot reproduzca un sonido, encienda ambos LEDs, espere un momento, apague los LEDs, avance a una velocidad moderada, y luego se detenga antes de repetir el ciclo.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit:</strong></p>
+<img src="MODULO5_27.png" alt="" width="716" height="353"><br>
+<h3>Explicación del Código Python Línea por Línea</h3>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<p><strong>Línea 1:</strong> Define una función llamada <code>on_forever</code> que contiene las instrucciones que se ejecutarán continuamente en un bucle.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    music.play(music.string_playable(<span class="hljs-string">"G B A G C5 B A B "</span>, <span class="hljs-number">120</span>), music.PlaybackMode.UNTIL_DONE)
+</code></div>
+</div>
+<p><strong>Línea 2:</strong> Reproduce una melodía en el robot. La secuencia de notas especificada ("G B A G C5 B A B") se reproduce a un tempo de 120 BPM. El modo <code>UNTIL_DONE</code> asegura que la melodía se complete antes de continuar.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    maqueen.write_led(maqueen.LED.LED_LEFT, maqueen.LEDswitch.TURN_ON)
+</code></div>
+</div>
+<p><strong>Línea 3:</strong> Enciende el LED izquierdo del Maqueen.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    maqueen.write_led(maqueen.LED.LED_RIGHT, maqueen.LEDswitch.TURN_ON)
+</code></div>
+</div>
+<p><strong>Línea 4:</strong> Enciende el LED derecho del Maqueen.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    basic.pause(<span class="hljs-number">2000</span>)
+</code></div>
+</div>
+<p><strong>Línea 5:</strong> Pausa la ejecución del programa durante 2 segundos (2000 milisegundos) para mantener los LEDs encendidos.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    maqueen.write_led(maqueen.LED.LED_LEFT, maqueen.LEDswitch.TURN_OFF)
+</code></div>
+</div>
+<p><strong>Línea 6:</strong> Apaga el LED izquierdo del Maqueen.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<p><strong>Línea 7:</strong> Hace que el Maqueen avance a una velocidad del 50%, girando ambos motores en el sentido horario.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    maqueen.write_led(maqueen.LED.LED_RIGHT, maqueen.LEDswitch.TURN_OFF)
+</code></div>
+</div>
+<p><strong>Línea 8:</strong> Apaga el LED derecho del Maqueen mientras el robot avanza.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    basic.pause(<span class="hljs-number">2000</span>)
+</code></div>
+</div>
+<p><strong>Línea 9:</strong> Pausa la ejecución durante otros 2 segundos mientras el robot sigue avanzando.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">    maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<p><strong>Línea 10:</strong> Detiene todos los motores del Maqueen, haciendo que el robot se detenga por completo.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<p><strong>Línea 11:</strong> Coloca la función <code>on_forever</code> dentro de un bucle infinito, repitiendo la secuencia de acciones indefinidamente.</p>
+<ol></ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><strong>Estructura del código en MakeCode:</strong></p>
+<img src="MODULO5_28.png" alt="" width="714" height="307"><br>
+<p><strong>Explicación Detallada del Código:</strong></p>
+<ol>
+<li>Abre MakeCode en el sitio web.</li>
+<li>Crea un nuevo proyecto haciendo clic en "Nuevo Proyecto".</li>
+<li>Haz clic en el ícono de "Engranaje" en la esquina superior derecha.</li>
+<li>Selecciona "Extensiones" y&nbsp;&nbsp;añade las extensiones "maqueen"&nbsp; y "neopixel" a tu proyecto.</li>
+</ol>
+<p><strong>1. Bloque "para siempre":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Básico".</li>
+<li><strong>Uso:</strong> Arrastra el bloque "para siempre" al área de trabajo.</li>
+</ul>
+<p><strong>2. Bloques "establecer LED":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Maqueen".</li>
+<li><strong>Configuración:</strong>
+<ul>
+<li>LED izquierdo: "ENCENDER".</li>
+<li>LED derecho: "ENCENDER".</li>
+</ul>
+</li>
+<li><strong>Uso:</strong> Arrastra estos bloques dentro del bloque "para siempre".</li>
+</ul>
+<p><strong>3. Bloque "pausa (ms)":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Básico".</li>
+<li><strong>Uso:</strong> Configura la pausa en 2000 milisegundos (2 segundos). Coloca este bloque después de los bloques de LED.</li>
+</ul>
+<p><strong>4. Apagar los LEDs con Bloques "establecer LED":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Maqueen".</li>
+<li><strong>Configuración:</strong>
+<ul>
+<li>LED izquierdo: "APAGAR".</li>
+<li>LED derecho: "APAGAR".</li>
+</ul>
+</li>
+<li><strong>Uso:</strong> Coloca estos bloques después del bloque de pausa.</li>
+</ul>
+<p><strong>5. Bloque "motor Run":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Maqueen".</li>
+<li><strong>Configuración:</strong>
+<ul>
+<li>Motor: "Todos".</li>
+<li>Dirección: "Adelante".</li>
+<li>Velocidad: 50.</li>
+</ul>
+</li>
+<li><strong>Uso:</strong> Coloca este bloque debajo de los bloques para apagar los LEDs.</li>
+</ul>
+<p><strong>6. Bloque "pausa (ms)":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Básico".</li>
+<li><strong>Uso:</strong> Configura la pausa en 1000 milisegundos (1 segundo). Coloca este bloque debajo del bloque "motor Run".</li>
+</ul>
+<p><strong>7. Bloque "motor Stop":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Maqueen".</li>
+<li><strong>Uso:</strong> Configura el bloque para detener "Todos" los motores. Coloca este bloque debajo del bloque de pausa.</li>
+</ul>
+<p><strong>8. </strong><strong>Bloque "reproduce secuencia"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: Categoría "Música".</li>
+<li><strong>Descripción</strong>: Este bloque reproduce una secuencia de notas musicales a un ritmo específico.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li>Melodía: Configura la secuencia de notas que deseas reproducir.</li>
+<li>Tempo: 120 BPM.</li>
+<li>Modo: "hasta que termine" (UNTIL_DONE).</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Uso:</strong> Coloca este bloque al inicio del ciclo, justo después del bloque "para siempre" y antes de los bloques de LED.</li>
+</ul>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="DISCOTECA.png" alt="" width="608" height="359"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id852">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">3. Trompos con Maqueen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta852_828_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">El objetivo de este programa es controlar un robot Maqueen utilizando la micro para que realice una serie de movimientos secuenciales. El robot debe realizar un ciclo de movimiento donde el motor izquierdo avance mientras el motor derecho retrocede, luego detenerse, y después realizar un movimiento inverso en el que el motor izquierdo retroceda y el motor derecho avance. Este ciclo de movimientos se repetirá de manera continua.</p>
+<h2>Solución con&nbsp; MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit:</strong></p>
+<table border="0" style="width: 65.9611%;">
+<tbody>
+<tr>
+<td style="width: 100%;"><img src="MODULO5_52.png" alt="" width="643" height="260"></td>
+</tr>
+<tr>
+<td style="width: 100%;"><img src="MODULO5_52b.png" alt="" width="646" height="229"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explicación detallada del código en Python</strong></p>
+<ol>
+<li>
+<p><strong>Definición de la función <code>on_forever</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea define una función llamada <code>on_forever</code> que contiene las instrucciones que el robot Maqueen ejecutará de manera repetida. La función engloba todas las acciones que se quieren realizar en cada ciclo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Primera secuencia de movimiento:</strong></p>
+<ul>
+<li>
+<p><strong>Motor izquierdo (M1) avanza en sentido horario</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa el motor izquierdo (<code>M1</code>) para avanzar en sentido horario (<code>CW</code>) a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: El motor izquierdo gira en sentido horario, lo que en combinación con el movimiento del motor derecho hace que el robot gire hacia la derecha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Motor derecho (M2) retrocede en sentido antihorario</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CCW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa el motor derecho (<code>M2</code>) para retroceder en sentido antihorario (<code>CCW</code>) a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: El motor derecho gira en sentido contrario, lo que contribuye al giro del robot hacia la derecha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa para permitir el movimiento</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">1000</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 1 segundo, permitiendo que el robot realice el giro completo hacia la derecha.</li>
+<li><strong>Explicación</strong>: Durante este tiempo, el robot estará realizando el movimiento de giro.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Primera parada de los motores</strong></p>
+<ul>
+<li>
+<p><strong>Detener ambos motores:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Detiene ambos motores del robot para finalizar el giro.</li>
+<li><strong>Explicación</strong>: El robot se detiene por completo al finalizar la primera secuencia de movimiento.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa para mantener el robot detenido</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">500</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 0.5 segundos para que el robot permanezca detenido antes de comenzar la siguiente secuencia.</li>
+<li><strong>Explicación</strong>: Este breve período de pausa asegura que haya una separación clara entre las dos secuencias de movimiento.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Segunda secuencia de movimiento</strong></p>
+<ul>
+<li>
+<p><strong>Motor izquierdo (M1) retrocede en sentido antihorario</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CCW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa el motor izquierdo (<code>M1</code>) para retroceder en sentido antihorario (<code>CCW</code>) a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: Ahora el motor izquierdo gira en sentido contrario, lo que en combinación con el motor derecho hace que el robot gire hacia la izquierda.</li>
+</ul>
+</li>
+<li>
+<p><strong>Motor derecho (M2) avanza en sentido horario</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa el motor derecho (<code>M2</code>) para avanzar en sentido horario (<code>CW</code>) a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: El motor derecho gira en sentido horario, lo que contribuye al giro del robot hacia la izquierda.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa para permitir el movimiento</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">1000</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 1 segundo, permitiendo que el robot realice el giro completo hacia la izquierda.</li>
+<li><strong>Explicación</strong>: Durante este tiempo, el robot estará realizando el movimiento de giro en la dirección opuesta a la primera secuencia.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Segunda parada de los motores</strong></p>
+<ul>
+<li>
+<p><strong>Detener ambos motores</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Detiene ambos motores del robot para finalizar el segundo giro.</li>
+<li><strong>Explicación</strong>: El robot se detiene por completo después de la segunda secuencia de movimiento.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa para mantener el robot detenido</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">500</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 0.5 segundos para que el robot permanezca detenido antes de repetir el ciclo.</li>
+<li><strong>Explicación</strong>: Esta pausa asegura que haya una separación clara antes de que el ciclo de movimientos se repita.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejecución continua</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea hace que la función <code>on_forever</code> se ejecute repetidamente en un bucle infinito.</li>
+<li><strong>Explicación</strong>: El ciclo de movimientos definidos en la función <code>on_forever</code> se repetirá indefinidamente, haciendo que el robot continúe girando hacia la derecha e izquierda de manera alternada.</li>
+</ul>
+</li>
+</ol>
+<ol style="text-align: justify;"></ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<h4><span style="font-size: 14pt;">Instalar la Extensión Maqueen</span></h4>
+<ol>
+<li><strong>Abrir MakeCode para micro</strong>
+<ul>
+<li>Abre el editor MakeCode en tu navegador web.</li>
+</ul>
+</li>
+<li><strong>Añadir la Extensión Maqueen</strong>:
+<ul>
+<li>Haz clic en <strong>Avanzado</strong> (en la parte inferior del menú de bloques).</li>
+<li>Luego selecciona <strong>Extensiones</strong>.</li>
+<li>En el cuadro de búsqueda, escribe "Maqueen" y selecciona la extensión "Maqueen" de la lista de resultados.</li>
+<li>Esto añadirá los bloques de Maqueen a tu área de trabajo en MakeCode.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Estructura del código en MakeCode:</strong></p>
+<p><img src="MODULO5_53.png" alt="" width="645" height="300"></p>
+<p style="text-align: justify;"><strong>Explicación detallada del código en MakeCode:</strong></p>
+<ol>
+<li>
+<p><strong>Bloque "para siempre"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>para siempre</strong>.</li>
+<li><strong>Función</strong>: Este bloque crea un bucle infinito, ejecutando de manera continua las acciones contenidas en su interior. En este caso, se asegura de que el ciclo de giros del robot se repita indefinidamente.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: M1, sentido avanzar, velocidad 50"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor izquierdo (<code>M1</code>) avance en sentido horario a una velocidad de 50.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M1</code> para activar solo el motor izquierdo.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> (en sentido horario, <code>CW</code>) para que el motor izquierdo avance.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>50</code> para que el motor funcione a baja velocidad.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: M2, sentido retroceder, velocidad 50"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor derecho (<code>M2</code>) retroceda en sentido antihorario a una velocidad de 50.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M2</code> para activar solo el motor derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>retroceder</code> (en sentido antihorario, <code>CCW</code>) para que el motor derecho retroceda.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>50</code> para que el motor funcione a baja velocidad.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 1000"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución del programa durante 1000 milisegundos (1 segundo), permitiendo que el robot complete el giro hacia la derecha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Parar motor: ambos"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Parar motor</strong>.</li>
+<li><strong>Función</strong>: Detiene ambos motores, haciendo que el robot se detenga por completo después del giro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 500"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución durante 500 milisegundos (medio segundo), permitiendo que el robot permanezca quieto antes de iniciar el siguiente movimiento.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: M1, sentido retroceder, velocidad 50"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor izquierdo (<code>M1</code>) retroceda en sentido antihorario a una velocidad de 50.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M1</code> para activar solo el motor izquierdo.</li>
+<li><strong>Sentido</strong>: Selecciona <code>retroceder</code> (en sentido antihorario, <code>CCW</code>) para que el motor izquierdo retroceda.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>50</code> para que el motor funcione a baja velocidad.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: M2, sentido avanzar, velocidad 50"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor derecho (<code>M2</code>) avance en sentido horario a una velocidad de 50.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M2</code> para activar solo el motor derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> (en sentido horario, <code>CW</code>) para que el motor derecho avance.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>50</code> para que el motor funcione a baja velocidad.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 1000"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución del programa durante 1000 milisegundos (1 segundo), permitiendo que el robot complete el giro hacia la izquierda.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Parar motor: ambos"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Parar motor</strong>.</li>
+<li><strong>Función</strong>: Detiene ambos motores del robot, haciendo que el robot se detenga por completo después del giro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 500"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución del programa durante 500 milisegundos (medio segundo), permitiendo que el robot permanezca quieto antes de repetir el ciclo.</li>
+</ul>
+</li>
+</ol>
+<ul style="list-style-type: disc;">
+<li style="list-style-type: none;"></li>
+</ul>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="TROMPOS.png" alt="" width="394" height="394"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id853">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">4. Evita obstáculos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta853_832_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">El objetivo es diseñar un programa en MicroPython para la micro que controle un robot Maqueen. El robot debe avanzar hacia adelante, detectar obstáculos usando su sensor ultrasónico, y evitar estos obstáculos. Para ello, si se detecta un obstáculo a menos de 10 cm, el robot debe retroceder y girar antes de continuar avanzando. Este ciclo se repetirá indefinidamente para asegurar que el robot pueda navegar sin colisiones.</p>
+<h2>Solución con MICROPYTHON</h2>
+<h4><span style="font-size: 14pt;">Instalar la Extensión Maqueen</span></h4>
+<ol>
+<li><strong>Abrir MakeCode para micro</strong>
+<ul>
+<li>Abre el editor MakeCode en tu navegador web.</li>
+</ul>
+</li>
+<li><strong>Añadir la Extensión Maqueen</strong>:
+<ul>
+<li>Haz clic en <strong>Avanzado</strong> (en la parte inferior del menú de bloques).</li>
+<li>Luego selecciona <strong>Extensiones</strong>.</li>
+<li>En el cuadro de búsqueda, escribe "Maqueen" y selecciona la extensión "Maqueen" de la lista de resultados.</li>
+<li>Esto añadirá los bloques de Maqueen a tu área de trabajo en MakeCode.</li>
+</ul>
+</li>
+</ol>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit</strong></span></p>
+<table border="0" style="width: 65.8597%;">
+<tbody>
+<tr>
+<td style="width: 100%;"><img src="MODULO5_31.png" alt="" width="643" height="393"></td>
+</tr>
+<tr>
+<td style="width: 100%;"><img src="MODULO5_31b.png" alt="" width="641" height="206"></td>
+</tr>
+</tbody>
+</table>
+<h3><span style="font-size: 14pt;">Explicación del Código en Python</span></h3>
+<p><span style="font-size: 14pt;"></span></p>
+<ul>
+<li>
+<p><strong>Definición de la función <code>on_forever</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea define una función llamada <code>on_forever</code> que se ejecutará de manera repetida e indefinida. En ella se especifica el comportamiento del robot cuando se encuentra con un obstáculo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Medir la distancia con el sensor ultrasónico:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">if</span> maqueen.ultrasonic(PingUnit.CENTIMETERS) &lt; <span class="hljs-number">10</span>:
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea utiliza el sensor ultrasónico del robot para medir la distancia a un objeto frente a él. Si la distancia medida es menor a 10 centímetros, se considera que hay un obstáculo cerca.</li>
+<li><strong>Explicación</strong>: <code>maqueen.ultrasonic(PingUnit.CENTIMETERS)</code> mide la distancia al objeto en centímetros, y el código verifica si esa distancia es menor que 10.</li>
+</ul>
+</li>
+<li>
+<p><strong>Si hay un obstáculo cerca, retrocede:</strong></p>
+<ul>
+<li>
+<p><strong>Motor izquierdo y derecho retroceden en sentido antihorario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CCW, <span class="hljs-number">50</span>)
+maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CCW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa ambos motores (<code>M1</code> y <code>M2</code>) para que retrocedan en sentido antihorario (<code>CCW</code>) a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: Esto hace que el robot retroceda para alejarse del obstáculo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa para permitir el movimiento de retroceso:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">1000</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 1 segundo, permitiendo que el robot retroceda durante ese tiempo.</li>
+<li><strong>Explicación</strong>: El robot se moverá hacia atrás durante 1 segundo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Detener ambos motores:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Detiene ambos motores del robot, dejando de moverse.</li>
+<li><strong>Explicación</strong>: Esto detiene al robot después de haber retrocedido.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa breve</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">500</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 0.5 segundos para asegurar que el robot esté detenido antes de realizar la siguiente maniobra.</li>
+<li><strong>Explicación</strong>: Esta breve pausa garantiza que haya una separación clara entre las acciones.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Girar hacia la derecha para esquivar el obstáculo:</strong></p>
+<ul>
+<li>
+<p><strong>Motor izquierdo avanza y motor derecho retrocede:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, <span class="hljs-number">50</span>)
+maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CCW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: El motor izquierdo (<code>M1</code>) avanza en sentido horario (<code>CW</code>), y el motor derecho (<code>M2</code>) retrocede en sentido antihorario (<code>CCW</code>), ambos a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: Esto hace que el robot gire hacia la derecha, lo que permite esquivar el obstáculo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa para permitir el giro:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">1000</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 1 segundo, permitiendo que el robot realice el giro completo.</li>
+<li><strong>Explicación</strong>: El robot girará durante 1 segundo para cambiar su dirección.</li>
+</ul>
+</li>
+<li>
+<p><strong>Detener ambos motores:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_stop(maqueen.Motors.ALL)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Detiene ambos motores para finalizar el giro.</li>
+<li><strong>Explicación</strong>: El robot se detiene después de completar el giro para prepararse para avanzar nuevamente.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa breve:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.pause(<span class="hljs-number">500</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Pausa la ejecución del programa durante 0.5 segundos antes de reanudar el movimiento hacia adelante.</li>
+<li><strong>Explicación</strong>: Esto asegura que el robot esté en reposo completo antes de continuar.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Si no hay obstáculo, avanzar:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, <span class="hljs-number">50</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Si el sensor ultrasónico no detecta ningún obstáculo cerca, ambos motores avanzan en sentido horario a una velocidad de 50.</li>
+<li><strong>Explicación</strong>: El robot se mueve hacia adelante, continuando su marcha normal.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejecución continua:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Hace que la función <code>on_forever</code> se ejecute repetidamente en un bucle infinito.</li>
+<li><strong>Explicación</strong>: Este bucle continuo permite que el robot siga detectando y esquivando obstáculos mientras avanza.</li>
+</ul>
+</li>
+</ul>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><strong>Estructura del código en MakeCode:</strong></p>
+<p><strong><img src="MODULO5_32.png" alt="" width="644" height="341"></strong></p>
+<p><strong>Explicación Detallada del Código:</strong></p>
+<p><strong></strong></p>
+<p><strong></strong></p>
+<ol>
+<li>
+<p><strong>Bloque "para siempre"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Básico</strong> &gt; <strong>para siempre</strong>.</li>
+<li><strong>Función</strong>: Este bloque es un bucle infinito que ejecuta continuamente todas las acciones dentro de él, lo que permite que el robot siga evaluando su entorno y actúe en consecuencia.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Si (0 &lt; 10)"</strong></p>
+<ul>
+<li>
+<p><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Lógica</strong> &gt; <strong>Si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este es un bloque condicional que compara dos valores. Dentro de este bloque se debe agregar un bloque de comparación y un bloque de lectura del sensor ultrasónico.</p>
+</li>
+<li>
+<p><strong>Añadir el Bloque de Comparación</strong>:</p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Este bloque permite comparar dos valores. Coloca este bloque dentro del condicional "Si". Por defecto, tiene dos espacios: uno para la lectura del sensor y otro para el valor a comparar (en este caso, 10).</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir el Bloque de Lectura de Ultrasonidos</strong>:</p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Ultrasonido</strong> &gt; <strong>Leer ultrasonido en centímetros</strong>.</li>
+<li><strong>Función</strong>: Este bloque se inserta en el primer espacio del bloque de comparación. El bloque leerá la distancia medida por el sensor ultrasónico en centímetros. Compara esta distancia con el valor 10 para determinar si el robot está cerca de un obstáculo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Comportamiento del Bloque</strong>:</p>
+<ul>
+<li>Si la distancia medida por el sensor ultrasónico es menor que 10 cm, el bloque condicional activará los bloques anidados dentro de él, que incluyen el retroceso y el giro del robot para evitar el obstáculo.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: izquierdo, sentido retroceder, velocidad 50"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Configura el motor izquierdo del robot (<code>M1</code>) para moverse hacia atrás (en sentido antihorario, <code>CCW</code>) a una velocidad de 50. Este bloque es parte de la maniobra para alejarse del obstáculo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: derecho, sentido retroceder, velocidad 50"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Configura el motor derecho (<code>M2</code>) para retroceder también a una velocidad de 50, haciendo que el robot se mueva hacia atrás en línea recta.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 1000"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución durante 1000 milisegundos (1 segundo). Permite que el robot retroceda durante un segundo antes de detenerse.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Parar motor: ambos"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor stop</strong>.</li>
+<li><strong>Función</strong>: Detiene ambos motores del robot, asegurando que el robot se detenga completamente después de retroceder.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 500"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución durante 500 milisegundos (0.5 segundos). Permite que el robot permanezca detenido antes de girar.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: izquierdo, sentido avanzar, velocidad 50"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Configura el motor izquierdo (<code>M1</code>) para avanzar (en sentido horario, <code>CW</code>) a una velocidad de 50. Este movimiento hace que el robot comience a girar hacia la derecha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: derecho, sentido retroceder, velocidad 50"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Configura el motor derecho (<code>M2</code>) para retroceder (en sentido antihorario, <code>CCW</code>) a una velocidad de 50. Este movimiento permite que el robot gire sobre su eje para esquivar el obstáculo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "pausa (ms): 1000"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Básico</strong> &gt; <strong>pausa (ms)</strong>.</li>
+<li><strong>Función</strong>: Pausa la ejecución durante 1000 milisegundos (1 segundo), permitiendo que el robot complete su giro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Parar motor: ambos"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor stop</strong>.</li>
+<li><strong>Función</strong>: Detiene ambos motores después del giro, asegurando que el robot se detenga por completo antes de reanudar su avance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: ambos, sentido avanzar, velocidad 50"</strong></p>
+<ul>
+<li><strong>Lugar (ubicación en MakeCode)</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Configura ambos motores del robot para avanzar a una velocidad de 50. Este bloque se ejecuta cuando no se detecta un obstáculo, permitiendo que el robot continúe su recorrido normalmente.</li>
+</ul>
+</li>
+</ol>
+<h3>Conclusión:</h3>
+<p>Con estos bloques, se garantiza que el robot Maqueen pueda moverse hacia adelante, detectar y esquivar obstáculos de manera eficiente. Al incluir un bloque de comparación dentro del bloque "Si", se logra que el robot evalúe correctamente la distancia a los obstáculos usando el sensor ultrasónico y reaccione de manera adecuada para evitar colisiones.</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="OBSTACULOS.png" alt="" width="356" height="454"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id854">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">5. Sigue líneas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta854_834_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">El objetivo de este programa es controlar un robot Maqueen utilizando la micropara que siga una línea negra utilizando los sensores de siguelíneas (patrol). El robot Maqueen tiene dos sensores, uno a la izquierda y otro a la derecha, que detectan si están sobre una línea negra o no. Según la información de estos sensores, el robot ajusta sus motores para mantenerse sobre la línea. Si ambos sensores detectan la línea, el robot avanza; si solo uno de los sensores detecta la línea, el robot gira hacia la dirección correspondiente para corregir su trayectoria.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit</strong></p>
+<p><img src="MODULO5_54.png" alt="" width="651" height="297"></p>
+<h3><span style="font-size: 14pt;">Explicación detallada del código en MicroPython</span></h3>
+<ol>
+<li>
+<p><strong>Definición de la función <code>on_forever</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Define la función <code>on_forever</code> que contiene la lógica que se ejecutará continuamente para controlar el robot Maqueen según los sensores de siguelíneas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición para avanzar cuando ambos sensores detectan la línea</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">if</span> maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == <span class="hljs-number">0</span>:
+    maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, <span class="hljs-number">175</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Verifica si ambos sensores de siguelíneas (izquierdo y derecho) están detectando la línea (valor <code>0</code> indica que están sobre la línea).</li>
+<li><strong>Explicación</strong>: Si ambos sensores están sobre la línea, el robot avanza en línea recta. Los motores izquierdo (<code>M1</code>) y derecho (<code>M2</code>) giran en sentido horario (<code>CW</code>) a una velocidad de 175.</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición para girar a la derecha cuando solo el sensor izquierdo detecta la línea</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">elif</span> maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == <span class="hljs-number">1</span> <span class="hljs-keyword">and</span> maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == <span class="hljs-number">0</span>:
+    maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, <span class="hljs-number">175</span>)
+    maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, <span class="hljs-number">0</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Verifica si el sensor izquierdo no está sobre la línea (valor <code>1</code>) mientras que el sensor derecho sí lo está (valor <code>0</code>).</li>
+<li><strong>Explicación</strong>: Si el robot se está desviando hacia la derecha (solo el sensor derecho detecta la línea), el motor izquierdo (<code>M1</code>) sigue avanzando mientras que el motor derecho (<code>M2</code>) se detiene, haciendo que el robot gire ligeramente hacia la derecha para volver a alinearse con la línea.</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición para girar a la izquierda cuando solo el sensor derecho detecta la línea</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">elif</span> maqueen.read_patrol(maqueen.Patrol.PATROL_LEFT) == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> maqueen.read_patrol(maqueen.Patrol.PATROL_RIGHT) == <span class="hljs-number">1</span>:
+    maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, <span class="hljs-number">175</span>)
+    maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, <span class="hljs-number">0</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Verifica si el sensor derecho no está sobre la línea (valor <code>1</code>) mientras que el sensor izquierdo sí lo está (valor <code>0</code>).</li>
+<li><strong>Explicación</strong>: Si el robot se está desviando hacia la izquierda (solo el sensor izquierdo detecta la línea), el motor derecho (<code>M2</code>) sigue avanzando mientras que el motor izquierdo (<code>M1</code>) se detiene, haciendo que el robot gire ligeramente hacia la izquierda para volver a alinearse con la línea.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejecución continua de la función</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Asegura que la función <code>on_forever</code> se ejecute repetidamente en un bucle infinito, permitiendo que el robot ajuste continuamente su dirección para seguir la línea.</li>
+</ul>
+</li>
+</ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<h4><span style="font-size: 14pt;">Instalar la Extensión Maqueen</span></h4>
+<ol>
+<li><strong>Abrir MakeCode para micro</strong>
+<ul>
+<li>Abre el editor MakeCode en tu navegador web.</li>
+</ul>
+</li>
+<li><strong>Añadir la Extensión Maqueen</strong>:
+<ul>
+<li>Haz clic en <strong>Avanzado</strong> (en la parte inferior del menú de bloques).</li>
+<li>Luego selecciona <strong>Extensiones</strong>.</li>
+<li>En el cuadro de búsqueda, escribe "Maqueen" y selecciona la extensión "Maqueen" de la lista de resultados.</li>
+<li>Esto añadirá los bloques de Maqueen a tu área de trabajo en MakeCode.</li>
+</ul>
+</li>
+</ol>
+<p><span style="font-size: 14pt;"><strong>Estructura del código en MakeCode:</strong></span></p>
+<p><strong><img src="MODULO5_34.png" alt="" width="643" height="254"></strong></p>
+<h3 style="text-align: justify;"><span style="font-size: 14pt;">Desglose Bloque a Bloque con Explicación Detallada</span></h3>
+<ol>
+<li>
+<p><strong>Bloque "para siempre"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>para siempre</strong>.</li>
+<li><strong>Función</strong>: Este bloque se ejecuta continuamente durante la ejecución del programa. Se utiliza para que el robot revise constantemente los sensores de siguelíneas y ajuste su dirección en función de la detección de la línea negra.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "si (leer siguelíneas izquierdo = 0) y (leer siguelíneas derecho = 0)"</strong></p>
+<ul>
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque verifica si ambos sensores de siguelíneas están detectando la línea negra, lo que indica que el robot debe avanzar en línea recta.</p>
+</li>
+<li>
+<p><strong>Configuración y Subbloques</strong>:</p>
+<ul>
+<li><strong>Subbloque de Comparación (<code>leer siguelíneas izquierdo = 0</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Compara el valor leído por el sensor de siguelíneas izquierdo con <code>0</code>. Un valor de <code>0</code> indica que el sensor está sobre la línea negra.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Seleccionar el Sensor</strong>: En <strong>Maqueen</strong> &gt; <strong>Siguelíneas</strong> &gt; <strong>Leer siguelíneas</strong>, selecciona "izquierdo" para obtener el valor del sensor izquierdo.</li>
+<li><strong>Operador Comparativo</strong>: Usando el bloque de comparación en <strong>Lógica</strong>, configúralo para verificar si el valor es igual a <code>0</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Subbloque de Comparación (<code>leer siguelíneas derecho = 0</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Compara el valor leído por el sensor de siguelíneas derecho con <code>0</code>. Un valor de <code>0</code> indica que el sensor está sobre la línea negra.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Seleccionar el Sensor</strong>: En <strong>Maqueen</strong> &gt; <strong>Siguelíneas</strong> &gt; <strong>Leer siguelíneas</strong>, selecciona "derecho" para obtener el valor del sensor derecho.</li>
+<li><strong>Operador Comparativo</strong>: Usando el bloque de comparación en <strong>Lógica</strong>, configúralo para verificar si el valor es igual a <code>0</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Subbloque "Y" (<code>y</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Y</strong>.</li>
+<li><strong>Función</strong>: Combina ambas comparaciones (izquierdo y derecho) para asegurarse de que ambas condiciones sean verdaderas al mismo tiempo. Si ambos sensores detectan la línea negra, el robot debe avanzar.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: ambos, sentido avanzar, velocidad 175"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Controla los motores izquierdo y derecho para avanzar a una velocidad de 175 en sentido horario (<code>CW</code>).</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>ambos</code> para activar tanto el motor izquierdo como el derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para que ambos motores giren en sentido horario.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>175</code> para que el robot avance a una velocidad moderada.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "si no, si (leer siguelíneas izquierdo = 1) y (leer siguelíneas derecho = 0)"</strong></p>
+<ul>
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no, si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque verifica si solo el sensor derecho está detectando la línea negra, lo que indica que el robot debe girar a la derecha para corregir su trayectoria.</p>
+</li>
+<li>
+<p><strong>Configuración y Subbloques</strong>:</p>
+<ul>
+<li><strong>Subbloque de Comparación (<code>leer siguelíneas izquierdo = 1</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Compara el valor leído por el sensor de siguelíneas izquierdo con <code>1</code>. Un valor de <code>1</code> indica que el sensor no está sobre la línea negra.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Seleccionar el Sensor</strong>: En <strong>Maqueen</strong> &gt; <strong>Siguelíneas</strong> &gt; <strong>Leer siguelíneas</strong>, selecciona "izquierdo" para obtener el valor del sensor izquierdo.</li>
+<li><strong>Operador Comparativo</strong>: Usando el bloque de comparación en <strong>Lógica</strong>, configúralo para verificar si el valor es igual a <code>1</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Subbloque de Comparación (<code>leer siguelíneas derecho = 0</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Compara el valor leído por el sensor de siguelíneas derecho con <code>0</code>. Un valor de <code>0</code> indica que el sensor está sobre la línea negra.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Seleccionar el Sensor</strong>: En <strong>Maqueen</strong> &gt; <strong>Siguelíneas</strong> &gt; <strong>Leer siguelíneas</strong>, selecciona "derecho" para obtener el valor del sensor derecho.</li>
+<li><strong>Operador Comparativo</strong>: Usando el bloque de comparación en <strong>Lógica</strong>, configúralo para verificar si el valor es igual a <code>0</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Subbloque "Y" (<code>y</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Y</strong>.</li>
+<li><strong>Función</strong>: Combina ambas comparaciones (izquierdo y derecho) para asegurarse de que ambas condiciones se verifiquen al mismo tiempo. Esto es necesario para que el robot gire a la derecha cuando el sensor izquierdo no detecta la línea negra y el derecho sí.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: izquierdo, sentido avanzar, velocidad 175" y "Motor: derecho, sentido detener, velocidad 0"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong> y <strong>Motor stop</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor izquierdo avance y el motor derecho se detenga para que el robot gire a la derecha.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor izquierdo</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M1</code> para activar solo el motor izquierdo.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para que el motor izquierdo gire en sentido horario.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>175</code> para que el motor avance a una velocidad moderada.</li>
+</ul>
+</li>
+<li><strong>Motor derecho</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M2</code> para activar solo el motor derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>detener</code> para que el motor derecho se detenga y no gire.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>0</code> para que el motor derecho no se mueva.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "si no, si (leer siguelíneas izquierdo = 0) y (leer siguelíneas derecho = 1)"</strong></p>
+<ul>
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no, si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque verifica si solo el sensor izquierdo está detectando la línea negra, lo que indica que el robot debe girar a la izquierda para corregir su trayectoria.</p>
+</li>
+<li>
+<p><strong>Configuración y Subbloques</strong>:</p>
+<ul>
+<li><strong>Subbloque de Comparación (<code>leer siguelíneas izquierdo = 0</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Compara el valor leído por el sensor de siguelíneas izquierdo con <code>0</code>. Un valor de <code>0</code> indica que el sensor está sobre la línea negra.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Seleccionar el Sensor</strong>: En <strong>Maqueen</strong> &gt; <strong>Siguelíneas</strong> &gt; <strong>Leer siguelíneas</strong>, selecciona "izquierdo" para obtener el valor del sensor izquierdo.</li>
+<li><strong>Operador Comparativo</strong>: Usando el bloque de comparación en <strong>Lógica</strong>, configúralo para verificar si el valor es igual a <code>0</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Subbloque de Comparación (<code>leer siguelíneas derecho = 1</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Compara el valor leído por el sensor de siguelíneas derecho con <code>1</code>. Un valor de <code>1</code> indica que el sensor no está sobre la línea negra.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Seleccionar el Sensor</strong>: En <strong>Maqueen</strong> &gt; <strong>Siguelíneas</strong> &gt; <strong>Leer siguelíneas</strong>, selecciona "derecho" para obtener el valor del sensor derecho.</li>
+<li><strong>Operador Comparativo</strong>: Usando el bloque de comparación en <strong>Lógica</strong>, configúralo para verificar si el valor es igual a <code>1</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Subbloque "Y" (<code>y</code>)</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Y</strong>.</li>
+<li><strong>Función</strong>: Combina ambas comparaciones (izquierdo y derecho) para asegurarse de que ambas condiciones se verifiquen al mismo tiempo. Esto es necesario para que el robot gire a la izquierda cuando el sensor izquierdo detecta la línea negra y el derecho no.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: derecho, sentido avanzar, velocidad 175" y "Motor: izquierdo, sentido detener, velocidad 0"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong> y <strong>Motor stop</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor derecho avance y el motor izquierdo se detenga para que el robot gire a la izquierda.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor derecho</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M2</code> para activar solo el motor derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para que el motor derecho gire en sentido horario.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>175</code> para que el motor avance a una velocidad moderada.</li>
+</ul>
+</li>
+<li><strong>Motor izquierdo</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M1</code> para activar solo el motor izquierdo.</li>
+<li><strong>Sentido</strong>: Selecciona <code>detener</code> para que el motor izquierdo se detenga y no gire.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>0</code> para que el motor izquierdo no se mueva.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: justify;">Conclusión:</h3>
+<p style="text-align: justify;">Este programa en MakeCode utiliza una combinación de bloques de <strong>Lógica</strong> y <strong>Maqueen</strong> para permitir que el robot siga una línea negra utilizando sus sensores de siguelíneas. Los subbloques de comparación y lectura de sensores juegan un papel clave en la determinación de la trayectoria correcta del robot. La configuración cuidadosa de cada bloque y subbloque garantiza que el robot pueda ajustar su dirección para mantenerse en la línea, ya sea avanzando en línea recta o corrigiendo su curso hacia la derecha o la izquierda según sea necesario.</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="SIGUELINEAS.png" alt="" width="700" height="331"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id856">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">6. Pilla - Pilla</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta856_838_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">El objetivo de este programa es controlar un robot Maqueen utilizando la micro para que el robot persiga un objeto si lo detecta a menos de 20 cm de distancia. Si no detecta ningún objeto, el robot gira en una dirección aleatoria, ya sea hacia la derecha o hacia la izquierda. El robot utiliza un sensor ultrasónico para medir la distancia a los objetos cercanos y tomar decisiones de movimiento basadas en esa información.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit:</strong></p>
+<p><img src="MODULO5_55.png" alt="" width="640" height="337"></p>
+<h3><span style="font-size: 12pt;">Explicación detallada del código en MicroPython:</span></h3>
+<h3>Explicación Detallada del Código en Python:</h3>
+<ol>
+<li>
+<p><strong>Inicialización de la variable <code>derecha</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">derecha = Math.random_boolean()
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea define una variable llamada <code>derecha</code>, que almacena un valor booleano (<code>True</code> o <code>False</code>) generado aleatoriamente. Este valor se utiliza para decidir la dirección en la que el robot girará cuando no detecte un objeto cercano.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>Math.random_boolean()</code>: Esta función genera un valor booleano aleatorio (<code>True</code> o <code>False</code>), que se almacena en la variable <code>derecha</code>. Esto permite que el robot elija al azar si girar hacia la derecha o hacia la izquierda cuando no detecta un objeto.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Definición de la función <code>on_forever</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Esta línea define una función llamada <code>on_forever</code>, que contendrá las instrucciones que el robot Maqueen ejecutará repetidamente en un bucle continuo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición para detectar un objeto cercano:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">if</span> maqueen.ultrasonic(PingUnit.CENTIMETERS) &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> maqueen.ultrasonic(PingUnit.CENTIMETERS) &gt;= <span class="hljs-number">0</span>:
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Verifica si el sensor ultrasónico del robot detecta un objeto a una distancia menor de 20 cm.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.ultrasonic(PingUnit.CENTIMETERS)</code>: Mide la distancia desde el robot hasta el objeto más cercano en centímetros.</li>
+<li>La condición comprueba si la distancia es menor a 20 cm y mayor o igual a 0 cm, indicando que hay un objeto dentro del rango detectable.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Movimiento hacia adelante si se detecta un objeto cercano:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, <span class="hljs-number">200</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Si se detecta un objeto a menos de 20 cm, el robot avanza hacia adelante a una velocidad de 200.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_run(maqueen.Motors.ALL, maqueen.Dir.CW, 200)</code>: Activa ambos motores (<code>M1</code> y <code>M2</code>) para avanzar en sentido horario (<code>CW</code>) a una velocidad de 200, lo que hace que el robot se acerque al objeto detectado.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición para girar a la derecha si no hay objeto y <code>derecha</code> es <code>True</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">elif</span> derecha == <span class="hljs-literal">True</span>:
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Verifica si la variable <code>derecha</code> es <code>True</code>, en cuyo caso el robot girará hacia la derecha.</li>
+<li><strong>Explicación</strong>: Si no se detecta ningún objeto cercano y <code>derecha</code> es <code>True</code>, el robot activará solo el motor izquierdo para girar hacia la derecha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Movimiento para girar a la derecha:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, <span class="hljs-number">200</span>)
+maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, <span class="hljs-number">0</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa solo el motor izquierdo (<code>M1</code>) para que el robot gire hacia la derecha.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 200)</code>: El motor izquierdo (<code>M1</code>) avanza en sentido horario a una velocidad de 200.</li>
+<li><code>maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 0)</code>: El motor derecho (<code>M2</code>) se detiene, lo que provoca que el robot gire hacia la derecha.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición para girar a la izquierda si no hay objeto y <code>derecha</code> es <code>False</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">else</span>:
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Si <code>derecha</code> es <code>False</code>, el robot girará hacia la izquierda.</li>
+<li><strong>Explicación</strong>: Cuando no se detecta ningún objeto cercano y <code>derecha</code> es <code>False</code>, el robot activará solo el motor derecho para girar hacia la izquierda.</li>
+</ul>
+</li>
+<li>
+<p><strong>Movimiento para girar a la izquierda:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, <span class="hljs-number">0</span>)
+maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, <span class="hljs-number">200</span>)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Activa solo el motor derecho (<code>M2</code>) para que el robot gire hacia la izquierda.</li>
+<li><strong>Explicación</strong>:
+<ul>
+<li><code>maqueen.motor_run(maqueen.Motors.M1, maqueen.Dir.CW, 0)</code>: El motor izquierdo (<code>M1</code>) se detiene.</li>
+<li><code>maqueen.motor_run(maqueen.Motors.M2, maqueen.Dir.CW, 200)</code>: El motor derecho (<code>M2</code>) avanza en sentido horario a una velocidad de 200, lo que hace que el robot gire hacia la izquierda.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejecución continua de la función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<ul>
+<li><strong>Propósito</strong>: Hace que la función <code>on_forever</code> se ejecute repetidamente en un bucle continuo.</li>
+<li><strong>Explicación</strong>: El robot sigue evaluando el entorno y ajustando su movimiento en función de la distancia al objeto detectado, girando aleatoriamente cuando no se detecta ningún objeto.</li>
+</ul>
+</li>
+</ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<h4><span style="font-size: 14pt;">Instalar la Extensión Maqueen</span></h4>
+<ol>
+<li><strong>Abrir MakeCode para micro</strong>
+<ul>
+<li>Abre el editor MakeCode en tu navegador web.</li>
+</ul>
+</li>
+<li><strong>Añadir la Extensión Maqueen</strong>:
+<ul>
+<li>Haz clic en <strong>Avanzado</strong> (en la parte inferior del menú de bloques).</li>
+<li>Luego selecciona <strong>Extensiones</strong>.</li>
+<li>En el cuadro de búsqueda, escribe "Maqueen" y selecciona la extensión "Maqueen" de la lista de resultados.</li>
+<li>Esto añadirá los bloques de Maqueen a tu área de trabajo en MakeCode.</li>
+</ul>
+</li>
+</ol>
+<p><span style="font-size: 14pt;"><strong>Estructura del código en MakeCode:</strong></span></p>
+<p><img src="MODULO5_36.png" alt="" width="644" height="275"></p>
+<h3 style="text-align: justify;"><span style="font-size: 12pt;">Desglose Bloque a Bloque con Explicación Detallada:</span></h3>
+<ol>
+<li>
+<p><strong>Bloque "al iniciar"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>al iniciar</strong>.</li>
+<li><strong>Función</strong>: Este bloque se ejecuta una sola vez al inicio del programa, cuando la micro se enciende o reinicia. En este caso, se utiliza para inicializar la variable <code>derecha</code><span style="font-size: 1.05em;">.</span>
+<ul style="list-style-type: circle;">
+<li><strong>Configuración y Subbloque</strong>&nbsp;</li>
+<li><strong>Lugar </strong>&nbsp;<strong>Variables</strong>&nbsp;, crea tu variable&nbsp; con el nombre "<strong>derecha"</strong>.&nbsp;</li>
+<li>En el bloque<strong> "al iniciar, " </strong>desde el bloque de variables arrastra<strong> " fijar derecha a"</strong> y en el<strong> "0" </strong>que aparece arrastrar desde el bloque matemáticas <strong>escoge al azar un valor verdadero o falso.&nbsp;</strong>Este bloque se usa para inicializar la variable <code>derecha</code> con un valor booleano (<code>true</code> o <code>false</code>) de manera aleatoria.</li>
+</ul>
+<ul>
+<li style="list-style-type: none;"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "para siempre"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>para siempre</strong>.</li>
+<li><strong>Función</strong>: Este bloque crea un bucle infinito que repite continuamente las acciones en su interior, permitiendo que el robot revise continuamente el entorno y ajuste su movimiento.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "si (leer ultrasonido &lt; 20 cm)"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si...entonces</strong> y <strong>Maqueen</strong> &gt; <strong>Ultrasonido</strong> &gt; <strong>Leer ultrasonido</strong>.</li>
+<li><strong>Función</strong>: Verifica si la distancia medida por el sensor ultrasónico es menor a 20 cm.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Leer Ultrasonido</strong>: En <strong>Maqueen</strong> &gt; <strong>Ultrasonido</strong>, selecciona "Leer ultrasonido en centímetros". Configura la comparación para verificar si la distancia es menor a 20.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Motor: ambos, sentido avanzar, velocidad 200"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong>.</li>
+<li><strong>Función</strong>: Activa ambos motores (<code>M1</code> y <code>M2</code>) para que el robot avance en sentido horario (<code>CW</code>) a una velocidad de 200.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>ambos</code> para activar tanto el motor izquierdo como el derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para que ambos motores giren en sentido horario.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>200</code> para que el robot avance a una velocidad moderada.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "si no"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no</strong>.</li>
+<li><strong>Función</strong>: Este bloque permite especificar lo que debe hacer el robot cuando no se detecta ningún objeto cercano.</li>
+</ul>
+</li>
+<li>
+<p><strong>Subbloque "si (derecha == True)"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si...entonces</strong>.</li>
+<li><strong>Función</strong>: Verifica si la variable <code>derecha</code> es <code>True</code>, lo que significa que el robot debe girar hacia la derecha.</li>
+</ul>
+</li>
+<li>
+<p><strong>Subbloque "Motor: M1, sentido avanzar, velocidad 200" y "Motor: M2, sentido detener, velocidad 0"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong> y <strong>Motor stop</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor izquierdo avance mientras que el motor derecho se detiene, haciendo que el robot gire hacia la derecha.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor izquierdo</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M1</code> para activar solo el motor izquierdo.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para que el motor izquierdo gire en sentido horario.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>200</code> para que el motor avance a una velocidad moderada.</li>
+</ul>
+</li>
+<li><strong>Motor derecho</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M2</code> para activar solo el motor derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>detener</code> para que el motor derecho no gire.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>0</code> para detener el motor derecho.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Subbloque "si no"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no</strong>.</li>
+<li><strong>Función</strong>: Si <code>derecha</code> es <code>False</code>, se ejecutan las instrucciones en este subbloque, que hacen que el robot gire hacia la izquierda.</li>
+</ul>
+</li>
+<li>
+<p><strong>Subbloque "Motor: M1, sentido detener, velocidad 0" y "Motor: M2, sentido avanzar, velocidad 200"</strong></p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Maqueen</strong> &gt; <strong>Motor</strong> &gt; <strong>Motor run</strong> y <strong>Motor stop</strong>.</li>
+<li><strong>Función</strong>: Hace que el motor derecho avance mientras que el motor izquierdo se detiene, haciendo que el robot gire hacia la izquierda.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Motor izquierdo</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M1</code> para activar solo el motor izquierdo.</li>
+<li><strong>Sentido</strong>: Selecciona <code>detener</code> para que el motor izquierdo no gire.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>0</code> para detener el motor izquierdo.</li>
+</ul>
+</li>
+<li><strong>Motor derecho</strong>:
+<ul>
+<li><strong>Motor</strong>: Selecciona <code>M2</code> para activar solo el motor derecho.</li>
+<li><strong>Sentido</strong>: Selecciona <code>avanzar</code> para que el motor derecho gire en sentido horario.</li>
+<li><strong>Velocidad</strong>: Ajusta a <code>200</code> para que el motor avance a una velocidad moderada.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="PILLAPILLA.png" alt="" width="666" height="366"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id855">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">TAREAS </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta855_128_2" class="block iDevice_content">
+<div class="pbl-task-description"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Haz todos los ejercicios que se proponen y preséntalo a tu profesor/ra en la forma que te indique.</li>
+<li>Anota en  tu cuaderno como se resuelve cada ejercicio y preséntalo a tu profesor/ra en la forma que te indique.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_82" class="block iDevice_content">
+
+</div>
+<ul class='exeFileList'><li><a href='E503 Programacion con el Robot Maqueen.pdf' target='_blank'>E503 Programación con el Robot Maqueen.pdf<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="programacin_avanzada_con_microbit.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

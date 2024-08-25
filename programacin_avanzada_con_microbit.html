@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Programación avanzada con Microbit </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-45"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li><a href="mdulo_4_robo_aprende_a_programar.html" class="daddy">Módulo 4: Robo aprende a programar</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="current-page-parent daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li id="active"><a href="programacin_avanzada_con_microbit.html" class="active no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="programacin_con_el_robot_maqueen.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Programación avanzada con Microbit</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id844">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">1. Acelerómetro</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta844_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p>Queremos crear un programa en la micro:bit que lea la inclinación en el eje X utilizando el acelerómetro. Si la inclinación es mayor a 200, se mostrará "&gt;" en la pantalla LED; si es menor a -200, se mostrará "&lt;"; y si está entre -200 y 200, se mostrará "-". Este proceso debe repetirse continuamente.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<img src="MODULO5_12.png" alt="Código en Python para micro:bit" width="645" height="302">
+<h3><span style="font-size: 14pt;">Explicación del código en Python:</span></h3>
+<ol>
+<li><strong>Obtener la inclinación en el eje X:</strong> <code>X = input.acceleration(Dimension.X)</code> Lee el valor de la aceleración en el eje X y lo almacena en la variable <code>x</code>.</li>
+<li><strong>Condicionales para mostrar símbolos:</strong>
+<ul>
+<li><code>if x &gt; 200:</code> Muestra <code>"&gt;"</code></li>
+<li><code>elif x &lt; -200:</code> Muestra <code>"&lt;"</code></li>
+<li><code>else:</code> Muestra <code>"-"</code></li>
+</ul>
+</li>
+<li><strong>Ejecución continua:</strong> <code>basic.forever(on_forever)</code> Hace que la micro:bit revise continuamente la inclinación y muestre el símbolo correspondiente.</li>
+</ol>
+<h2>Solución con MAKECODE</h2>
+<p><span style="font-size: 14pt;"><strong>Estructura visual del código en MakeCode:</strong></span></p>
+<img src="MODULO5_13.png" alt="Estructura del código en MakeCode" width="646" height="241">
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Explicación Detallada del Código:</strong></span></p>
+<p style="text-align: justify;">1. <strong>Bloque "para siempre"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Básico"</strong>.</li>
+<li>Está ubicado en la parte superior de la lista de bloques.</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque es un bucle infinito que ejecuta repetidamente cualquier código que se coloque dentro de él. En este caso, se usa para medir continuamente la aceleración en el eje X y mostrar la inclinación de la micro en la pantalla LED.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">2. <strong>Bloque "fijar x a aceleración (mg) en X"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Variables"</strong> y la categoría <strong>"Entrada"</strong>.</li>
+<li>Primero debes crear la variable <code>x</code> en la categoría "Variables".</li>
+<li>Luego, arrastra el bloque "fijar [variable] a [valor]" y selecciona "aceleración (mg) en X" de la categoría "Entrada".</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque mide continuamente la aceleración en el eje X utilizando el acelerómetro integrado en la micro y almacena ese valor en la variable <code>x</code><span style="font-size: 1.05em;">. El valor de la aceleración se expresa en miligramos (mg) y se utiliza en los siguientes bloques condicionales para determinar la inclinación de la micro</span>.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">3. <strong>Bloque "si... entonces"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Lógica"</strong>.</li>
+<li>Al abrir la categoría "Lógica", encontrarás el bloque "si... entonces" y "si... entonces... si no".</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque permite ejecutar ciertas acciones solo si se cumple una condición específica. En este caso, se comparan los valores de la variable <code>x</code> para determinar cómo está inclinada la micro.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">4. <strong>Condiciones en el Bloque "si... entonces"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Condición 1</strong>:</p>
+<ul>
+<li><strong>Si <code>x &gt; 200</code> entonces</strong>:
+<ul>
+<li><strong>Bloque involucrado</strong>:
+<ul>
+<li><code>x &gt; 200</code>: Comparación que verifica si la micro está inclinada hacia adelante (aceleración positiva en el eje X).</li>
+</ul>
+</li>
+<li><strong>Función</strong>: Si se cumple esta condición, el bloque "mostrar cadena '&gt;'" se ejecuta, mostrando el símbolo "&gt;" en la pantalla LED para indicar inclinación hacia adelante.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición 2</strong>:</p>
+<ul>
+<li><strong>Si no, si <code>x &lt; -200</code> entonces</strong>:
+<ul>
+<li><strong>Bloque involucrado</strong>:
+<ul>
+<li><code>x &lt; -200</code>: Comparación que verifica si la micro está inclinada hacia atrás (aceleración negativa en el eje X).</li>
+</ul>
+</li>
+<li><strong>Función</strong>: Si se cumple esta condición, el bloque "mostrar cadena '&lt;'" se ejecuta, mostrando el símbolo "&lt;" en la pantalla LED para indicar inclinación hacia atrás.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Condición 3</strong>:</p>
+<ul>
+<li><strong>Si no</strong>:
+<ul>
+<li><strong>Función</strong>: Si ninguna de las condiciones anteriores se cumple, significa que la micro está en posición neutral (aceleración en el eje X cercana a 0). Se ejecuta el bloque "mostrar cadena '-'", mostrando el símbolo "-" en la pantalla LED.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">5. <strong>Bloque "mostrar cadena"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Básico"</strong>.</li>
+<li>Al abrir la categoría "Básico", encontrarás el bloque "mostrar cadena".</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Muestra una cadena de texto en la pantalla LED de la micro. En este programa, se usa para mostrar un símbolo ("&lt;", "&gt;", "-") que indica la inclinación de la micro.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;"><strong>Resumen del Flujo del Programa:</strong></p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Medición Continua de la Aceleración</strong>:</p>
+<ul>
+<li>La micro mide constantemente la aceleración en el eje X utilizando su acelerómetro integrado. El valor medido se guarda en la variable <code>x</code><span style="font-size: 1.05em;">.</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Determinación de la Inclinación</strong>:</p>
+<ul>
+<li>El programa utiliza bloques condicionales para comparar el valor de <code>x</code> con ciertos umbrales (200 y -200) para determinar si la micro está inclinada hacia adelante, hacia atrás, o si está en posición neutral.</li>
+</ul>
+</li>
+<li>
+<p><strong>Visualización de la Inclinación</strong>:</p>
+<ul>
+<li>Dependiendo de la inclinación, el programa muestra un símbolo en la pantalla LED:
+<ul>
+<li><strong>"&gt;"</strong>: Indica que la micro está inclinada hacia adelante.</li>
+<li><strong>"&lt;"</strong>: Indica que la micro está inclinada hacia atrás.</li>
+<li><strong>"-"</strong>: Indica que la micro está en posición neutral.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: justify;">Este código es un excelente ejemplo de cómo utilizar el acelerómetro de la micro para detectar y mostrar la inclinación del dispositivo en tiempo real. Es ideal para aprender a trabajar con sensores y a interpretar sus lecturas para generar respuestas visuales en la pantalla LED de la micro.</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="ACELEROMETRO.png" alt="" width="315" height="322"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id845">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">2. Sensor de temperatura</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta845_828_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">Queremos crear un programa en la micro:bit que lea la temperatura ambiente utilizando el sensor integrado y la muestre en la pantalla LED cada segundo. El valor de la temperatura se actualiza continuamente, acompañado de la letra "C" para indicar que la medida está en grados Celsius.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit:</strong></p>
+<img src="MODULO5_14.png" alt="Código en Python" width="643" height="211">
+<h3>Explicación detallada del código en Python:</h3>
+<ol>
+<li style="text-align: justify;"><strong>Obtener la temperatura:</strong> <code>temp = input.temperature()</code> Lee la temperatura ambiente en grados Celsius y almacena el valor en la variable <code>temp</code>.</li>
+<li style="text-align: justify;"><strong>Mostrar la temperatura en la pantalla LED:</strong> <code>basic.show_string(str(temp) + "C")</code> Convierte el valor de <code>temp</code> a una cadena de texto, lo concatena con "C", y lo muestra en la pantalla LED.</li>
+<li style="text-align: justify;"><strong>Pausar antes de la siguiente actualización:</strong> <code>basic.pause(1000)</code> Pausa la ejecución del programa durante 1 segundo antes de actualizar la pantalla.</li>
+<li style="text-align: justify;"><strong>Ejecución continua de la función <code>on_forever</code>:</strong> <code>basic.forever(on_forever)</code> Ejecuta continuamente la función <code>on_forever</code>, actualizando la temperatura cada segundo.</li>
+</ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><strong>Estructura del código en MakeCode:</strong></p>
+<img src="MODULO5_16.png" alt="" width="646" height="157">
+<p><strong>Explicación Detallada del Código:</strong></p>
+<p>1. <strong>Bloque "para siempre"</strong></p>
+<ul>
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Básico"</strong>.</li>
+<li>Está ubicado en la parte superior de la lista de bloques.</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque es un bucle infinito que ejecuta repetidamente cualquier código que se coloque dentro de él. En este caso, se usa para medir continuamente la temperatura y mostrarla en la pantalla LED de la micro.</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Bloque "fijar temp a temperatura (°C)"</strong></p>
+<ul>
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Variables"</strong> y la categoría <strong>"Entrada"</strong>.</li>
+<li>Primero debes crear la variable <code>temp</code> en la categoría "Variables".</li>
+<li>Luego, arrastra el bloque "fijar [variable] a [valor]" y selecciona "temperatura (°C)" de la categoría "Entrada".</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque mide continuamente la temperatura ambiental utilizando el sensor de temperatura integrado en la micro y almacena ese valor en la variable <code>temp</code><span style="font-size: 1.05em;">. Este valor se usa en el siguiente bloque para mostrar la temperatura en la pantalla LED.</span></li>
+</ul>
+</li>
+</ul>
+<h4>3. <strong>Bloque "mostrar cadena unir temp '°C'"</strong></h4>
+<ul>
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque combina dos categorías: <strong>"Básico"</strong> y <strong>"Texto"</strong>.</li>
+<li>El bloque "mostrar cadena" se encuentra en la categoría "Básico".</li>
+<li>El bloque "unir" se encuentra en la categoría "Texto".</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li><strong>Mostrar cadena</strong>: Este bloque muestra una cadena de texto en la pantalla LED de la micro
+<div></div>
+. En este caso, se utiliza para mostrar la temperatura medida.</li>
+<li><strong>Unir</strong>: El bloque "unir" se usa para concatenar (unir) la variable <code>temp</code> con el símbolo "°C", formando una cadena como "22°C" (dependiendo del valor de la temperatura). Esta cadena completa se muestra en la pantalla LED.</li>
+</ul>
+</li>
+</ul>
+<h4>4. <strong>Bloque "pausa (ms) 1000"</strong></h4>
+<ul>
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Básico"</strong>.</li>
+<li>Al abrir la categoría "Básico", verás el bloque "pausa (ms)" en la lista.</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque hace que la micro
+<div></div>
+espere un tiempo determinado antes de continuar con la siguiente iteración del bucle. En este caso, la pausa es de 1000 milisegundos (1 segundo). Esto significa que la temperatura se mide y se muestra en la pantalla LED cada segundo.</li>
+</ul>
+</li>
+</ul>
+<h3>Resumen del Flujo del Programa:</h3>
+<ol>
+<li>
+<p><strong>Medición Continua de la Temperatura</strong>:</p>
+<ul>
+<li>La micro
+<div></div>
+mide constantemente la temperatura ambiental utilizando su sensor de temperatura integrado. El valor medido se guarda en la variable <code>temp</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Visualización de la Temperatura</strong>:</p>
+<ul>
+<li>El valor de la variable <code>temp</code> se combina con el símbolo "°C" y se muestra en la pantalla LED de la micro
+<div></div>
+. Por ejemplo, si la temperatura es de 22 grados Celsius, se muestra "22°C".</li>
+</ul>
+</li>
+<li>
+<p><strong>Pausa entre Mediciones</strong>:</p>
+<ul>
+<li>Después de mostrar la temperatura, el programa espera 1 segundo antes de realizar la siguiente medición y actualización en la pantalla LED.</li>
+</ul>
+</li>
+</ol>
+<p>Este código es una excelente manera de mostrar cómo la micro</p>
+<div></div>
+<p>puede ser utilizada para medir y visualizar datos de sensores en tiempo real. Es ideal para aprender a trabajar con variables, entradas de sensores y la salida de texto en la pantalla LED de la micro</p>
+<div></div>
+<p>. ¡Buen trabajo!</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="SENSOR_TEMPERATURA.png" alt="" width="298" height="165"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id846">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">3. Intensidad luminosa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta846_828_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">Queremos crear un programa sencillo utilizando la micro que nos permita medir la intensidad luminosa de una habitación y representarla como un diagrama de barras en la pantalla LED de la micro , de forma continua.</p>
+<h2>Solución con&nbsp; MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<p><img src="MODULO5_17.png" alt="" width="649" height="262"></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Explicación detallada del código en Python:</strong></span></p>
+<ol style="text-align: justify;"></ol>
+<ul>
+<li style="text-align: justify;">
+<p><strong>Obtener el nivel de luz</strong>:&nbsp;<span style="font-size: 1.05em;"></span><code class="!whitespace-pre hljs language-python">luz = <span class="hljs-built_in">input</span>.light_level()&nbsp;</code><span style="font-size: 1.05em;">Esta línea obtiene el nivel de luz en la habitación usando el sensor de luz de la micro.</span></p>
+</li>
+<li style="text-align: justify;">
+<p><strong>Mostrar el nivel de luz en la pantalla LED</strong>:&nbsp;<span style="font-size: 1.05em;"></span><code class="!whitespace-pre hljs language-python">basic.show_number(luz)&nbsp;</code>Muestra el valor numérico de la intensidad de luz en la pantalla LED de la micro.</p>
+</li>
+<li>
+<p style="text-align: justify;"><strong>Ejecución continua de la función on_forever&nbsp;</strong><span style="font-size: 1.05em;"></span><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)&nbsp;</code>Esta línea hace que la micro ejecute la función <code>on_forever</code> de manera continua, actualizando constantemente la medición de la luz y mostrándola en la pantalla.</p>
+</li>
+</ul>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><strong>Estructura del código en MakeCode:</strong></p>
+<p><img src="MODULO5_19.png" alt="" width="638" height="125"></p>
+<p style="text-align: justify;"><strong>Explicación detallada del código en MakeCode:</strong></p>
+<p style="text-align: justify;">1. <strong>Bloque "para siempre"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Básico"</strong>.</li>
+<li>Está justo debajo del bloque "al iniciar" en la lista.</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este es un bucle infinito que ejecuta repetidamente cualquier código que se coloque dentro de él. En este caso, se usa para medir continuamente el nivel de luz ambiental y actualizar la pantalla LED con un gráfico de barras.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">2. <strong>Bloque "fijar luz a nivel de luz"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"Variables"</strong> y la categoría <strong>"Entrada"</strong>.</li>
+<li>Primero debes crear la variable <code>luz</code> en la categoría "Variables".</li>
+<li>Luego, arrastra el bloque "fijar [variable] a [valor]" y selecciona "nivel de luz" de la categoría "Entrada".</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque mide continuamente la intensidad de la luz ambiental utilizando el sensor de luz integrado en la micro y almacena ese valor en la variable <code>luz</code><span style="font-size: 1.05em;">. Este valor se usa en el siguiente bloque para representar gráficamente la cantidad de luz en la pantalla LED.</span></li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">3. <strong>Bloque "trazar gráfico de barras [luz] hasta 255"</strong></p>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>:</p>
+<ul>
+<li>Este bloque se encuentra en la categoría <strong>"LED"</strong>.</li>
+<li>Al abrir la categoría "LED", verás el bloque "trazar gráfico de barras" en la lista.</li>
+</ul>
+</li>
+<li>
+<p><strong>Función</strong>:</p>
+<ul>
+<li>Este bloque toma el valor almacenado en la variable <code>luz</code> y lo representa como un gráfico de barras en la pantalla LED de la micro. La altura de la barra se ajusta en función del valor de <code>luz</code><span style="font-size: 1.05em;">, con un valor máximo de 255 (que representa la máxima intensidad de luz que puede medir la micro</span>).</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Resumen del Flujo del Programa:</strong></span></p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Medición Continua del Nivel de Luz</strong>:</p>
+<ul>
+<li>La micro mide constantemente el nivel de luz ambiental utilizando su sensor de luz integrado. El valor medido se guarda en la variable <code>luz</code><span style="font-size: 1.05em;">.</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Representación Gráfica en la Pantalla LED</strong>:</p>
+<ul>
+<li>El valor de la variable <code>luz</code> se representa gráficamente como una barra en la pantalla LED. Si la luz es baja, la barra será corta; si la luz es alta, la barra será más alta.</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: justify;">Este código es un excelente ejemplo de cómo utilizar los sensores de la micro para crear una visualización en tiempo real del entorno. Es ideal para aprender a trabajar con variables, entradas de sensores y salidas gráficas en la micro</p>
+<ul style="list-style-type: disc;">
+<li style="list-style-type: none;"></li>
+</ul>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><table border="0" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">NIVELES NUMÉRICOS (CÓDIGO MICROPYTHON)</td>
+<td style="width: 50%; text-align: center;">NIVELES BARRA (CÓDIGO MAKECODE)</td>
+</tr>
+<tr>
+<td style="width: 50%;"><img src="NIVELES_LUZ_NUMERICO.png" alt="" width="234" height="127" style="display: block; margin-left: auto; margin-right: auto;"></td>
+<td style="width: 50%;"><img src="NIVELES_LUZ_BARRA.png" alt="" width="239" height="182"></td>
+</tr>
+</tbody>
+</table><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id847">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">4. Brújula</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta847_832_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">Queremos crear un programa sencillo utilizando la micro:bit que use su brújula integrada para mostrar en la pantalla LED la dirección cardinal hacia la que está orientada (Norte, Este, Sur u Oeste). El programa debe calibrar la brújula al inicio y luego mostrar continuamente la dirección en la pantalla.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<img src="MODULO5_20.png" alt="Código en Python" width="569" height="406"><br>
+<h3><span style="font-size: 14pt;">Explicación detallada del código en Python:</span></h3>
+<ol>
+<li><strong>Calibración de la brújula:</strong>
+<pre><code class="language-python">input.calibrate_compass()</code></pre>
+<p>Esta línea calibra la brújula de la micro:bit. Al ejecutar esta función, la micro:bit pedirá que la muevas en un círculo para calibrar correctamente el sensor.</p>
+</li>
+<li><strong>Obtener el ángulo de la brújula:</strong>
+<pre><code class="language-python">angulo = input.compass_heading()</code></pre>
+<p>Este comando obtiene la dirección en la que apunta la micro:bit, medida en grados. El valor devuelto va de 0 a 360 grados.</p>
+</li>
+<li><strong>Mostrar la dirección cardinal:</strong>
+<pre><code class="language-python">
+if angulo &lt; 45 or angulo &gt; 315:
+    basic.show_string("N")
+elif angulo &lt; 135:
+    basic.show_string("E")
+elif angulo &lt; 225:
+    basic.show_string("S")
+else:
+    basic.show_string("O")
+            </code></pre>
+<p>Se utilizan condicionales para determinar cuál dirección mostrar en la pantalla LED:</p>
+<ul>
+<li><strong>Norte (N):</strong> Se muestra si el ángulo es menor de 45 grados o mayor de 315 grados.</li>
+<li><strong>Este (E):</strong> Se muestra si el ángulo es entre 45 y 135 grados.</li>
+<li><strong>Sur (S):</strong> Se muestra si el ángulo es entre 135 y 225 grados.</li>
+<li><strong>Oeste (O):</strong> Se muestra si el ángulo es entre 225 y 315 grados</li>
+</ul>
+</li>
+<li><strong>Ejecución continua:</strong>
+<pre><code class="language-python">basic.forever(on_forever)</code></pre>
+<p>Este bloque hace que la micro:bit ejecute continuamente el código dentro de <code>on_forever</code>, revisando y mostrando la dirección cardinal en tiempo real.</p>
+</li>
+</ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><span style="font-size: 14pt;"><strong>Estructura del código en MakeCode:</strong></span></p>
+<img src="MODULO5_21.png" alt="Estructura del código en MakeCode" width="643" height="346">
+<p><strong><span style="font-size: 14pt;">Explicación Detallada del Código:</span></strong></p>
+<p><strong>1. Bloque "al iniciar":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Básico", parte superior de la lista de bloques.</li>
+<li><strong>Función:</strong> Este bloque se ejecuta solo una vez al encender la micro:bit. Es ideal para realizar configuraciones iniciales necesarias para el correcto funcionamiento del programa.</li>
+</ul>
+<p><strong>2. Bloque "calibrar brújula":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Entrada". Se encuentra hacia la mitad de la lista.</li>
+<li><strong>Función:</strong> Inicia el proceso de calibración de la brújula. Es esencial para obtener lecturas precisas de la dirección. Durante la calibración, la micro:bit te pedirá que la muevas en forma de 8.</li>
+</ul>
+<p><strong>3. Bloque "para siempre":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Básico", debajo del bloque "al iniciar".</li>
+<li><strong>Función:</strong> Es un bucle infinito que ejecuta repetidamente cualquier código dentro de él. En este caso, se usa para medir continuamente la dirección de la brújula y actualizar la pantalla LED con la dirección cardinal correspondiente.</li>
+</ul>
+<p><strong>4. Bloque "fijar angulo a dirección de la brújula (°)":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categorías "Variables" y "Entrada". Primero, crea la variable <code>angulo</code> en "Variables". Luego, arrastra el bloque "fijar [variable] a [valor]" y selecciona "dirección de la brújula (°)" de "Entrada".</li>
+<li><strong>Función:</strong> Mide continuamente la dirección en grados en la que está orientada la micro:bit y almacena ese valor en la variable <code>angulo</code>. Este valor se usa en los bloques condicionales para determinar la dirección cardinal (Norte, Este, Sur, Oeste).</li>
+</ul>
+<p><strong>5. Bloque "si... entonces":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Lógica". Al abrirla, encontrarás el bloque "si... entonces" y "si... entonces... si no".</li>
+<li><strong>Función:</strong> Permite ejecutar acciones solo si se cumple una condición específica. Aquí, se comparan los valores del <code>angulo</code> para determinar qué dirección cardinal mostrar.</li>
+</ul>
+<ul>
+<li><strong>Condiciones en el Bloque "si... entonces":</strong>
+<ul>
+<li><strong>Condición 1:</strong>
+<ul>
+<li><strong>Si <code>angulo &lt; 45</code> o <code>angulo &gt; 315</code>:</strong> Verifica si la micro:bit está orientada hacia el Norte. Si se cumple, muestra "N" en la pantalla LED.</li>
+</ul>
+</li>
+<li><strong>Condición 2:</strong>
+<ul>
+<li><strong>Si <code>angulo &lt; 135</code>:</strong> Verifica si la micro:bit está orientada hacia el Este. Si se cumple, muestra "E" en la pantalla LED.</li>
+</ul>
+</li>
+<li><strong>Condición 3:</strong>
+<ul>
+<li><strong>Si <code>angulo &lt; 225</code>:</strong> Verifica si la micro:bit está orientada hacia el Sur. Si se cumple, muestra "S" en la pantalla LED.</li>
+</ul>
+</li>
+<li><strong>Condición 4:</strong>
+<ul>
+<li><strong>Si no:</strong> Si ninguna condición anterior se cumple, la micro:bit está orientada hacia el Oeste y muestra "O" en la pantalla LED.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>6. Bloque "mostrar cadena":</strong></p>
+<ul>
+<li><strong>Ubicación:</strong> Categoría "Básico".</li>
+<li><strong>Función:</strong> Muestra una cadena de texto en la pantalla LED de la micro:bit. En este programa, se usa para mostrar la dirección cardinal en la que está orientada la micro:bit (N, E, S, O).</li>
+</ul>
+<p><span style="font-size: 14pt;"><strong>Resumen del Flujo del Programa:</strong></span></p>
+<ol>
+<li><strong>Calibración de la brújula al inicio:</strong> Asegura lecturas precisas al encender la micro:bit.</li>
+<li><strong>Medición Continua:</strong> La micro:bit mide constantemente la dirección en grados mediante la brújula y guarda este valor en la variable <code>angulo</code>.</li>
+<li><strong>Determinación de la Dirección:</strong> El programa usa bloques "si... entonces" para comparar el valor de <code>angulo</code> con los rangos de grados que corresponden a las direcciones cardinales: Norte, Este, Sur, y Oeste.</li>
+<li><strong>Visualización en la Pantalla LED:</strong> Dependiendo de la dirección cardinal detectada, el programa muestra la letra correspondiente ("N", "E", "S", "O") en la pantalla LED de la micro:bit.</li>
+</ol>
+<p>Este código es un ejemplo perfecto de cómo utilizar la brújula integrada de la micro:bit para determinar y mostrar la dirección cardinal en la pantalla LED. La inclusión de la calibración asegura que las lecturas sean precisas, lo que es esencial para que el programa funcione correctamente.</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="BRUJULA.png" alt="" width="678" height="397"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id848">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">5 Acelerómetro y brújula</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta848_834_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">Queremos crear un programa en la micro:bit que combine el uso de la brújula y el acelerómetro. El programa debe mostrar la dirección cardinal hacia la que está orientada la micro:bit (Norte, Este, Sur, Oeste) y, al mismo tiempo, indicar si la micro:bit está inclinada hacia adelante, hacia atrás o si está en posición neutral.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<table style="width: 58.5%;">
+<tbody>
+<tr>
+<td><img src="MODULO5_22a.png" alt="Código en Python Parte 1" width="570" height="403"></td>
+</tr>
+<tr>
+<td><img src="MODULO5_22b.png" alt="Código en Python Parte 2" width="569" height="206"></td>
+</tr>
+</tbody>
+</table>
+<h3><span style="font-size: 14pt;">Explicación detallada del código en MicroPython:</span></h3>
+<ul style="list-style-type: square;">
+<li><strong>Calibración de la brújula:</strong>
+<pre><code class="language-python">input.calibrate_compass()</code></pre>
+<p>Esta línea asegura que la brújula se calibre antes de que comience la medición. La calibración es necesaria para que las lecturas de la brújula sean precisas.</p>
+</li>
+<li><strong>Obtener la inclinación en el eje X y la dirección de la brújula:</strong>
+<pre><code class="language-python">x = input.acceleration(Dimension.X)
+angulo = input.compass_heading()</code></pre>
+<p style="text-align: justify;">x = input.acceleration(Dimension.X): Aquí se está midiendo la aceleración de la micro en el eje X, que se refiere a la inclinación hacia adelante o hacia atrás. Si x es positivo, la microestá inclinada hacia adelante, y si es negativo, está inclinada hacia atrás.&nbsp;</p>
+<p style="text-align: justify;">angulo = input.compass_heading(): Esta línea obtiene la dirección actual de la brújula en grados, con respecto al Norte magnético. El valor se almacena en la variable angulo. Este ángulo varía de 0° a 359°, donde 0° o 360° indica el Norte, 90° el Este, 180° el Sur y 270° el Oeste.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Determinar la dirección cardinal:</strong></li>
+</ul>
+<pre style="padding-left: 30px;"><code class="language-python">if angulo &lt; 45 or angulo &gt; 315:
+    direccion = "N"
+elif angulo &lt; 135:
+    direccion = "E"
+elif angulo &lt; 225:
+    direccion = "S"
+else:
+    direccion = "O"</code></pre>
+<p style="text-align: justify;">Este bloque de código se encarga de determinar la dirección cardinal (Norte, Este, Sur u Oeste) en función del valor del ángulo obtenido previamente:</p>
+<ul style="list-style-type: circle;">
+<li>Si el ángulo está entre 0° y 45° o entre 315° y 360°, la dirección es "N" (Norte).</li>
+<li>Si el ángulo está entre 45° y 135°, la dirección es "E" (Este).</li>
+<li>Si el ángulo está entre 135° y 225°, la dirección es "S" (Sur).</li>
+<li>Si el ángulo está entre 225° y 315°, la dirección es "O" (Oeste).</li>
+</ul>
+<p>Dependiendo del valor de <code>angulo</code>, se asigna la dirección cardinal correspondiente a la variable <code>direccion</code>.</p>
+<ul>
+<li><strong>Mostrar la dirección junto con la inclinación:</strong></li>
+</ul>
+<pre style="padding-left: 30px;"><code class="language-python">if x &gt; 200:
+    basic.show_string(direccion + " &gt;")
+elif x &lt; -200:
+    basic.show_string(direccion + " &lt;")
+else:
+    basic.show_string(direccion + " -")<br></code></pre>
+<p>Este fragmento de código se encarga de mostrar en la pantalla LED de la micro la dirección cardinal junto con un símbolo que indica la inclinación de la micro:bit:</p>
+<ul style="list-style-type: circle;">
+<li><span style="font-size: 1.05em;">Si x es mayor que 200, significa que la micro&nbsp;</span><span style="font-size: 1.05em;">está inclinada hacia adelante, y se muestra la dirección seguida de " &gt;".</span></li>
+<li><span style="font-size: 1.05em;">Si x es menor que -200, significa que la micro&nbsp;</span><span style="font-size: 1.05em;">está inclinada hacia atrás, y se muestra la dirección seguida de " &lt;".</span></li>
+<li><span style="font-size: 1.05em;">Si x está entre -200 y 200, significa que la micro&nbsp;está en una posición relativamente neutral, y se muestra la dirección seguida de " -".</span></li>
+</ul>
+<p><span style="font-size: 1.05em;"></span><span style="font-size: 1.05em;">Dependiendo del valor de </span><code>x</code><span style="font-size: 1.05em;">, se muestra la dirección cardinal junto con un símbolo que indica si la micro:bit está inclinada hacia adelante ("&gt;"), hacia atrás ("&lt;"), o si está en posición neutral ("-").</span></p>
+<ul>
+<li><strong>Ejecución continua:</strong></li>
+</ul>
+<pre style="padding-left: 30px;"><code class="language-python">basic.forever(on_forever)</code></pre>
+<p>Este bloque asegura que el código dentro de la función <code>on_forever</code> se ejecute continuamente, revisando y mostrando la dirección y la inclinación en tiempo real.</p>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><span style="font-size: 14pt;"><strong>Estructura del código en MakeCode:</strong></span></p>
+<p><img src="MODULO5_48.png" alt="" width="533" height="395"></p>
+<div class="flex max-w-full flex-col flex-grow">
+<div data-message-author-role="assistant" data-message-id="cd0cf164-a099-4fb4-a596-a761cee88be8" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 break-words [.text-message+&amp;]:mt-5 overflow-x-auto whitespace-pre-wrap">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3 style="text-align: justify;"><span style="font-size: 14pt;">Desglose Bloque a Bloque con Explicación Detallada:</span></h3>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">1. <strong>Bloque "al iniciar"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>al iniciar</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque se ejecuta solo una vez, al inicio del programa, y se utiliza para realizar configuraciones iniciales necesarias antes de que comience la ejecución continua del programa.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "calibrar brújula"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Entrada</strong> &gt; <strong>calibrar brújula</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque calibra la brújula de la micro. La calibración es necesaria para asegurarse de que las lecturas de la dirección sean precisas. Durante la calibración, la micro puede pedirte que la muevas en todas las direcciones para completar el proceso.</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">2. <strong>Bloque "para siempre"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>para siempre</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque crea un bucle infinito que ejecuta continuamente todos los bloques que se colocan dentro de él. Es esencial para que el programa siga funcionando y respondiendo a cambios en la orientación y el movimiento de la micro.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "fijar angulo a dirección de la brújula (*)"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Variables</strong> &gt; <strong>fijar</strong> y <strong>Entrada</strong> &gt; <strong>brújula</strong> &gt; <strong>brújula en grados</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque se usa para almacenar el valor del ángulo medido por la brújula en la variable <code>angulo</code>.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>"fijar"</strong>: Este es un bloque de la categoría <strong>Variables</strong> que se utiliza para asignar un valor a una variable.</li>
+<li><strong>"brújula en grados"</strong>: Este bloque está en <strong>Entrada</strong> y mide el ángulo actual de la brújula, devolviendo un valor entre 0 y 360 grados, que indica la dirección hacia la que está orientada la micro.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">3. <strong>Bloque "si (angulo &lt; 45 o angulo &gt; 315)"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque condicional compara el valor del <code>angulo</code> con 45 y 315 grados para determinar si la microestá orientada al Norte.</p>
+</li>
+<li>
+<p><strong>Configuración del Bloque</strong>:</p>
+<ul>
+<li><strong>Añadir Bloques de Comparación</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>Comparación</strong>.</li>
+<li><strong>Función</strong>: Estos sub-bloques comparan el valor del <code>angulo</code> con 45 y 315 para ver si está dentro del rango que indica el Norte.</li>
+</ul>
+</li>
+<li><strong>Añadir Bloque "O" Lógica</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>O</strong>.</li>
+<li><strong>Función</strong>: Este bloque combina las dos comparaciones. El operador "O" (OR en inglés) permite que la condición sea verdadera si cualquiera de las dos comparaciones es cierta. Es decir, si el <code>angulo</code> es menor que 45 o mayor que 315, entonces la condición se cumple.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sub-bloque "fijar dirección a 'N'"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Variables</strong> &gt; <strong>fijar</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque asigna el valor "N" (para Norte) a la variable <code>dirección</code> cuando la condición anterior se cumple, es decir, cuando la micro está orientada al Norte.</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">4. <strong>Bloque "si no, si (angulo &lt; 135)"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no, si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque condicional verifica si el valor del <code>angulo</code> está entre 45 y 135 grados, lo que indicaría que la micro está orientada al Este.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "fijar dirección a 'E'"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Variables</strong> &gt; <strong>fijar</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque asigna el valor "E" (para Este) a la variable <code>dirección</code> si la condición es verdadera.</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">5. <strong>Bloque "si no, si (angulo &lt; 225)"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no, si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque condicional verifica si el valor del <code>angulo</code> está entre 135 y 225 grados, lo que indicaría que la micro está orientada al Sur.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "fijar dirección a 'S'"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Variables</strong> &gt; <strong>fijar</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque asigna el valor "S" (para Sur) a la variable <code>dirección</code> si la condición es verdadera.</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">6. <strong>Bloque "si no"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque captura cualquier otro valor de <code>angulo</code> que no haya sido capturado por las condiciones anteriores, lo que significa que la micro está orientada al Oeste.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "fijar dirección a 'O'"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Variables</strong> &gt; <strong>fijar</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque asigna el valor "O" (para Oeste) a la variable <code>dirección</code> si todas las condiciones anteriores fallan.</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">7. <strong>Bloque "si (x &gt; 200)"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque condicional verifica si la aceleración en el eje <code>x</code> es mayor que 200. Esto podría interpretarse como una inclinación significativa de la micro hacia un lado.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "mostrar cadena unir 'E' + dirección"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>mostrar cadena</strong> y <strong>Texto</strong> &gt; <strong>unir</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque muestra la letra "E" seguida de la dirección cardinal en la pantalla LED de la micro.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Bloque "unir"</strong>:
+<ul>
+<li><strong>Ubicación</strong>: <strong>Texto</strong> &gt; <strong>unir</strong>.</li>
+<li><strong>Función</strong>: Este bloque toma dos textos y los combina en uno solo. En este caso, combina la letra "E" con la dirección actual almacenada en la variable <code>dirección</code>.</li>
+</ul>
+</li>
+<li><strong>Mostrar cadena</strong>:
+<ul>
+<li><strong>Función</strong>: Muestra el texto combinado en la pantalla LED de la micro.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">8. <strong>Bloque "si no, si (x &lt; -200)"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no, si...entonces</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque condicional verifica si la aceleración en el eje <code>x</code> es menor que -200, lo que podría indicar una inclinación hacia el lado opuesto.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "mostrar cadena unir 'O' + dirección"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>mostrar cadena</strong> y <strong>Texto</strong> &gt; <strong>unir</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque muestra la letra "O" seguida de la dirección cardinal en la pantalla LED de la micro.</li>
+<li><strong>Configuración</strong>:
+<ul>
+<li><strong>Bloque "unir"</strong>:
+<ul>
+<li><strong>Función</strong>: Este bloque combina la letra "O" con la dirección actual almacenada en la variable <code>dirección</code>.</li>
+</ul>
+</li>
+<li><strong>Mostrar cadena</strong>:
+<ul>
+<li><strong>Función</strong>: Muestra el texto combinado en la pantalla LED de la micro.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 style="text-align: justify;"><span style="font-size: 12pt;">9. <strong>Bloque "si no"</strong></span></h4>
+<ul style="text-align: justify;">
+<li>
+<p><strong>Ubicación</strong>: <strong>Lógica</strong> &gt; <strong>si no</strong>.</p>
+</li>
+<li>
+<p><strong>Función</strong>: Este bloque se ejecuta si ninguna de las condiciones anteriores es verdadera, es decir, si la micro no está inclinada de manera significativa en el eje <code>x</code>.</p>
+</li>
+<li>
+<p><strong>Sub-bloque "mostrar cadena dirección"</strong>:</p>
+<ul>
+<li><strong>Ubicación</strong>: <strong>Básico</strong> &gt; <strong>mostrar cadena</strong>.</li>
+<li><strong>Función</strong>: Este sub-bloque muestra únicamente la dirección cardinal (almacenada en la variable <code>dirección</code>) en la pantalla LED de la micro.</li>
+</ul>
+</li>
+</ul>
+<h3 style="text-align: justify;"><span style="font-size: 12pt;">Conclusión:</span></h3>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Este programa en</span> MakeCode utiliza una combinación de bloques de <strong>Lógica</strong>, <strong>Entrada</strong>, <strong>Variables</strong>, y <strong>Texto</strong> para determinar y mostrar la dirección cardinal a la que está orientada la micro, así como para considerar la inclinación de la micro en el eje <code>x</code>. Los bloques de comparación se usan para evaluar el ángulo y la aceleración, mientras que los bloques de <strong>unir</strong> en <strong>Texto</strong> se emplean para combinar letras (como "E" u "O") con la dirección cardinal antes de mostrarlas en la pantalla. Cada parte del programa está diseñada para actualizarse continuamente, asegurando que la información mostrada sea precisa y en tiempo real.</p>
+</div>
+</div>
+</div>
+</div>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="ACELEROMETRO_Y_BRUJULA.png" alt="" width="454" height="466"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id849">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">TAREAS </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta849_128_2" class="block iDevice_content">
+<div class="pbl-task-description"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Haz todos los ejercicios que se proponen y preséntalo a tu profesor/ra en la forma que te indique.</li>
+<li>Anota en  tu cuaderno como se resuelve cada ejercicio y preséntalo a tu profesor/ra en la forma que te indique.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_82" class="block iDevice_content">
+
+</div>
+<ul class='exeFileList'><li><a href='E502 Programacion Avanzada con Microbit.pdf' target='_blank'>E502 Programación Avanzada con Microbit.pdf<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="programacin_con_el_robot_maqueen.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

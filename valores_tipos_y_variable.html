@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Valores, Tipos y Variable </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li class="current-page-parent"><a href="mdulo_4_robo_aprende_a_programar.html" class="current-page-parent daddy">Módulo 4: Robo aprende a programar</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li id="active"><a href="valores_tipos_y_variable.html" class="active no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="introduccin_a_la_programacin_con_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="operadores_y_expresiones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Valores, Tipos y Variable</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id795">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">CONCEPTOS TEÓRICOS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta795_128_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>TIPOS DE DATOS : NÚMEROS Y CADENAS</h2>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="1aa153a8-3db5-4345-ba3b-e4c3f17c75e7" dir="auto" class="min-h-[20px] text-message flex flex-col items-start whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 juice:w-full juice:items-end overflow-x-auto gap-2">
+<div class="flex w-full flex-col gap-1 juice:empty:hidden juice:first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<ul>
+<li>
+<p><strong>Números</strong>: Pueden ser enteros (<code>int</code>) o decimales (<code>float</code>).</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span><img src="NUMEROS.png" alt="" width="618" height="113"></span></div>
+</div>
+</li>
+<li>
+<p><strong>Cadenas</strong>: Texto encerrado entre comillas (<code>str</code>).</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span><img src="CADENA.png" alt="" width="620" height="91"></span></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2>VARIABLES</h2>
+<ul>
+<li>Una <strong>variable</strong> es un espacio en la memoria que se utiliza para almacenar un valor que puede cambiar durante la ejecución del programa.</li>
+</ul>
+<p><strong>Cómo nombrar variables</strong></p>
+<ul>
+<li>Las variables deben tener nombres descriptivos.</li>
+<li>Deben comenzar con una letra o un guion bajo <code>_</code>.</li>
+<li>Pueden contener letras, números y guion bajo <code>_</code>.</li>
+<li>No pueden usar palabras reservadas de Python como <code>print</code>, <code>if</code>, <code>else</code>, etc.</li>
+</ul>
+<p><img src="VARIABLES.png" alt="" width="652" height="153"></p>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<p>Este código define cuatro variables y les asigna diferentes tipos de valores.</p>
+<ol>
+<li>
+<p><strong>Variable <code>edad</code></strong>:</p>
+<ul>
+<li><code>edad = 12</code>
+<ul>
+<li>Se crea una variable llamada <code>edad</code> y se le asigna el valor entero <code>12</code>.</li>
+<li>El tipo de dato de esta variable es un entero (<code>int</code>), que representa un número sin decimales.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Variable <code>altura</code></strong>:</p>
+<ul>
+<li><code>altura = 1.75&nbsp;</code>
+<ul>
+<li>Se crea una variable llamada <code>altura</code> y se le asigna el valor decimal <code>1.75</code>.</li>
+<li>El tipo de dato de esta variable es un número de punto flotante (<code>float</code>), que representa un número con decimales.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Variable <code>nombre</code></strong>:</p>
+<ul>
+<li><code>nombre = "Ana"&nbsp;</code>
+<ul>
+<li>Se crea una variable llamada <code>nombre</code> y se le asigna la cadena de texto <code>"Ana"</code>.</li>
+<li>El tipo de dato de esta variable es una cadena de caracteres (<code>str</code>), que representa texto.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Variable <code>es_estudiante</code></strong></p>
+<ul>
+<li><code>es_estudiante = True&nbsp;</code>
+<ul>
+<li>Se crea una variable llamada <code>es_estudiante</code> y se le asigna el valor booleano <code>True</code>.</li>
+<li>El tipo de dato de esta variable es un booleano (<code>bool</code>), que representa un valor de verdad (<code>True</code> para verdadero y <code>False</code> para falso).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3>Resumen:</h3>
+<ul>
+<li><code>edad</code>: Es una variable entera que almacena la edad, en este caso <code>12</code>.</li>
+<li><code>altura</code>: Es una variable de punto flotante que almacena la altura en metros, en este caso <code>1.75</code>.</li>
+<li><code>nombre</code>: Es una variable de cadena que almacena el nombre, en este caso <code>"Ana"</code>.</li>
+<li><code>es_estudiante</code>: Es una variable booleana que indica si es estudiante, en este caso <code>True</code> (verdadero).</li>
+</ul>
+<p>Estas variables pueden ser usadas más adelante en el programa para realizar operaciones, mostrar información, o tomar decisiones basadas en sus valores.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id796">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_tarea.svg)"><h1 class="iDeviceTitle">ACTIVIDADES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta796_129_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>USO DE VARIABLES EN LA VIDA COTIDIANA</h2>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="1aa153a8-3db5-4345-ba3b-e4c3f17c75e7" dir="auto" class="min-h-[20px] text-message flex flex-col items-start whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 juice:w-full juice:items-end overflow-x-auto gap-2">
+<div class="flex w-full flex-col gap-1 juice:empty:hidden juice:first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">
+<p>Ejercicio 1: Crear variables para almacenar información sobre ti mismo y mostrar esa información.</p>
+<p><img src="VARIABLES02.png" alt="" width="624" height="196"></p>
+<p>Ejercicio 2: Crear variables para una receta de cocina.</p>
+<p><img src="VARIABLES03.png" alt="" width="620" height="220"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2>CREAR UN JUEGO USANDO VARIABLES</h2>
+<ul>
+<li>
+<p>Crea un programa que lleve la cuenta de los puntos de dos jugadores en un juego.</p>
+</li>
+</ul>
+<p><img src="VARIABLES04.png" alt="" width="621" height="241"></p>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p><img src="VARIABLES03.png" alt="" width="620" height="220"></p>
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="88d267f7-bf6b-44b6-b5ec-70cf7032f216" dir="auto" class="min-h-[20px] text-message flex flex-col items-start whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 juice:w-full juice:items-end overflow-x-auto gap-2">
+<div class="flex w-full flex-col gap-1 juice:empty:hidden juice:first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3>Explicación del código:</h3>
+<ol>
+<li>
+<p><strong>Asignación de valores a variables</strong>:</p>
+<ul>
+<li>
+<p><code>jugador1 = "Ana"</code>:</p>
+<ul>
+<li>Se crea una variable llamada <code>jugador1</code> y se le asigna la cadena de texto <code>"Ana"</code>.</li>
+<li>Esta variable almacena el nombre del primer jugador.</li>
+</ul>
+</li>
+<li>
+<p><code>jugador2 = "Luis"</code>:</p>
+<ul>
+<li>Se crea una variable llamada <code>jugador2</code> y se le asigna la cadena de texto <code>"Luis"</code>.</li>
+<li>Esta variable almacena el nombre del segundo jugador.</li>
+</ul>
+</li>
+<li>
+<p><code>puntos_jugador1 = 5</code>:</p>
+<ul>
+<li>Se crea una variable llamada <code>puntos_jugador1</code> y se le asigna el valor entero <code>5</code>.</li>
+<li>Esta variable almacena la cantidad de puntos que tiene el primer jugador.</li>
+</ul>
+</li>
+<li>
+<p><code>puntos_jugador2 = 3</code>:</p>
+<ul>
+<li>Se crea una variable llamada <code>puntos_jugador2</code> y se le asigna el valor entero <code>3</code>.</li>
+<li>Esta variable almacena la cantidad de puntos que tiene el segundo jugador.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Uso de la función <code>print</code> para mostrar información</strong>:</p>
+<ul>
+<li>
+<p><code>print("Puntuación del juego:")</code>:</p>
+<ul>
+<li>La función <code>print</code> se utiliza para mostrar información en la pantalla.</li>
+<li>En este caso, imprime la cadena de texto <code>"Puntuación del juego:"</code>, que sirve como título o encabezado para la información que sigue.</li>
+</ul>
+</li>
+<li>
+<p><code>print(jugador1, "tiene", puntos_jugador1, "puntos.")</code>:</p>
+<ul>
+<li>La función <code>print</code> imprime varios elementos en una sola línea, separados por espacios.</li>
+<li><code>jugador1</code> es la variable que contiene el nombre <code>"Ana"</code>.</li>
+<li><code>"tiene"</code> es una cadena literal que se imprimirá tal cual.</li>
+<li><code>puntos_jugador1</code> es la variable que contiene el valor <code>5</code>.</li>
+<li><code>"puntos."</code> es otra cadena literal que se imprimirá tal cual.</li>
+<li>El resultado de esta línea será: <code>Ana tiene 5 puntos.</code></li>
+</ul>
+</li>
+<li>
+<p><code>print(jugador2, "tiene", puntos_jugador2, "puntos.")</code>:</p>
+<ul>
+<li>Similar a la línea anterior, esta línea imprime varios elementos en una sola línea.</li>
+<li><code>jugador2</code> es la variable que contiene el nombre <code>"Luis"</code>.</li>
+<li><code>"tiene"</code> es una cadena literal que se imprimirá tal cual.</li>
+<li><code>puntos_jugador2</code> es la variable que contiene el valor <code>3</code>.</li>
+<li><code>"puntos."</code> es otra cadena literal que se imprimirá tal cual.</li>
+<li>El resultado de esta línea será: <code>Luis tiene 3 puntos.</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3>Resumen del funcionamiento:</h3>
+<p style="text-align: justify;">El código define dos variables para almacenar los nombres de los jugadores (<code>jugador1</code> y <code>jugador2</code>) y dos variables para almacenar sus respectivas puntuaciones (<code>puntos_jugador1</code> y <code>puntos_jugador2</code>). Luego, utiliza la función <code>print</code> para mostrar la puntuación del juego en un formato legible. Primero, imprime un encabezado ("Puntuación del juego:") y luego, imprime las puntuaciones de cada jugador en líneas separadas, combinando texto literal y valores de las variables para formar frases completas.</p>
+</div>
+</div>
+</div>
+</div><button class="exe-udlContent-alt-content-hide">Cerrar</button></article><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="VARIABLES02.png" alt="" width="624" height="196"></p>
+<h3>Explicación del código:</h3>
+<ol>
+<li>
+<p><strong>Asignación de valores a variables</strong>:</p>
+<ul>
+<li>
+<p><code>nombre = "Juan"</code></p>
+<ul>
+<li>Se crea una variable llamada <code>nombre</code> y se le asigna la cadena de texto <code>"Juan"</code>.</li>
+<li>Esta variable almacena un nombre en forma de texto (cadena de caracteres o string).</li>
+</ul>
+</li>
+<li>
+<p><code>edad = 12</code></p>
+<ul>
+<li>Se crea una variable llamada <code>edad</code> y se le asigna el valor entero <code>12</code>.</li>
+<li>Esta variable almacena la edad como un número entero.</li>
+</ul>
+</li>
+<li>
+<p><code>altura = 1.60</code></p>
+<ul>
+<li>Se crea una variable llamada <code>altura</code> y se le asigna el valor decimal <code>1.60</code>.</li>
+<li>Esta variable almacena la altura en metros como un número de punto flotante (float).</li>
+<li>El comentario <code># en metros</code> indica que la altura se está midiendo en metros.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Uso de la función <code>print</code> para mostrar información</strong>:</p>
+<ul>
+<li>
+<p><code>print("Nombre:", nombre)</code></p>
+<ul>
+<li>La función <code>print</code> se utiliza para mostrar información en la pantalla.</li>
+<li><code>"Nombre:"</code> es una cadena literal que se imprimirá tal cual.</li>
+<li><code>nombre</code> es la variable que contiene el valor <code>"Juan"</code>, y su valor se imprimirá después de la cadena literal.</li>
+<li>El resultado será: <code>Nombre: Juan</code>.</li>
+</ul>
+</li>
+<li>
+<p><code>print("Edad:", edad, "años")</code></p>
+<ul>
+<li><code>"Edad:"</code> es una cadena literal.</li>
+<li><code>edad</code> es la variable que contiene el valor <code>12</code>.</li>
+<li><code>"años"</code> es otra cadena literal que se imprimirá después del valor de <code>edad</code>.</li>
+<li>Todos estos elementos se imprimirán en una sola línea, separados por espacios.</li>
+<li>El resultado será: <code>Edad: 12 años</code>.</li>
+</ul>
+</li>
+<li>
+<p><code>print("Altura:", altura, "metros")</code></p>
+<ul>
+<li><code>"Altura:"</code> es una cadena literal.</li>
+<li><code>altura</code> es la variable que contiene el valor <code>1.60</code>.</li>
+<li><code>"metros"</code> es otra cadena literal que se imprimirá después del valor de <code>altura</code>.</li>
+<li>Todos estos elementos se imprimirán en una sola línea, separados por espacios.</li>
+<li>El resultado será: <code>Altura: 1.60 metros</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3>Resumen del funcionamiento:</h3>
+<p style="text-align: justify;">El código define tres variables (<code>nombre</code>, <code>edad</code> y <code>altura</code>) y les asigna valores específicos. Luego, utiliza la función <code>print</code> para mostrar estos valores en la pantalla con mensajes descriptivos. Cada llamada a <code>print</code> combina texto literal con los valores de las variables para generar una salida legible y bien formada.</p>
+<button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id797">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">ASIGNACIÓN DE TAREAS Y CIERRE</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta797_127_2" class="block iDevice_content">
+<div class="pbl-task-description"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Escribir un programa que almacene su edad y la imprima junto con un mensaje.<br />
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs  language-python"><span class="token punctuation"></span></code></div>
+</div>
+</li>
+</ul>
+</li>
+<li><strong>Cierre</strong>:
+<ul>
+<li>Resumir, en el cuaderno y a mano,  los puntos clave de la sesión</li>
+</ul>
+</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><h4>Instrucciones:</h4>
+<p><strong>Define una variable para almacenar tu edad</strong>:</p>
+<ul>
+<li>Asigna tu edad a una variable llamada <code>edad</code>.</li>
+<li>
+<p>Imprime la edad junto con un mensaje:</p>
+<ul>
+<li>Usa la función <code>print</code> para mostrar un mensaje que incluya tu edad.</li>
+</ul>
+</li>
+</ul>
+<h4>Ejemplo de Código:</h4>
+<p><img src="VARIABLES00.png" alt="" width="652" height="173" /></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">
+<h3>Explicación del código:</h3>
+<ol>
+<li>
+<p><strong>Definición y asignación de la variable <code>edad</code></strong>:</p>
+<ul>
+<li><code>edad = 25</code>:
+<ul>
+<li>Se crea una variable llamada <code>edad</code>.</li>
+<li>A esta variable se le asigna el valor entero <code>25</code>, que representa la edad de la persona.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Uso de la función <code>print</code> para mostrar información</strong>:</p>
+<ul>
+<li><code>print("Tengo", edad, "años.")</code>:
+<ul>
+<li>La función <code>print</code> se utiliza para mostrar información en la pantalla.</li>
+<li>En este caso, se están concatenando varios elementos dentro de la función <code>print</code> para formar un mensaje completo:
+<ul>
+<li><code>"Tengo"</code>: Es una cadena literal que se imprimirá tal cual.</li>
+<li><code>edad</code>: Es la variable que contiene el valor <code>25</code>. La función <code>print</code> convertirá este número a una cadena de texto y lo imprimirá.</li>
+<li><code>"años."</code>: Es otra cadena literal que se imprimirá tal cual.</li>
+</ul>
+</li>
+<li>La función <code>print</code> combina estos elementos separados por comas y los imprime en una sola línea con espacios entre ellos, resultando en el mensaje: <code>Tengo 25 años.</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Al ejecutar el código, se mostrará en la pantalla:</p>
+</div>
+</div>
+<h4><img src="VARIABLES01.png" alt="" width="656" height="94" style="font-size: 1.05em; font-weight: normal;" /></h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span style="font-size: 1.2em; font-weight: bold;">Consejos:</span></div>
+</div>
+<ul>
+<li>Asegúrate de que la variable <code>edad</code> contenga tu edad en forma de número entero.</li>
+<li>Usa la función <code>print</code> para mostrar el mensaje de manera clara y legible.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que la variable esté correctamente definida.</li>
+</ul>
+<p>¡Diviértete programando y aprendiendo a usar variables y la función <code>print</code> en Python!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="introduccin_a_la_programacin_con_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="operadores_y_expresiones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

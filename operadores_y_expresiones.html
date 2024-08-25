@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Operadores y Expresiones </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-33"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li class="current-page-parent"><a href="mdulo_4_robo_aprende_a_programar.html" class="current-page-parent daddy">Módulo 4: Robo aprende a programar</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li id="active"><a href="operadores_y_expresiones.html" class="active no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="valores_tipos_y_variable.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="decisiones_con_if_y_else.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Operadores y Expresiones</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id799">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">CONCEPTOS TEÓRICOS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta799_128_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>OPERADORES MATEMÁTICOS</h2>
+<ul>
+<li><strong>Suma</strong> (<code>+</code>): Añade dos números.</li>
+<li><strong>Resta</strong> (<code>-</code>): Resta el segundo número del primero.</li>
+<li><strong>Multiplicación</strong> (<code>*</code>): Multiplica dos números.</li>
+<li><strong>División</strong> (<code>/</code>): Divide el primer número por el segundo.</li>
+<li><strong>Exponenciación</strong> (<code>**</code>): Eleva el primer número a la potencia del segundo.</li>
+<li><strong>Módulo</strong> (<code>%</code>): Devuelve el resto de la división del primer número por el segundo.</li>
+</ul>
+<p><img src="OPERADORESMAT.png" alt="" width="656" height="237"></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<p><strong>Operador Módulo</strong></p>
+<ul>
+<li><strong>Módulo</strong> (<code>%</code>): Devuelve el resto de la división de un número por otro. Es útil para determinar si un número es par o impar, entre otras aplicaciones.</li>
+</ul>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-comment"></span>
+</code></div>
+</div>
+<h2>CONCATENACIÓN DE CADENAS</h2>
+<ul>
+<li><strong>Concatenación</strong> (<code>+</code>): Une dos cadenas de texto.</li>
+<li><strong>Repetición</strong> (<code>*</code>): Repite una cadena un número determinado de veces.</li>
+</ul>
+<p><img src="CONCATENACIONCADENAS.png" alt="" width="654" height="156"></p>
+<h2>OPERADOR MÓDULO</h2>
+<ul>
+<li><strong>Módulo</strong> (<code>%</code>): Devuelve el resto de la división de un número por otro. Es útil para determinar si un número es par o impar, entre otras aplicaciones.</li>
+</ul>
+<p><img src="OPERADORMODULO.png" alt="" width="653" height="118"></p>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id800">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_tarea.svg)"><h1 class="iDeviceTitle">ACTIVIDADES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta800_129_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>CÁLCULOS MATEMÁTICOS SIMPLES</h2>
+<p>Escribe&nbsp; un programa en Python que realice operaciones matemáticas simples con dos números. El programa debe mostrar el resultado de cada operación de manera clara.</p>
+<h4>Instrucciones:</h4>
+<ul>
+<li style="list-style-type: none;">
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>
+<p><strong>Define dos variables</strong>:</p>
+<ul style="list-style-type: circle;">
+<li>Asigna el valor <code>10</code> a una variable llamada <code>a</code>.</li>
+<li>Asigna el valor 7 a una variable llamada <code>b</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Realiza las siguientes operaciones matemáticas</strong>:</p>
+<ul style="list-style-type: circle;">
+<li>Suma de <code>a</code> y <code>b</code>.</li>
+<li>Resta de <code>a</code> y <code>b</code>.</li>
+<li>Multiplicación de <code>a</code> y <code>b</code>.</li>
+<li>División de <code>a</code> entre <code>b</code>.</li>
+<li>Exponenciación de <code>a</code> elevado a <code>b</code>.</li>
+<li>Módulo (residuo) de <code>a</code> dividido por <code>b</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Muestra los resultados</strong>:</p>
+<ul style="list-style-type: circle;">
+<li>Usa la función <code>print</code> para mostrar el resultado de cada operación junto con un mensaje que indique qué operación se realizó.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p><strong>Consejos:</strong></p>
+</li>
+<li style="list-style-type: circle;">Asegúrate de escribir correctamente los operadores matemáticos (+, -, *, /, **, %).</li>
+<li style="list-style-type: circle;">Usa la función print para mostrar mensajes claros y los resultados de las operaciones</li>
+<li style="list-style-type: circle;">Revisa tu código para asegurarte de que no haya errores de sintaxis.</li>
+</ul>
+<p><img src="divertido.png" alt="" width="401" height="229" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul>
+<li style="list-style-type: none;"></li>
+<li style="list-style-type: none;">¡Diviértete programando y aprendiendo cómo funcionan las operaciones básicas en Python!
+<h2>CONCATENAR&nbsp; Y REPETIR CADENAS</h2>
+<p>Crea un programa en Python que concatene y repita cadenas de texto para formar frases divertidas.</p>
+<h4>Instrucciones:</h4>
+<ol>
+<li>
+<p><strong>Define tres variables de texto</strong>:</p>
+<ul>
+<li>Asigna una palabra divertida a una variable llamada <code>palabra1</code>.</li>
+<li>Asigna otra palabra divertida a una variable llamada <code>palabra2</code>.</li>
+<li>Asigna una palabra extra divertida a una variable llamada <code>palabra3</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Realiza las siguientes operaciones con cadenas</strong>:</p>
+<ul>
+<li>Concatenar <code>palabra1</code> y <code>palabra2</code> para formar una frase.</li>
+<li>Repetir <code>palabra3</code> tres veces seguidas para formar una expresión divertida.</li>
+<li>Concatenar la frase anterior con la expresión divertida.</li>
+</ul>
+</li>
+<li>
+<p><strong>Muestra las frases resultantes</strong>: Usa la función <code>print</code> para mostrar cada frase o expresión creada.</p>
+<h4>Consejos:</h4>
+<ul>
+<li>Asegúrate de escribir correctamente las cadenas y los operadores de concatenación (<code>+</code>) y repetición (<code>*</code>).</li>
+<li>Usa la función <code>print</code> para mostrar mensajes claros y los resultados de las operaciones con cadenas.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis.</li>
+</ul>
+<p>¡Diviértete programando y creando frases divertidas con Python!</p>
+</li>
+</ol>
+<h2>CALCULA EL ÁREA DE UN RECTANGULO</h2>
+<p>Crea un programa en Python que solicite al usuario el largo y el ancho de un rectángulo, y luego calcule y muestre su área.</p>
+<h4>Instrucciones:</h4>
+<ol>
+<li>
+<p><strong>Solicita al usuario que ingrese el largo y el ancho</strong>:</p>
+<ul>
+<li>Usa la función <code>input</code> para pedir al usuario que ingrese el largo del rectángulo y almacena el valor en una variable llamada <code>largo</code>.</li>
+<li>Usa la función <code>input</code> para pedir al usuario que ingrese el ancho del rectángulo y almacena el valor en una variable llamada <code>ancho</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Calcula el área del rectángulo</strong>:</p>
+<ul>
+<li>Multiplica el largo por el ancho y almacena el resultado en una variable llamada <code>area</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Muestra el área del rectángulo</strong>:</p>
+<ul>
+<li>Usa la función <code>print</code> para mostrar el área calculada con un mensaje claro.</li>
+</ul>
+</li>
+</ol>
+<h4>Consejos:</h4>
+<ul>
+<li>Asegúrate de convertir las entradas del usuario a números de punto flotante (<code>float</code>) usando <code>float(input(...))</code>, para permitir cálculos con decimales.</li>
+<li>Usa la función <code>print</code> para mostrar el resultado con un mensaje claro y fácil de entender.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que las variables estén correctamente definidas.</li>
+</ul>
+</li>
+<li style="list-style-type: none;"><img src="RECTANGULO.png" alt="" width="299" height="171" style="display: block; margin-left: auto; margin-right: auto;"></li>
+<li style="list-style-type: none;">
+<p>¡Diviértete programando y aprendiendo a calcular el área de un rectángulo con Python!</p>
+</li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_interactivo" id="id801">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_interactivo.svg)"><h1 class="iDeviceTitle">ASIGNACIÓN DE TAREAS Y CIERRE</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta801_128_2" class="block iDevice_content">
+<div class="pbl-task-description"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Escribir un programa que calcule la suma de dos números dados por el usuario..</li>
+</ul>
+</li>
+<li><strong>Cierre</strong>:
+<ul>
+<li>Resumir, en el cuaderno y a mano,  los puntos clave de la sesión</li>
+</ul>
+</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><ul>
+<li style="list-style-type: none;">
+<h3>Instrucciones:</h3>
+<ol>
+<li>
+<p><strong>Solicita al usuario que ingrese dos números</strong>:</p>
+<ul>
+<li>Usa la función <code>input</code> para pedir al usuario que ingrese el primer número y almacena el valor en una variable llamada <code>numero1</code>.</li>
+<li>Usa la función <code>input</code> para pedir al usuario que ingrese el segundo número y almacena el valor en una variable llamada <code>numero2</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Calcula la suma de los dos números</strong>:</p>
+<ul>
+<li>Suma <code>numero1</code> y <code>numero2</code> y almacena el resultado en una variable llamada <code>suma</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Muestra la suma de los dos números</strong>:</p>
+<ul>
+<li>Usa la función <code>print</code> para mostrar la suma calculada con un mensaje claro.</li>
+</ul>
+</li>
+</ol>
+<h3><span style="font-size: 1.2em;">Consejos:</span></h3>
+<ul>
+<li>Asegúrate de convertir las entradas del usuario a números de punto flotante (<code>float</code>) usando <code>float(input(...))</code>, para permitir cálculos con decimales.</li>
+<li>Usa la función <code>print</code> para mostrar el resultado con un mensaje claro y fácil de entender.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que las variables estén correctamente definidas.</li>
+</ul>
+<p></p>
+</li>
+</ul>
+<h3>Código del Programa</h3>
+<p><img src="VARIABLES05.png" alt="" width="723" height="335" /></p>
+<h3 style="text-align: justify;">Explicación del código:</h3>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Solicitar el primer número</strong>:</p>
+<ul>
+<li><code>numero1 = float(input("Ingrese el primer número: "))</code>:
+<ul>
+<li>La función <code>input</code> muestra el mensaje <code>"Ingrese el primer número: "</code> y espera que el usuario ingrese un valor.</li>
+<li>El valor ingresado se captura como una cadena de texto (string).</li>
+<li>La función <code>float</code> convierte esa cadena de texto en un número de punto flotante (decimal).</li>
+<li>Este número se almacena en la variable <code>numero1</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Solicitar el segundo número</strong>:</p>
+<ul>
+<li><code>numero2 = float(input("Ingrese el segundo número: "))</code>:
+<ul>
+<li>Similar a la línea anterior, se muestra el mensaje <code>"Ingrese el segundo número: "</code> y se espera que el usuario ingrese un valor.</li>
+<li>El valor ingresado se convierte a un número de punto flotante y se almacena en la variable <code>numero2</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Calcular la suma de los dos números</strong>:</p>
+<ul>
+<li><code>suma = numero1 + numero2</code>:
+<ul>
+<li>Esta línea suma los valores almacenados en <code>numero1</code> y <code>numero2</code>.</li>
+<li>El resultado de la suma se almacena en la variable <code>suma</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Mostrar la suma de los dos números</strong>:</p>
+<ul>
+<li><code>print("La suma de los dos números es:", suma)</code>:
+<ul>
+<li>La función <code>print</code> se utiliza para mostrar el mensaje <code>"La suma de los dos números es:"</code> seguido del valor de la variable <code>suma</code>.</li>
+<li>El resultado de la suma se convierte automáticamente a una cadena de texto y se muestra en la pantalla junto con el mensaje.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: justify;">Resultado Esperado:</h3>
+<p style="text-align: justify;">Cuando ejecutes el programa e ingreses dos números, deberías ver algo similar a esto en la pantalla:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-number"></span><img src="VARIABLES06.png" alt="" width="716" height="140" />
+</code></div>
+</div>
+<h3 style="text-align: justify;">Resumen del funcionamiento:</h3>
+<ul style="text-align: justify;">
+<li><strong>Entrada del usuario</strong>: El programa solicita al usuario que ingrese dos números. Estos números se convierten de texto a números de punto flotante para poder realizar operaciones matemáticas con ellos.</li>
+<li><strong>Cálculo</strong>: El programa suma los dos números ingresados.</li>
+<li><strong>Salida</strong>: El programa muestra el resultado de la suma en la pantalla con un mensaje descriptivo.</li>
+</ul>
+<p style="text-align: justify;">Este programa es un ejemplo sencillo de cómo interactuar con el usuario para recibir entradas, realizar cálculos con esas entradas y mostrar el resultado.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="valores_tipos_y_variable.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="decisiones_con_if_y_else.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

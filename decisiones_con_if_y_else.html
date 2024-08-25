@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Decisiones con if y else </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-34"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li class="current-page-parent"><a href="mdulo_4_robo_aprende_a_programar.html" class="current-page-parent daddy">Módulo 4: Robo aprende a programar</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li id="active"><a href="decisiones_con_if_y_else.html" class="active no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="operadores_y_expresiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funciones_i.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Decisiones con if y else</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id803">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">CONCEPTOS TEÓRICOS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta803_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>DESICIONES Y COMPARACIONES</h2>
+<p><strong>Conceptos Teóricos</strong>:</p>
+<ul>
+<li><strong>Sentencias if, else, y elif</strong>
+<ul>
+<li><strong>if</strong><span>: Ejecuta un bloque de código si la condición es verdadera.</span></li>
+<li><strong>else</strong>: Ejecuta un bloque de código si la condición del if es falsa.</li>
+<li><strong>elif</strong>: Ejecuta un bloque de código si la condición anterior (if o elif) es falsa y la condición actual es verdadera.</li>
+</ul>
+</li>
+<li><strong>Comparaciones Simples</strong>
+<ul>
+<li>Igual a (<code>==</code>)</li>
+<li>No igual a (<code>!=</code>)</li>
+<li>Mayor que (<code>&gt;</code>)</li>
+<li>Menor que (<code>&lt;</code>)</li>
+<li>Mayor o igual que (<code>&gt;=</code>)</li>
+<li>Menor o igual que (<code>&lt;=</code>)</li>
+</ul>
+</li>
+</ul>
+<h3>Programa para determinar si es mayor de edad</h3>
+<p><img src="EDAD01.png" alt="" width="651" height="171"></p>
+<p><strong>1. Entrada de datos:</strong></p>
+<p><strong><img src="EDAD02.png" alt="" width="616" height="86"></strong></p>
+<ul>
+<li><code>input("Ingresa tu edad: ")</code> muestra un mensaje al usuario para que ingrese su edad.</li>
+<li><code>int(...)</code> convierte la entrada del usuario de una cadena de texto (<code>str</code>) a un número entero (<code>int</code>).</li>
+</ul>
+<p><strong>2.&nbsp;Condicional</strong> <code>if-else</code>:</p>
+<p><img src="EDAD03.png" alt="" width="620" height="153"></p>
+<ul style="list-style-type: square;">
+<li>La sentencia if verifica si la edad ingresada es mayor o igual a 18.</li>
+<li>Si la condición edad &gt;= 18 es verdadera, se ejecuta print("Eres mayor de edad.").</li>
+<li>Si la condición es falsa, se ejecuta el bloque else, que imprime print("Eres menor de edad.").</li>
+</ul>
+<h4>Funcionamiento</h4>
+<ul>
+<li>El usuario ingresa su edad.</li>
+<li>El programa determina si la persona es mayor o menor de edad y muestra el mensaje correspondiente.</li>
+</ul>
+<p><img src="EDAD06.png" alt="" width="344" height="197" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h3>Programa para determinar la calificación basada en la nota</h3>
+<p><img src="NOTA01.png" alt="" width="652" height="252"></p>
+<p><strong>1. Asignación de la variable <code>nota</code>:</strong></p>
+<p><strong><img src="NOTA02.png" alt="" width="617" height="85"></strong><strong></strong></p>
+<ul>
+<li><strong>Aquí se asigna directamente el valor 85 a la variable <code>nota</code>.</strong><strong></strong></li>
+</ul>
+<p><strong>2. Condicional</strong> <code>if-elif-else</code>:</p>
+<p><img src="NOTA03.png" alt="" width="623" height="239"></p>
+<ul>
+<li>La sentencia if verifica si la nota es mayor o igual a 90.</li>
+<li>Si la condición nota &gt;= 90 es verdadera, se ejecuta print("Tienes una A.").</li>
+<li>Si no, se evalúa la siguiente condición elif, que verifica si la nota es mayor o igual a 80.</li>
+<li>Si nota &gt;= 80 es verdadera, se ejecuta print("Tienes una B.").</li>
+<li>Si ninguna de las condiciones anteriores es verdadera, se evalúa la siguiente condición elif, que verifica si la nota es mayor o igual a 70.</li>
+<li>Si nota &gt;= 70 es verdadera, se ejecuta print("Tienes una C."). Si ninguna de las condiciones anteriores es verdadera, se ejecuta el bloque else, que imprime print("Necesitas mejorar.").</li>
+</ul>
+<h4>Funcionamiento</h4>
+<ul>
+<li>El valor de la nota se evalúa para determinar la calificación.</li>
+<li>Dependiendo del valor de la nota, se imprime un mensaje que indica la calificación (A, B, C) o la necesidad de mejorar.</li>
+</ul>
+<h3>Resumen</h3>
+<ul>
+<li><strong><code>if</code></strong>: Ejecuta un bloque de código si la condición es verdadera.</li>
+<li><strong><code>elif</code></strong>: Proporciona condiciones adicionales si la condición <code>if</code> original es falsa.</li>
+<li><strong><code>else</code></strong>: Captura todos los demás casos cuando ninguna de las condiciones anteriores es verdadera.</li>
+</ul>
+<p>Estas estructuras se utilizan en conjunto para permitir que el programa tome decisiones y ejecute diferentes bloques de código basados en diferentes condiciones.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id804">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">ACTIVIDADES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta804_130_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>PROGRAMAS QUE TOMAN DECISIONES BASADAS EN LAS ENTRADAS DEL USUARIO</h2>
+<p>Crear un programa que tome la edad del usuario y determine si es mayor de edad.</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span><img src="ENTRADA02.png" width="728" height="307"></span></div>
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">
+<ol>
+<li>
+<p><strong>Entrada de datos</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">edad = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Ingresa tu edad: "</span>))
+</code></div>
+</div>
+<ul>
+<li><code>input("Ingresa tu edad: ")</code> muestra un mensaje al usuario para que ingrese su edad.</li>
+<li><code>int(...)</code> convierte la entrada del usuario de una cadena de texto (<code>str</code>) a un número entero (<code>int</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Condicional <code>if-else</code>:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">if</span> edad &gt;= <span class="hljs-number">18</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Eres mayor de edad."</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Eres menor de edad."</span>)
+</code></div>
+</div>
+<ul>
+<li>La sentencia <code>if</code> verifica si la edad ingresada es mayor o igual a 18.</li>
+<li>Si la condición <code>edad &gt;= 18</code> es verdadera, se ejecuta <code>print("Eres mayor de edad.")</code>.</li>
+<li>Si la condición es falsa, se ejecuta el bloque <code>else</code>, que imprime <code>print("Eres menor de edad.")</code>.</li>
+</ul>
+</li>
+</ol>
+<p style="padding-left: 30px;"><strong>3. Funcionamiento</strong></p>
+<ul style="list-style-type: square;">
+<li><span style="font-size: 1.05em;">El usuario ingresa su edad cuando se le solicita.</span></li>
+<li>El programa convierte esta entrada a un número entero.</li>
+<li>Luego, el programa evalúa si la edad es 18 o mayor.</li>
+<li>Dependiendo del resultado de esta evaluación, el programa imprime un mensaje indicando si el usuario es mayor o menor de edad.</li>
+</ul>
+</div>
+</div>
+<h2>ADIVINAR SI UN NÚMERO ES MAYOR, MENOR O IGUAL A 10</h2>
+<p>Crear un programa que tome un número del usuario y adivine si es mayor, menor o igual a 10.</p>
+<p><img src="ENTRADA03.png" alt="" width="652" height="384"></p>
+<ol>
+<li>
+<p><strong>Entrada de datos:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">numero = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Ingresa un número: "</span>))
+</code></div>
+</div>
+<ul>
+<li><code>input("Ingresa un número: ")</code> muestra un mensaje al usuario para que ingrese un número.</li>
+<li><code>int(...)</code> convierte la entrada del usuario de una cadena de texto (<code>str</code>) a un número entero (<code>int</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Condicional <code>if-elif-else</code>:</strong></p>
+<ul>
+<li>La sentencia <code>if</code> verifica si el número ingresado es mayor que 10.</li>
+<li>Si la condición <code>numero &gt; 10</code> es verdadera, se ejecuta <code>print("El número es mayor que 10.")</code>.</li>
+<li>Si no, se evalúa la condición <code>elif</code>, que verifica si el número es menor que 10.</li>
+<li>Si <code>numero &lt; 10</code> es verdadero, se ejecuta <code>print("El número es menor que 10.")</code>.</li>
+<li>Si ninguna de las condiciones anteriores es verdadera (es decir, si el número no es ni mayor ni menor que 10), se ejecuta el bloque <code>else</code>, que imprime <code>print("El número es igual a 10.")</code></li>
+</ul>
+</li>
+</ol>
+<p>&nbsp; &nbsp;<strong>3. Funcionamiento</strong></p>
+<ul>
+<li>El usuario ingresa un número cuando se le solicita.</li>
+<li>El programa convierte esta entrada a un número entero.</li>
+<li>Luego, el programa evalúa tres condiciones:
+<ol>
+<li>Si el número es mayor que 10.</li>
+<li>Si el número es menor que 10.</li>
+<li>Si el número es igual a 10.</li>
+</ol>
+</li>
+<li>Dependiendo del resultado de estas evaluaciones, el programa imprime un mensaje correspondiente.</li>
+</ul>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><h3>Programa para determinar si es mayor de edad</h3>
+<p><img src="EDAD01.png" alt="" width="651" height="171"></p>
+<p><strong>1. Entrada de datos:</strong></p>
+<p><strong><img src="EDAD02.png" alt="" width="616" height="86"></strong></p>
+<ul>
+<li><code>input("Ingresa tu edad: ")</code> muestra un mensaje al usuario para que ingrese su edad.</li>
+<li><code>int(...)</code> convierte la entrada del usuario de una cadena de texto (<code>str</code>) a un número entero (<code>int</code>).</li>
+</ul>
+<p><strong>2. Condicional</strong> <code>if-else</code>:</p>
+<p><img src="EDAD03.png" alt="" width="620" height="153"></p>
+<ul style="list-style-type: square;">
+<li>La sentencia if verifica si la edad ingresada es mayor o igual a 18.</li>
+<li>Si la condición edad >= 18 es verdadera, se ejecuta print("Eres mayor de edad.").</li>
+<li>Si la condición es falsa, se ejecuta el bloque else, que imprime print("Eres menor de edad.").</li>
+</ul>
+<h4>Funcionamiento</h4>
+<ul>
+<li>El usuario ingresa su edad.</li>
+<li>El programa determina si la persona es mayor o menor de edad y muestra el mensaje correspondiente.</li>
+</ul>
+<p><img src="EDAD06.png" alt="" width="344" height="197" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h3>Programa para determinar la calificación basada en la nota</h3>
+<p><img src="NOTA01.png" alt="" width="652" height="252"></p>
+<p><strong>1. Asignación de la variable <code>nota</code>:</strong></p>
+<p><strong><img src="NOTA02.png" alt="" width="617" height="85"></strong><strong></strong></p>
+<ul>
+<li><strong>Aquí se asigna directamente el valor 85 a la variable <code>nota</code>.</strong><strong></strong></li>
+</ul>
+<p><strong>2. Condicional</strong> <code>if-elif-else</code>:</p>
+<p><img src="NOTA03.png" alt="" width="623" height="239"></p>
+<ul>
+<li>La sentencia if verifica si la nota es mayor o igual a 90.</li>
+<li>Si la condición nota >= 90 es verdadera, se ejecuta print("Tienes una A.").</li>
+<li>Si no, se evalúa la siguiente condición elif, que verifica si la nota es mayor o igual a 80.</li>
+<li>Si nota >= 80 es verdadera, se ejecuta print("Tienes una B.").</li>
+<li>Si ninguna de las condiciones anteriores es verdadera, se evalúa la siguiente condición elif, que verifica si la nota es mayor o igual a 70.</li>
+<li>Si nota >= 70 es verdadera, se ejecuta print("Tienes una C."). Si ninguna de las condiciones anteriores es verdadera, se ejecuta el bloque else, que imprime print("Necesitas mejorar.").</li>
+</ul>
+<h4>Funcionamiento</h4>
+<ul>
+<li>El valor de la nota se evalúa para determinar la calificación.</li>
+<li>Dependiendo del valor de la nota, se imprime un mensaje que indica la calificación (A, B, C) o la necesidad de mejorar.</li>
+</ul>
+<h3>Resumen</h3>
+<ul>
+<li><strong><code>if</code></strong>: Ejecuta un bloque de código si la condición es verdadera.</li>
+<li><strong><code>elif</code></strong>: Proporciona condiciones adicionales si la condición <code>if</code> original es falsa.</li>
+<li><strong><code>else</code></strong>: Captura todos los demás casos cuando ninguna de las condiciones anteriores es verdadera.</li>
+</ul>
+<p>Estas estructuras se utilizan en conjunto para permitir que el programa tome decisiones y ejecute diferentes bloques de código basados en diferentes condiciones.</p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_interactivo" id="id805">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_interactivo.svg)"><h1 class="iDeviceTitle">ASIGNACIÓN DE TAREAS Y CIERRE</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta805_128_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Escribir un programa que diga si un número es par o impar.</li>
+</ul>
+</li>
+<li><strong>Cierre</strong>:
+<ul>
+<li>Resumir, en el cuaderno y a mano,  los puntos clave de la sesión</li>
+</ul>
+</li>
+</ul>
+<p><img src="CUADERNO01.png" alt="" width="401" height="229" style="display: block; margin-left: auto; margin-right: auto;" /></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><h3>Objetivo</h3>
+<p>Crea un programa en Python que determine si un número ingresado por el usuario es par o impar e imprima el resultado.</p>
+<h3>Instrucciones</h3>
+<ol>
+<li>
+<p><strong>Solicita un número al usuario y convierte la entrada a un número entero:</strong></p>
+<ul>
+<li>Usa <code>input</code> para solicitar un número al usuario.</li>
+<li>Convierte la entrada del usuario a un número entero usando <code>int</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Determina si el número es par o impar:</strong></p>
+<ul>
+<li>Usa una estructura <code>if-else</code> para determinar si el número es par o impar.</li>
+<li>Imprime el resultado.</li>
+</ul>
+</li>
+</ol>
+<h3>Ejemplo de Código</h3>
+<p><img src="PARIMPAR01.png" alt="" width="642" height="230" /></p>
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="89ee6968-fd62-4c60-98ed-298b992c0ad4" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3>Explicación Detallada</h3>
+<h4>Paso 1: Solicitar un número al usuario y convertirlo a un número entero</h4>
+<ul>
+<li><code>input("Ingresa un número: ")</code> muestra un mensaje al usuario para que ingrese un número.</li>
+<li><code>int(...)</code> convierte la entrada del usuario (que es una cadena de texto) en un número entero y lo almacena en la variable <code>numero</code>.</li>
+</ul>
+<h4>Paso 2: Determinar si el número es par o impar usando una estructura <code>if-else</code></h4>
+<ul>
+<li><code>if numero % 2 == 0:</code> verifica si el número ingresado es par calculando el residuo de la división del número entre 2.
+<ul>
+<li>La expresión <code>numero % 2</code> calcula el residuo de dividir <code>numero</code> entre 2.</li>
+<li>Si el residuo es <code>0</code>, entonces <code>numero</code> es par, porque es divisible por 2 sin ningún residuo.</li>
+</ul>
+</li>
+<li>Si la condición <code>numero % 2 == 0</code> es verdadera, se ejecuta <code>print("El número es par.")</code>.</li>
+<li>Si la condición es falsa, se ejecuta el bloque <code>else</code>, que imprime <code>print("El número es impar.")</code>.</li>
+</ul>
+<h3>Funcionamiento</h3>
+<ol>
+<li>
+<p><strong>El usuario ingresa un número:</strong></p>
+<ul>
+<li>El usuario ve el mensaje <code>Ingresa un número:</code> y escribe un número, por ejemplo, <code>4</code>.</li>
+<li>El programa convierte esta entrada a un entero y la almacena en la variable <code>numero</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>El programa evalúa si el número es par o impar:</strong></p>
+<ul>
+<li>La expresión <code>numero % 2 == 0</code> verifica si el residuo de la división del número entre 2 es <code>0</code>.</li>
+<li>Si el número es <code>4</code>, entonces <code>4 % 2</code> es <code>0</code>, lo que significa que <code>4</code> es par, y el programa imprimirá "El número es par."</li>
+<li>Si el número es <code>5</code>, entonces <code>5 % 2</code> es <code>1</code>, lo que significa que <code>5</code> es impar, y el programa imprimirá "El número es impar."</li>
+</ul>
+</li>
+</ol>
+<h3>Resultado Esperado</h3>
+<p>Cuando ejecutes el programa, deberías ver algo similar a esto en la pantalla:</p>
+<ul>
+<li>Ingresa un número: 4 El número es par.</li>
+<li>Ingresa un número: 5 El número es impar.</li>
+</ul>
+<h3>Consejos</h3>
+<ul>
+<li>Asegúrate de ingresar un número entero cuando el programa te lo solicite.</li>
+<li>Usa la función <code>print</code> para mostrar el mensaje de manera clara y legible.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que la variable esté correctamente definida.</li>
+</ul>
+<p>¡Diviértete programando y aprendiendo a usar estructuras condicionales y la función <code>print</code> en Python</p>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="operadores_y_expresiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funciones_i.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

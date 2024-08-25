@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Funciones II y Variables </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-36"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li class="current-page-parent"><a href="mdulo_4_robo_aprende_a_programar.html" class="current-page-parent daddy">Módulo 4: Robo aprende a programar</a>
+   <ul>
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li id="active"><a href="funciones_ii_y_variables.html" class="active no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="funciones_i.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="bucles_for_y_while.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Funciones II y Variables</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id811">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">CONCEPTOS TEÓRICOS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta811_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>PARÁMETROS</h2>
+<p style="text-align: justify;">Son variables que se pasan a una función para que esta pueda trabajar con diferentes valores. Se definen dentro de los paréntesis de la definición de la función.</p>
+<p style="text-align: justify;"><img src="PARAMETROS01.png" alt="" width="615" height="105"></p>
+<ul>
+<li>
+<p><strong>Definición de la Función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">saludar</span>(<span class="hljs-params">nombre</span>):
+</code></div>
+</div>
+<ul>
+<li>La palabra clave <code>def</code> se usa para definir una nueva función en Python.</li>
+<li><code>saludar</code> es el nombre de la función. Este nombre se usa para identificar y llamar a la función más tarde.</li>
+<li><code>nombre</code> es un parámetro de la función. Este parámetro actúa como una variable que acepta un valor cuando se llama a la función.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Cuerpo de la Función:</strong></li>
+</ul>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr" style="padding-left: 30px;"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"¡Hola, "</span> + nombre + <span class="hljs-string">"!"</span>)
+</code></div>
+</div>
+<ul>
+<li>Esta línea de código es el cuerpo de la función y se ejecuta cada vez que se llama a la función <code>saludar</code>.</li>
+<li><code>print</code> es una función integrada en Python que imprime el mensaje especificado en la pantalla.</li>
+<li><code>"¡Hola, " + nombre + "!"</code> es una expresión que concatena la cadena <code>"¡Hola, "</code> con el valor del parámetro <code>nombre</code> y luego con la cadena <code>"!"</code>.</li>
+<li>Si <code>nombre</code> es <code>"Juan"</code>, la expresión resultante será <code>"¡Hola, Juan!"</code></li>
+</ul>
+<h3>Ejemplo de Uso</h3>
+<p><img src="PARAMETROS02.png" alt="" width="644" height="216"></p>
+<ol>
+<li>
+<p><strong>Definir la Función:</strong> La función <code>saludar</code> se define de la misma manera que antes.</p>
+</li>
+<li>
+<p><strong>Llamadas a la Función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar(<span class="hljs-string">"Juan"</span>)
+</code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar(<span class="hljs-string">"María"</span>)
+</code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar(<span class="hljs-string">"Pedro"</span>)
+</code></div>
+</div>
+<ul>
+<li>Cada una de estas líneas llama a la función <code>saludar</code> con un argumento diferente.</li>
+<li>La primera llamada pasa el argumento <code>"Juan"</code>, por lo que la función imprimirá <code>"¡Hola, Juan!"</code>.</li>
+<li>La segunda llamada pasa el argumento <code>"María"</code>, por lo que la función imprimirá <code>"¡Hola, María!"</code>.</li>
+<li>La tercera llamada pasa el argumento <code>"Pedro"</code>, por lo que la función imprimirá <code>"¡Hola, Pedro!"</code>.</li>
+</ul>
+</li>
+</ol>
+<h3>Interactividad con <code>input</code></h3>
+<p>Si deseas que el usuario introduzca el nombre a través de la entrada del teclado, puedes usar la función <code>input</code>:</p>
+<p><img src="PARAMETROS03.png" alt="" width="647" height="235"></p>
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="2b7c2546-f0b7-49bc-8e31-34c7bbacfc44" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<ol>
+<li>
+<p><strong>Pedir Entrada al Usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">nombre_usuario = <span class="hljs-built_in">input</span>(<span class="hljs-string">"Por favor, introduce tu nombre: "</span>)
+</code></div>
+</div>
+<ul>
+<li>La función <code>input</code> muestra un mensaje en la pantalla y espera a que el usuario introduzca un valor.</li>
+<li>El valor introducido por el usuario se almacena en la variable <code>nombre_usuario</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la Función con la Entrada del Usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">saludar(nombre_usuario)
+</code></div>
+</div>
+<ul>
+<li>La función <code>saludar</code> se llama con el valor proporcionado por el usuario.</li>
+<li>Si el usuario introduce <code>"Ana"</code>, la función imprimirá <code>"¡Hola, Ana!"</code>.</li>
+</ul>
+</li>
+</ol>
+<p>De esta manera, puedes crear un programa interactivo que saluda al usuario por su nombre.</p>
+</div>
+</div>
+</div>
+</div>
+<h2>VARIABLES DE RETORNO</h2>
+<p>Son los valores que una función devuelve después de ejecutar su código. Se utilizan la palabra clave <strong>return.</strong></p>
+<p><img src="RETORNO02.png" alt="" width="643" height="257"></p>
+<p><strong>Paso 1: Definir una función para sumar dos números</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">sumar</span>(<span class="hljs-params">a, b</span>):
+    <span class="hljs-keyword">return</span> a + b
+</code></div>
+</div>
+<ul>
+<li><code>def sumar(a, b):</code> define una función llamada <code>sumar</code> que toma dos argumentos <code>a</code> y <code>b</code>.</li>
+<li>La función realiza la suma de <code>a</code> y <code>b</code> y devuelve el resultado con <code>return a + b</code>.</li>
+</ul>
+<p><strong>Paso 2: Llamar a la función con dos números específicos</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">resultado = sumar(<span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
+</code></div>
+</div>
+<ul>
+<li><code>sumar(3, 5)</code> llama a la función <code>sumar</code> pasando los valores <code>3</code> y <code>5</code> como argumentos.</li>
+<li>La función <code>sumar</code> calcula <code>3 + 5</code> y devuelve <code>8</code>.</li>
+<li>El valor devuelto <code>8</code> se almacena en la variable <code>resultado</code>.</li>
+</ul>
+<p><strong>Paso 3: Imprimir el resultado de la suma</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"La suma es:"</span>, resultado)
+</code></div>
+</div>
+<ul>
+<li><code>print("La suma es:", resultado)</code> usa la función <code>print</code> para mostrar el mensaje <code>"La suma es:"</code> seguido del valor de la variable <code>resultado</code>.</li>
+<li>En este caso, <code>resultado</code> contiene el valor <code>8</code>, por lo que el mensaje completo que se imprimirá es <code>"La suma es: 8"</code>.</li>
+</ul>
+<h3>Funcionamiento</h3>
+<ol>
+<li>
+<p><strong>Definir la función:</strong></p>
+<ul>
+<li>La función <code>sumar</code> toma dos argumentos, <code>a</code> y <code>b</code>, y devuelve su suma.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la función con dos números:</strong></p>
+<ul>
+<li>La función se llama con los números <code>3</code> y <code>5</code>.</li>
+<li>La función calcula <code>3 + 5</code> y devuelve <code>8</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Imprimir el resultado:</strong></p>
+<ul>
+<li>El programa imprime el resultado de la suma, que es <code>8</code>.</li>
+</ul>
+</li>
+</ol>
+<h3>Resultado Esperado</h3>
+<p>Cuando ejecutes el programa, deberías ver algo similar a esto en la pantalla:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-attr">La suma es:</span> <span class="hljs-number">8</span>
+</code></div>
+</div>
+<h3>Consejos</h3>
+<ul>
+<li>Asegúrate de que los números pasados a la función sean del tipo adecuado (en este caso, enteros o flotantes).</li>
+<li>Usa la función <code>print</code> para mostrar el mensaje de manera clara y legible.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que la función esté correctamente definida.</li>
+</ul>
+<p>¡Diviértete programando y aprendiendo a usar funciones y la función <code>print</code> en Python!<strong></strong></p>
+<h2>VARIABLES LOCALES</h2>
+<p>Son las que se definen dentro de una función y solo pueden ser usadas dentro de esa función.</p>
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="137e0539-3177-42b7-858a-fd84a27ef38f" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3><img src="PARAMETROS04.png" alt="" width="646" height="188"></h3>
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="9b6182f5-47a9-4054-9e61-6b366c817a43" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3>Paso a Paso</h3>
+<ol>
+<li>
+<p><strong>Definir la función <code>funcion</code></strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">funcion</span>():
+    local = <span class="hljs-number">10</span>  <span class="hljs-comment"># Variable local</span>
+    <span class="hljs-built_in">print</span>(local)
+</code></div>
+</div>
+<ul>
+<li><code>def funcion():</code> define una nueva función llamada <code>funcion</code>.</li>
+<li>Dentro de esta función, se declara una variable <code>local</code> y se le asigna el valor <code>10</code>.</li>
+<li><code>print(local)</code> imprime el valor de la variable <code>local</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la función <code>funcion</code></strong>:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">funcion()
+</code></div>
+</div>
+<ul>
+<li><code>funcion()</code> llama a la función <code>funcion</code>, ejecutando el código dentro de ella.</li>
+<li>La función imprime <code>10</code>, el valor de la variable <code>local</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Intentar acceder a la variable <code>local</code> fuera de la función</strong>:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(local)  <span class="hljs-comment"># Esto causará un error porque 'local' no está definida fuera de la función</span>
+</code></div>
+</div>
+<ul>
+<li><code>print(local)</code> intenta imprimir el valor de la variable <code>local</code> fuera de la función <code>funcion</code>.</li>
+<li>Sin embargo, <code>local</code> fue definida dentro de la función <code>funcion</code>, lo que significa que solo existe dentro de esa función.</li>
+<li>Fuera de la función, <code>local</code> no está definida, lo que produce un error.</li>
+</ul>
+</li>
+</ol>
+<h3>Detalle del Error</h3>
+<p>Cuando ejecutas <code>print(local)</code> fuera de la función, Python no puede encontrar la variable <code>local</code> porque su alcance está limitado a la función <code>funcion</code>. Esto causa un <code>NameError</code>.</p>
+<h3>Resultado de la Ejecución</h3>
+<p>Cuando ejecutas el programa, la salida será la siguiente:</p>
+<ol>
+<li>La función <code>funcion</code> se llama y se ejecuta:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs">10
+</code></div>
+</div>
+</li>
+<li>Después, el programa intenta ejecutar <code>print(local)</code> fuera de la función y produce un error:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-csharp">NameError: name <span class="hljs-string">'local'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></div>
+</div>
+</li>
+</ol>
+<h3>Explicación del Alcance de las Variables</h3>
+<ul>
+<li><strong>Variable Local</strong>: Una variable definida dentro de una función (como <code>local</code> en este caso) solo está accesible dentro de esa función. Este es el alcance de la variable.</li>
+<li><strong>Variable Global</strong>: Una variable definida fuera de todas las funciones está accesible en cualquier parte del código.</li>
+</ul>
+<h3>Ejemplo de Variable Local y Global</h3>
+<p>Para aclarar, veamos un ejemplo con una variable global y una local:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-comment"></span><img src="PARAMETROS05.png" alt="" width="652" height="280"></code></div>
+</div>
+<ol>
+<li>
+<p><strong>Variable Global</strong>:</p>
+<ul>
+<li><code>global_variable</code> es una variable global porque está definida fuera de cualquier función.</li>
+<li>Puedes acceder a <code>global_variable</code> desde cualquier parte del programa.</li>
+</ul>
+</li>
+<li>
+<p><strong>Variable Local</strong>:</p>
+<ul>
+<li><code>local</code> es una variable local definida dentro de la función <code>funcion</code>.</li>
+<li>Solo puedes acceder a <code>local</code> dentro de la función <code>funcion</code>.</li>
+</ul>
+</li>
+</ol>
+<h3>Ejecución</h3>
+<ol>
+<li>La función <code>funcion</code> imprime:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs">Dentro de la función: 10
+</code></div>
+</div>
+</li>
+<li>Fuera de la función, se imprime:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs">Fuera de la función: 20
+</code></div>
+</div>
+</li>
+<li>Intentar imprimir <code>local</code> fuera de la función causará un error:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-csharp">NameError: name <span class="hljs-string">'local'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></div>
+</div>
+</li>
+</ol>
+<p>Este ejemplo muestra cómo el alcance de las variables afecta dónde pueden ser utilizadas en tu programa. Las variables locales solo existen dentro de su función, mientras que las variables globales existen en todo el programa.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id812">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">ACTIVIDADES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta812_130_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>FUNCIONES CON PARÁMETROS Y VARIABLES DE RETORNO</h2>
+<p>Crear una función que multiplique dos números y devuelva el resultado.</p>
+<p><img src="PARAMETROS06.png" alt="" width="649" height="254"></p>
+<div class="flex flex-grow flex-col max-w-full">
+<div data-message-author-role="assistant" data-message-id="3083e0ea-052e-44e2-985e-592585ac523c" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h4>Paso 1: Definir la función</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">multiplicar</span>(<span class="hljs-params">a, b</span>):
+    <span class="hljs-comment"># Multiplicar dos números y devolver el resultado</span>
+    <span class="hljs-keyword">return</span> a * b
+</code></div>
+</div>
+<ul>
+<li><code>def multiplicar(a, b):</code> define una función llamada <code>multiplicar</code> que toma dos parámetros, <code>a</code> y <code>b</code>.</li>
+<li>Dentro de la función, se multiplica <code>a</code> por <code>b</code> y se devuelve el resultado con <code>return a * b</code>.</li>
+</ul>
+<h4>Paso 2: Llamar a la función con dos números específicos</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">resultado = multiplicar(<span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
+</code></div>
+</div>
+<ul>
+<li><code>multiplicar(3, 5)</code> llama a la función <code>multiplicar</code>, pasando los valores <code>3</code> y <code>5</code> como argumentos.</li>
+<li>La función <code>multiplicar</code> calcula <code>3 * 5</code> y devuelve <code>15</code>.</li>
+<li>El valor devuelto <code>15</code> se almacena en la variable <code>resultado</code>.</li>
+</ul>
+<h4>Paso 3: Imprimir el resultado</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"El resultado de la multiplicación es:"</span>, resultado)
+</code></div>
+</div>
+<ul>
+<li><code>print("El resultado de la multiplicación es:", resultado)</code> usa la función <code>print</code> para mostrar el mensaje <code>"El resultado de la multiplicación es:"</code> seguido del valor de la variable <code>resultado</code>.</li>
+<li>En este caso, <code>resultado</code> contiene el valor <code>15</code>, por lo que el mensaje completo que se imprimirá es <code>"El resultado de la multiplicación es: 15"</code>.</li>
+</ul>
+<h3>Funcionamiento</h3>
+<ol>
+<li>
+<p><strong>Definir la función:</strong></p>
+<ul>
+<li>La función <code>multiplicar</code> toma dos argumentos, <code>a</code> y <code>b</code>, y devuelve su producto.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la función con dos números:</strong></p>
+<ul>
+<li>La función se llama con los números <code>3</code> y <code>5</code>.</li>
+<li>La función calcula <code>3 * 5</code> y devuelve <code>15</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Imprimir el resultado:</strong></p>
+<ul>
+<li>El programa imprime el resultado de la multiplicación, que es <code>15</code>.</li>
+</ul>
+</li>
+</ol>
+<h3>Resultado Esperado</h3>
+<p>Cuando ejecutes el programa, deberías ver algo similar a esto en la pantalla:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-string">El</span> <span class="hljs-string">resultado</span> <span class="hljs-string">de</span> <span class="hljs-string">la</span> <span class="hljs-string">multiplicación</span> <span class="hljs-attr">es:</span> <span class="hljs-number">15</span>
+</code></div>
+</div>
+<h3>Consejos</h3>
+<ul>
+<li>Asegúrate de que los números pasados a la función sean del tipo adecuado (en este caso, enteros o flotantes).</li>
+<li>Usa la función <code>print</code> para mostrar el mensaje de manera clara y legible.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que la función esté correctamente definida.</li>
+</ul>
+<p>¡Diviértete programando y aprendiendo a usar funciones y la función <code>print</code> en Python!</p>
+</div>
+</div>
+</div>
+</div>
+<h2>JUEGO CALCULAR LA EDAD EN DÍAS</h2>
+<p><img src="EDADDIAS01.png" width="647" height="193"></p>
+<h3>Explicación del Código</h3>
+<ol>
+<li>
+<p><strong>Definición de la Función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">calcular_edad_en_dias</span>(<span class="hljs-params">edad</span>):
+</code></div>
+</div>
+<ul>
+<li><code>def</code> se usa para definir una función en Python.</li>
+<li><code>calcular_edad_en_dias</code> es el nombre de la función.</li>
+<li><code>edad</code> es un parámetro que recibe la edad en años.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cálculo dentro de la Función:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">dias = edad * <span class="hljs-number">365</span>  <span class="hljs-comment"># Aproximación sin considerar años bisiestos</span>
+</code></div>
+</div>
+<ul>
+<li><code>dias</code> es una variable que almacena el resultado de multiplicar <code>edad</code> por <code>365</code>.</li>
+<li>Este cálculo convierte la edad de años a días, asumiendo que cada año tiene 365 días (sin considerar años bisiestos).</li>
+</ul>
+</li>
+<li>
+<p><strong>Retorno del Resultado:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">return</span> dias
+</code></div>
+</div>
+<ul>
+<li><code>return</code> se usa para devolver el resultado del cálculo desde la función.</li>
+<li>En este caso, devuelve la cantidad de días.</li>
+</ul>
+</li>
+<li>
+<p><strong>Entrada del Usuario:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">edad = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Ingresa tu edad en años: "</span>))
+</code></div>
+</div>
+<ul>
+<li><code>input("Ingresa tu edad en años: ")</code> muestra un mensaje al usuario y espera a que el usuario introduzca un valor.</li>
+<li><code>int</code> convierte la entrada del usuario (que es una cadena) en un número entero.</li>
+<li>El valor entero se almacena en la variable <code>edad</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamada a la Función y Salida del Resultado:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"Tu edad en días es aproximadamente:"</span>, calcular_edad_en_dias(edad))
+</code></div>
+</div>
+<ul>
+<li><code>calcular_edad_en_dias(edad)</code> llama a la función <code>calcular_edad_en_dias</code> con el valor de <code>edad</code> proporcionado por el usuario.</li>
+<li><code>print</code> muestra el mensaje <code>"Tu edad en días es aproximadamente:"</code> seguido del resultado de la función.</li>
+</ul>
+</li>
+</ol>
+<h3>Ejecución del Programa</h3>
+<p>Cuando ejecutas este programa, el flujo de ejecución es el siguiente:</p>
+<ol>
+<li>El usuario es solicitado a ingresar su edad en años.</li>
+<li>El usuario introduce un valor, por ejemplo, <code>25</code>.</li>
+<li>La función <code>calcular_edad_en_dias</code> es llamada con <code>edad</code> igual a <code>25</code>.</li>
+<li>La función calcula <code>25 * 365</code>, que es <code>9125</code>.</li>
+<li>El resultado <code>9125</code> es devuelto por la función.</li>
+<li>El programa imprime: <code>"Tu edad en días es aproximadamente: 9125"</code>.</li>
+</ol>
+<h3>Consideración de Años Bisiestos</h3>
+<p>Este programa no considera años bisiestos. Para una aproximación más precisa, puedes incluir una lógica que cuente los años bisiestos. Aquí hay un ejemplo modificado que incluye esta consideración:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><img src="EDADDIAS02.png" width="651" height="215"></div>
+</div>
+<h3>Explicación del Código Modificado</h3>
+<ol>
+<li>
+<p><strong>Calcular Años Bisiestos:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">bisiestos = edad // <span class="hljs-number">4</span>
+</code></div>
+</div>
+<ul>
+<li><code>bisiestos</code> calcula la cantidad aproximada de años bisiestos en la edad del usuario.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ajuste del Cálculo Total:</strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">dias = edad * <span class="hljs-number">365</span> + bisiestos
+</code></div>
+</div>
+<ul>
+<li>Este cálculo suma los días adicionales por los años bisiestos.</li>
+</ul>
+</li>
+</ol>
+<p>Este ajuste proporciona una estimación más precisa de la edad en días al incluir los años bisiestos.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_interactivo" id="id813">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_interactivo.svg)"><h1 class="iDeviceTitle">ASIGNACIÓN DE TAREAS Y CIERRE</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta813_128_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Escribir una función que reciba dos números y devuelva su suma</li>
+</ul>
+</li>
+<li><strong>Cierre</strong>:
+<ul>
+<li>Resumir, en el cuaderno y a mano,  los puntos clave de la sesión</li>
+</ul>
+</li>
+</ul>
+<p><img src="CUADERNO01.png" alt="" width="401" height="229" style="display: block; margin-left: auto; margin-right: auto;" /></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><h3>Objetivo</h3>
+<p>Crea un programa en Python que:</p>
+<ol>
+<li>Defina una función para sumar dos números.</li>
+<li>Solicite al usuario que ingrese dos números.</li>
+<li>Use la función de suma para calcular el resultado.</li>
+<li>Imprima el resultado de la suma.</li>
+</ol>
+<h3>Instrucciones</h3>
+<ol>
+<li>
+<p><strong>Define la función para sumar dos números:</strong></p>
+<ul>
+<li>La función debe tomar dos argumentos y devolver su suma.</li>
+</ul>
+</li>
+<li>
+<p><strong>Solicita al usuario que ingrese dos números:</strong></p>
+<ul>
+<li>Usa <code>input</code> para solicitar los números al usuario.</li>
+<li>Convierte la entrada del usuario a un número de punto flotante (<code>float</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Llama a la función de suma y muestra el resultado:</strong></p>
+<ul>
+<li>Usa la función <code>print</code> para mostrar el resultado.</li>
+</ul>
+</li>
+</ol>
+<h3>Ejemplo de Código</h3>
+<p><img src="PARAMETROS07.png" alt="" width="648" height="263" /></p>
+<h4>Paso 1: Definir la función para sumar dos números</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">sumar</span>(<span class="hljs-params">a, b</span>):
+    <span class="hljs-keyword">return</span> a + b
+</code></div>
+</div>
+<ul>
+<li><code>def sumar(a, b):</code> define una función llamada <code>sumar</code> que toma dos parámetros, <code>a</code> y <code>b</code>.</li>
+<li>Dentro de la función, se suma <code>a</code> y <code>b</code> y se devuelve el resultado con <code>return a + b</code>.</li>
+</ul>
+<h4>Paso 2: Solicitar al usuario que ingrese dos números</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">numero1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Ingresa el primer número: "</span>))
+numero2 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Ingresa el segundo número: "</span>))
+</code></div>
+</div>
+<ul>
+<li><code>input("Ingresa el primer número: ")</code> muestra un mensaje al usuario pidiéndole que ingrese el primer número.</li>
+<li><code>float(...)</code> convierte la entrada del usuario (que es una cadena de texto) en un número de punto flotante y lo almacena en la variable <code>numero1</code>.</li>
+<li>Se repite el proceso para el segundo número, almacenándolo en la variable <code>numero2</code>.</li>
+</ul>
+<h4>Paso 3: Llamar a la función de suma y mostrar el resultado</h4>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"La suma de los dos números es:"</span>, sumar(numero1, numero2))
+</code></div>
+</div>
+<ul>
+<li><code>sumar(numero1, numero2)</code> llama a la función <code>sumar</code>, pasando <code>numero1</code> y <code>numero2</code> como argumentos.</li>
+<li>La función <code>sumar</code> calcula la suma de <code>numero1</code> y <code>numero2</code> y devuelve el resultado.</li>
+<li><code>print("La suma de los dos números es:", ...)</code> usa la función <code>print</code> para mostrar el mensaje <code>"La suma de los dos números es:"</code> seguido del resultado de la suma.</li>
+</ul>
+<h3>Funcionamiento</h3>
+<ol>
+<li>
+<p><strong>Definir la función:</strong></p>
+<ul>
+<li>La función <code>sumar</code> toma dos argumentos, <code>a</code> y <code>b</code>, y devuelve su suma.</li>
+</ul>
+</li>
+<li>
+<p><strong>Solicitar al usuario que ingrese dos números:</strong></p>
+<ul>
+<li>El usuario ingresa dos números cuando se le solicita.</li>
+<li>Las entradas se convierten a números de punto flotante y se almacenan en <code>numero1</code> y <code>numero2</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Llamar a la función de suma y mostrar el resultado:</strong></p>
+<ul>
+<li>La función <code>sumar</code> se llama con <code>numero1</code> y <code>numero2</code> como argumentos.</li>
+<li>La función calcula la suma y devuelve el resultado.</li>
+<li>El resultado se muestra en la pantalla.</li>
+</ul>
+</li>
+</ol>
+<h3>Resultado Esperado</h3>
+<p>Cuando ejecutes el programa, deberías ver algo similar a esto en la pantalla:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-string">Ingresa</span> <span class="hljs-string">el</span> <span class="hljs-string">primer</span> <span class="hljs-string">número:</span> <span class="hljs-number">3.5</span>
+</code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-string">Ingresa</span> <span class="hljs-string">el</span> <span class="hljs-string">segundo</span> <span class="hljs-string">número:</span> <span class="hljs-number">4.2</span>
+</code></div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-string">La</span> <span class="hljs-string">suma</span> <span class="hljs-string">de</span> <span class="hljs-string">los</span> <span class="hljs-string">dos</span> <span class="hljs-string">números</span> <span class="hljs-attr">es:</span> <span class="hljs-number">7.7</span>
+</code></div>
+</div>
+<h3>Consejos</h3>
+<ul>
+<li>Asegúrate de ingresar números válidos cuando el programa te lo solicite.</li>
+<li>Revisa tu código para asegurarte de que no haya errores de sintaxis y que las variables y la función estén correctamente definidas.</li>
+</ul>
+<p>¡Diviértete programando y aprendiendo a usar funciones y la función <code>print</code> en Python!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="funciones_i.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="bucles_for_y_while.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

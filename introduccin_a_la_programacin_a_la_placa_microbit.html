@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Introducción a la programación a la placa Microbit </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-44"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">COMPUTACIÓN Y ROBÓTICA 1º ESO</a></li>
+   <li><a href="mdulo_1_introduccin_a_la_robtica_con_robo.html" class="no-ch">Módulo 1: Introducción a la Robótica con ROBO</a></li>
+   <li><a href="modulo_2_tica_en_la_era_de_la_ia.html" class="no-ch">Modulo 2: Ética en la Era de la IA</a></li>
+   <li><a href="mdulo_3_la_historia_de_robo_el_robot_inteligente.html" class="no-ch">Módulo 3: La Historia de Robo, el Robot Inteligente</a></li>
+   <li><a href="mdulo_4_robo_aprende_a_programar.html" class="daddy">Módulo 4: Robo aprende a programar</a>
+   <ul class="other-section">
+      <li><a href="introduccin_a_la_programacin_con_python.html" class="no-ch">Introducción a la programación con Python</a></li>
+      <li><a href="valores_tipos_y_variable.html" class="no-ch">Valores, Tipos y Variable</a></li>
+      <li><a href="operadores_y_expresiones.html" class="no-ch">Operadores y Expresiones</a></li>
+      <li><a href="decisiones_con_if_y_else.html" class="no-ch">Decisiones con if y else</a></li>
+      <li><a href="funciones_i.html" class="no-ch">Funciones I</a></li>
+      <li><a href="funciones_ii_y_variables.html" class="no-ch">Funciones II y Variables</a></li>
+      <li><a href="bucles_for_y_while.html" class="no-ch">Bucles for y while</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="current-page-parent daddy">Módulo 5: Robo conoce a dos amigos inseparables Micro:bit y Maqueen</a>
+   <ul>
+      <li id="active"><a href="introduccin_a_la_programacin_a_la_placa_microbit.html" class="active no-ch">Introducción a la programación a la placa Microbit</a></li>
+      <li><a href="programacin_avanzada_con_microbit.html" class="no-ch">Programación avanzada con Microbit</a></li>
+      <li><a href="programacin_con_el_robot_maqueen.html" class="no-ch">Programación con el Robot Maqueen</a></li>
+      <li><a href="misin_exploradores_del_espacio_con_microbit_y_maqueen.html" class="no-ch">Misión: Exploradores del Espacio con Microbit y Maqueen</a></li>
+   </ul>
+   </li>
+   <li><a href="mdulo_6_crea_tu_mundo_digital.html" class="no-ch">Módulo 6: Crea tu Mundo Digital</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="programacin_avanzada_con_microbit.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Introducción a la programación a la placa Microbit</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id838">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">1. Mi primer programa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta838_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>&nbsp;Planteamiento del problema</h2>
+<p _msttexthash="19941532" _msthash="217" style="text-align: justify;">Queremos crear un programa sencillo utilizando la micro&nbsp;que muestre un mensaje de texto en la pantalla LED de la micro&nbsp;y envíe un mensaje a la consola de la computadora. Este programa debe ejecutarse de manera continua, repitiendo ambos mensajes indefinidamente.</p>
+<h2>Solución con MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<p><strong><img src="MODULO5_01.png" alt="" width="646" height="251"></strong></p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">
+</code></div>
+</div>
+<p><span style="font-size: 14pt;"><strong>Explicación detallada del código:</strong></span></p>
+<ol>
+<li><strong>Definición de la función on_forever:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<p>Esta línea define una función llamada <code>on_forever</code>. En Python, una función es un bloque de código que realiza una tarea específica. En este caso, la función <code>on_forever</code> contendrá las instrucciones que queremos que se repitan continuamente en la micro</p>
+<ol start="2">
+<li><strong>Mostrar texto en la pantalla LED:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.show_string(<span class="hljs-string">"Hola Mundo!"</span>)
+</code></div>
+</div>
+<p>es una instrucción que utiliza la micro para mostrar el texto "Hola Mundo!" en su pantalla LED. Este texto se muestra desplazándose letra por letra. La función <code>show_string</code> pertenece al módulo <code>basic</code>, que contiene funciones básicas para controlar la micro</p>
+<ol start="3">
+<li><strong>Enviar un mensaje a la consola:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">serial.write_line(<span class="hljs-string">"Este texto aparece en la consola"</span>)
+</code></div>
+</div>
+<p>es una instrucción que envía el texto "Este texto aparece en la consola" a la consola de la computadora que está conectada a la micro</p>
+<p>&nbsp;Esta es una función útil para depuración y seguimiento de lo que está haciendo la micro</p>
+<p>La función <code>write_line</code> pertenece al módulo <code>serial</code>, que maneja la comunicación serie con la computadora.</p>
+<ol start="4">
+<li><strong>Ejecución continua de la función on_forever:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<p>Esta línea es crucial porque le indica a la micro que ejecute la función <code>on_forever</code> de forma continua y sin detenerse. El módulo <code>basic</code> contiene la función <code>forever</code>, que toma como argumento una función (en este caso, <code>on_forever</code>) y la ejecuta en un ciclo infinito.</p>
+<p><span style="font-size: 14pt;"><strong>Resumen de la estructura del código:</strong></span></p>
+<ul>
+<li><strong>Definición de la función <code>on_forever</code>:</strong> Aquí se colocan las instrucciones que queremos que se repitan continuamente.</li>
+<li><strong>Mostrar texto en la pantalla LED:</strong> La función <code>basic.show_string("Hola Mundo!")</code> muestra el mensaje en la pantalla LED.</li>
+<li><strong>Enviar mensaje a la consola:</strong> La función <code>serial.write_line("Este texto aparece en la consola")</code> envía un mensaje a la consola.</li>
+<li><strong>Ejecución continua:</strong> La función <code>basic.forever(on_forever)</code> asegura que todo lo que esté en <code>on_forever</code> se ejecute continuamente, logrando así un ciclo infinito en la micro</li>
+</ul>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><strong><span style="font-size: 14pt;">Estructura del código en MakeCode:</span></strong></p>
+<p><img src="MODULO5_43.png" alt="" width="718" height="147"></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Explicación de la estructura del código:</strong></span></p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Bloque "Para Siempre" (<code>forever</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; para siempre</code>.</li>
+<li><strong>Función:</strong> Este bloque ejecuta de forma continua el código que contiene. Es ideal para tareas que deben repetirse indefinidamente mientras el micro está encendido.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Mostrar Cadena" (<code>show string</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; mostrar cadena</code>.</li>
+<li><strong>Función:</strong> Muestra una secuencia de caracteres (cadena de texto) en la pantalla de LEDs del micro. En este caso, muestra el texto "Hola Mundo!".</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Cadena de Texto:</strong> Puedes ingresar cualquier texto que desees mostrar en la pantalla. En este caso, se ha configurado para mostrar "Hola Mundo!".</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Serial Escribir Línea" (<code>serial write line</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Serial &gt; serial escribir línea</code>.</li>
+<li><strong>Función:</strong> Envía una cadena de texto a través del puerto serial, lo que significa que el texto se envía a la consola de serie o al monitor serial conectado al micro. En este caso, envía "Este texto aparece en la consola".</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Cadena de Texto:</strong> Puedes ingresar cualquier texto que desees enviar a la consola. Aquí, se ha configurado para enviar "Este texto aparece en la consola".</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: justify;"><span style="font-size: 14pt;">Comportamiento del Programa:</span></h3>
+<ul style="text-align: justify;">
+<li><strong>Visualización en Pantalla:</strong>
+<ul>
+<li><strong>Cadena de Texto:</strong> El programa muestra repetidamente "Hola Mundo!" en la pantalla de LEDs del micro. El texto desfilará por la pantalla, lo que es útil para mostrar mensajes cortos o indicadores visuales.</li>
+</ul>
+</li>
+<li><strong>Envío a la Consola Serial:</strong>
+<ul>
+<li><strong>Texto en Consola:</strong> Al mismo tiempo, el programa envía "Este texto aparece en la consola" a través del puerto serial. Este texto aparecerá en la consola serial del entorno de programación (si está conectada), lo que es útil para depuración o para registrar eventos.</li>
+</ul>
+</li>
+</ul>
+<h3 style="text-align: justify;"><span style="font-size: 14pt;">Resumen:</span></h3>
+<p style="text-align: justify;">Este código en MakeCode muestra cómo combinar la salida visual en la pantalla de LEDs del micro con la salida de texto en la consola serial. Mientras el micro muestra un mensaje en su pantalla, también está enviando información a la consola serial, lo que puede ser útil para monitorear el comportamiento del programa o para la depuración. Es una excelente manera de demostrar cómo se pueden utilizar diferentes medios de salida (pantalla y consola) en un programa simple de micro</p>
+<p><img src="MODULO5_03.png" alt="" width="541" height="175" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id839">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">2. Bucles</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta839_828_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p _msttexthash="19941532" _msthash="217" style="text-align: justify;">En esta actividad, queremos utilizar bucles para contar números y crear una animación sencilla en la pantalla LED de la micro. El programa debe contar del 0 al 4 usando un bucle while, luego mostrar una animación de un corazón latiendo 5 veces usando un bucle for. Todo el proceso debe repetirse indefinidamente.</p>
+<h2>Solución con&nbsp; MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit:</strong></p>
+<p><strong><img src="MODULO5_04.png" alt="" width="643" height="404"></strong></p>
+<p><span style="font-size: 14pt;"><strong>Explicación detallada del código en Python:</strong></span></p>
+<ol>
+<li><strong>Definición de la función <code>on_forever</code>:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">on_forever</span>():
+</code></div>
+</div>
+<p>Esta línea define una función llamada <code>on_forever</code>. Esta función contendrá todas las instrucciones que queremos que se repitan continuamente en la micro.</p>
+<ol start="2">
+<li><strong>Bucle <code>while</code> que cuenta del 0 al 4:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">contador = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> contador &lt; <span class="hljs-number">5</span>:
+    basic.show_number(contador)
+    basic.pause(<span class="hljs-number">1000</span>)
+    contador += <span class="hljs-number">1</span>
+</code></div>
+</div>
+<ul>
+<li><strong><code>contador = 0</code>:</strong> Se inicializa una variable llamada <code>contador</code> en 0.</li>
+<li><strong><code>while contador &lt; 5</code>:</strong> Este es un bucle <code>while</code> que continuará ejecutándose mientras la condición (<code>contador &lt; 5</code>) sea verdadera.</li>
+<li><strong><code>basic.show_number(contador)</code>:</strong> Muestra el valor actual de <code>contador</code> en la pantalla LED de la micro.</li>
+<li><strong><code>basic.pause(1000)</code>:</strong> Pausa la ejecución durante 1000 milisegundos (1 segundo).</li>
+<li><strong><code>contador += 1</code>:</strong> Incrementa el valor de <code>contador</code> en 1.</li>
+</ul>
+<p>Este bucle muestra los números del 0 al 4 en la pantalla LED, con una pausa de 1 segundo entre cada número.</p>
+<ol start="3">
+<li><strong>Bucle <code>for</code> que muestra un corazón latiendo 5 veces:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">5</span>):
+    basic.show_icon(IconNames.HEART)
+    basic.pause(<span class="hljs-number">500</span>)
+    basic.show_icon(IconNames.SMALL_HEART)
+    basic.pause(<span class="hljs-number">500</span>)
+</code></div>
+</div>
+<ul>
+<li><strong><code>for i in range(5)</code>:</strong> Este es un bucle <code>for</code> que se ejecutará 5 veces.</li>
+<li><strong><code>basic.show_icon(IconNames.HEART)</code>:</strong> Muestra un icono de un corazón grande en la pantalla LED.</li>
+<li><strong><code>basic.pause(500)</code>:</strong> Pausa la ejecución durante 500 milisegundos (0,5 segundos).</li>
+<li><strong><code>basic.show_icon(IconNames.SMALL_HEART)</code>:</strong> Muestra un icono de un corazón pequeño en la pantalla LED.</li>
+<li><strong><code>basic.pause(500)</code>:</strong> Pausa la ejecución durante 500 milisegundos (0,5 segundos).</li>
+</ul>
+<p>Este bucle crea una animación donde un corazón grande se alterna con uno pequeño, simulando un latido del corazón, y lo repite 5 veces.</p>
+<ol start="4">
+<li><strong>Ejecución continua de la función <code>on_forever</code>:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)
+</code></div>
+</div>
+<p>Esta línea le indica a la micro que ejecute la función <code>on_forever</code> de forma continua e indefinida. De esta manera, después de que se completen ambos bucles (el que cuenta del 0 al 4 y el que muestra el corazón latiendo), el proceso comienza de nuevo desde el principio.</p>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><span style="font-size: 14pt;"><strong>Estructura visual del código en MakeCode:</strong></span></p>
+<p><img src="MODULO5_37.png" alt="" width="720" height="310"></p>
+<p><span style="font-size: 14pt;"><strong>Explicación de la estructura en MakeCode:</strong></span></p>
+<ol>
+<li>
+<p><strong>Bloque "Para Siempre" (<code>forever</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; para siempre</code>.</li>
+<li><strong>Función:</strong> Este es un bucle infinito que ejecuta todo el código que contiene de manera continua. Todo lo que se coloca dentro de este bloque se repetirá sin fin, lo que es útil para programas que deben ejecutarse constantemente, como los que controlan un dispositivo interactivo como el micro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Mientras" (<code>while contador &lt; 5</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Lógica &gt; mientras</code>.</li>
+<li><strong>Función:</strong> Este es un bucle condicional que sigue ejecutándose mientras la condición especificada sea verdadera. En este caso, el bloque verifica si la variable <code>contador</code> es menor que 5. Mientras lo sea, el código dentro del bucle se ejecutará repetidamente.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Condición:</strong> <code>contador &lt; 5</code>. Esta comparación se realiza utilizando un bloque de comparación que se encuentra en <code>Lógica &gt; Comparación</code>. El lado izquierdo de la comparación usa la variable <code>contador</code>, y el lado derecho es el número 5.</li>
+<li><strong>Bloque de Comparación:</strong> Este bloque compara dos valores, en este caso, la variable <code>contador</code> y el número 5.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Mostrar Número" (<code>show number contador</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; mostrar número</code>.</li>
+<li><strong>Función:</strong> Muestra el valor de la variable <code>contador</code> en la pantalla de LEDs del micro
+<div></div>
+. Esto permite al usuario ver el progreso del conteo en tiempo real.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Número a Mostrar:</strong> El bloque toma como entrada la variable <code>contador</code>, que es el número que se mostrará en la pantalla.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Pausa" (<code>pause (1000 ms)</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; pausa (ms)</code>.</li>
+<li><strong>Función:</strong> Introduce una pausa en la ejecución del programa durante 1000 milisegundos (1 segundo). Esto se utiliza para ralentizar la actualización del número en la pantalla, permitiendo que el usuario vea el cambio antes de que el programa continúe.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Duración de la Pausa:</strong> El valor de la pausa es 1000 ms, lo que equivale a 1 segundo. Esto puede ajustarse según las necesidades del programa.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Cambiar por" (<code>change contador by 1</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Variables &gt; cambiar por</code>.</li>
+<li><strong>Función:</strong> Incrementa el valor de la variable <code>contador</code> en 1. Esto es crucial para que el bucle <code>mientras</code> eventualmente termine, ya que cada vez que se ejecuta este bloque, la variable <code>contador</code> se acerca más al valor de 5.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Variable:</strong> La variable <code>contador</code> se incrementa por 1. Puedes configurar este bloque para que incremente cualquier variable por un valor específico.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Repetir 5 veces" (<code>repeat 5 times</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Control &gt; repetir</code>.</li>
+<li><strong>Función:</strong> Ejecuta el código contenido dentro de él un número específico de veces, en este caso, 5 veces. Este tipo de bloque es útil para acciones que necesitan repetirse un número exacto de veces, como animaciones o ciclos de procesamiento.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Número de Repeticiones:</strong> En este caso, está configurado para repetir el bloque 5 veces.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Mostrar Ícono" (<code>show icon</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; mostrar icono</code>.</li>
+<li><strong>Función:</strong> Muestra un ícono predefinido en la matriz de LEDs del micro
+<div></div>
+. Esto se utiliza en tu código para crear una pequeña animación, ya que el ícono se muestra y se apaga repetidamente.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Selección de Ícono:</strong> Puedes seleccionar entre varios íconos predefinidos en MakeCode. En este caso, se utiliza un ícono específico que parpadea en la pantalla durante el bucle.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Pausa" (<code>pause (500 ms)</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; pausa (ms)</code>.</li>
+<li><strong>Función:</strong> Similar al bloque de pausa anterior, pero esta vez la pausa es de 500 ms (0.5 segundos). Se usa para hacer que el ícono parpadee en la pantalla durante la animación.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Duración de la Pausa:</strong> El valor de la pausa es 500 ms, lo que introduce un pequeño retraso entre la aparición y desaparición del ícono, creando un efecto de parpadeo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3><span style="font-size: 14pt;">Comportamiento del Programa:</span></h3>
+<ol>
+<li>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>Contador:</strong></span></p>
+<ul style="text-align: justify;">
+<li><strong>Primera Parte:</strong> El programa empieza mostrando el valor de la variable <code>contador</code> en la pantalla de LEDs, incrementándola cada segundo hasta que alcanza 5. Este proceso es visible para el usuario, lo que permite seguir el progreso del conteo.</li>
+</ul>
+</li>
+<li style="text-align: justify;">
+<p><strong>Animación de Íconos:</strong></p>
+<ul>
+<li><strong>Segunda Parte:</strong> Después de que el contador llega a 5, el programa entra en un segundo bucle que repite una animación de un ícono parpadeante. El ícono se muestra y se apaga repetidamente 5 veces, con pausas de medio segundo entre cada aparición y desaparición, creando un efecto visual atractivo.</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: justify;"><span style="font-size: 14pt;"><img src="MODULO5_38.png" alt="" width="263" height="426" style="font-weight: normal; text-align: left; font-size: 1.05em; display: block; margin-left: auto; margin-right: auto;"></span></h3>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id840">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">3. Animaciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta840_828_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">Queremos crear una animación en la pantalla LED de la micro que cambie entre dos imágenes de flechas: una apuntando a la derecha y otra a la izquierda. La animación debe repetirse de forma continua, con una breve pausa entre cada cambio. &nbsp;La primera flecha apunta hacia la derecha y la segunda hacia la izquierda. Cada imagen debe permanecer en la pantalla durante 500 milisegundos antes de cambiar a la otra, generando una animación que se repite de manera indefinida.</p>
+<h2>Solución con&nbsp; MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<p><strong><img src="MODULO5_06.png" alt="" width="549" height="493"></strong></p>
+<p><span style="font-size: 14pt;"><strong>Explicación detallada del código en Python:</strong></span></p>
+<ol>
+<li><strong>Definición de las imágenes de las flechas:</strong></li>
+</ol>
+<ul>
+<li style="text-align: justify;"><strong><code>images.create_image</code></strong>: Esta función se utiliza para crear una imagen personalizada en la micro utilizando un patrón de LEDs.</li>
+<li style="text-align: justify;">La imagen de <code>flecha_derecha</code><span style="font-size: 1.05em;"> representa una flecha apuntando hacia la derecha, y la de </span><code>flecha_izquierda</code><span style="font-size: 1.05em;"> representa una flecha apuntando hacia la izquierda.</span></li>
+</ul>
+<ol start="2">
+<li style="text-align: justify;"><strong>Bucle que alterna entre las dos flechas:</strong></li>
+</ol>
+<ul>
+<li><strong><code>flecha_derecha.show_image(0)</code></strong>: Muestra la imagen de la flecha derecha en la pantalla LED de la micro.</li>
+<li><strong><code>basic.pause(500)</code></strong>: Pausa la ejecución durante 500 milisegundos (0,5 segundos).</li>
+<li><strong><code>flecha_izquierda.show_image(0)</code></strong>: Muestra la imagen de la flecha izquierda en la pantalla LED de la micro.</li>
+<li><strong><code>basic.pause(500)</code></strong>: Pausa la ejecución durante 500 milisegundos (0,5 segundos).</li>
+</ul>
+<ol start="3">
+<li><strong>Ejecución continua de la función <code>on_forever</code>:</strong></li>
+</ol>
+<ul>
+<li>&nbsp;Ejecuta la función <code>on_forever</code> de forma continua e indefinida. Esto hace que la micro alterne continuamente entre mostrar la flecha derecha y la flecha izquierda, creando una animación sin fin.</li>
+</ul>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><span style="font-size: 14pt;"><strong>Estructura visual del código en MakeCode:</strong></span></p>
+<p><img src="MODULO5_39.png" alt="" width="713" height="190"></p>
+<p><strong>Explicación de la estructura en MakeCode:</strong></p>
+<ol>
+<li>
+<p><strong>Acceder a la Sección de Variables:</strong></p>
+<ul>
+<li>En la interfaz de MakeCode, busca en la columna de la izquierda donde están las categorías de bloques.</li>
+<li>Haz clic en la categoría llamada <strong>"Variables"</strong>. Aquí es donde puedes gestionar y crear nuevas variables.</li>
+</ul>
+</li>
+<li>
+<p><strong>Crear una Nueva Variable:</strong></p>
+<ul>
+<li>Dentro de la sección de "Variables", selecciona el botón que dice <strong>"Crear una variable"</strong>.</li>
+<li>Aparecerá un cuadro de diálogo donde podrás escribir el nombre de tu nueva variable.</li>
+<li><strong>Nombres de las Variables:</strong>
+<ul>
+<li>Para la primera variable, escribe <code>flecha_derecha</code>.</li>
+<li>Para la segunda variable, escribe <code>flecha_izquierda</code>.</li>
+</ul>
+</li>
+<li>Después de escribir el nombre, haz clic en <strong>"Aceptar"</strong>. La nueva variable aparecerá en la lista de variables disponibles en la categoría de "Variables".</li>
+</ul>
+</li>
+<li>
+<p><strong>Uso de las Variables en el Código:</strong></p>
+<ul>
+<li>Una vez creadas, las variables <code>flecha_derecha</code> y <code>flecha_izquierda</code> estarán disponibles para ser usadas en los bloques "fijar a".</li>
+<li>Arrastra el bloque <strong>"fijar [variable] a"</strong> desde la categoría "Variables" al área de trabajo.</li>
+<li>Selecciona la variable que acabas de crear (por ejemplo, <code>flecha_derecha</code> o <code>flecha_izquierda</code>) en el menú desplegable del bloque.</li>
+<li>Luego, puedes usar el bloque <strong>"crear imagen"</strong> para asignar una imagen a esta variable</li>
+</ul>
+</li>
+<li>
+<p><strong>Fijar Variables:</strong></p>
+<ul>
+<li><strong>Función:</strong> Este bloque asigna un valor a una variable. En este caso, estamos asignando una imagen de flecha a cada variable.</li>
+<li><strong>Variable:</strong> Selecciona <code>flecha_derecha</code> o <code>flecha_izquierda</code> de la lista de variables creadas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Crear imagen</strong></p>
+<ul>
+<li><strong>Función:</strong> Dentro del bloque "fijar a", se usa el bloque "crear imagen" para crear una representación gráfica de una flecha en la matriz de LEDs del micro</li>
+<li><strong>Imagen de Flecha Derecha e Izquierda:</strong> Usa la cuadrícula 5x5 para encender o apagar LEDs y formar las flechas que se almacenarán en las variables.</li>
+</ul>
+</li>
+</ol>
+<p><img src="MODULO5_40.png" alt="" width="348" height="368" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id841">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">4. Condicionales</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta841_832_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p style="text-align: justify;">Enunciado del problema: Queremos crear un programa en la micro&nbsp;que lea la temperatura ambiente y, en función de su valor, muestre diferentes imágenes en la pantalla LED. Si la temperatura es mayor a 25 grados Celsius, se mostrará un sombrilla; si es menor a 10 grados, se mostrará un cuadrado; y si está entre 10 y 25 grados, se mostrará una cara feliz. Este proceso debe repetirse continuamente.</p>
+<p style="text-align: justify;">Para ello, utilizaremos condicionales para ejecutar diferentes acciones según el valor de una variable temperatura medida por la micro. Dependiendo del valor de la temperatura, se mostrarán distintas imágenes en la pantalla LED. Esto permitirá entender cómo usar condicionales (if, elif, else) en un programa para tomar decisiones basadas en condiciones específicas.</p>
+<h2>Solución con&nbsp; MICROPYTHON</h2>
+<p><strong>Código en Python para micro:bit:</strong></p>
+<p><img src="MODULO5_08.png" alt="" width="644" height="344"></p>
+<p><strong>Explicación detallada del código en Python:</strong></p>
+<ol>
+<li><strong>Obtener la temperatura:</strong></li>
+</ol>
+<ul>
+<li style="text-align: justify;"><strong><code>input.temperature()</code></strong>: Esta función se usa para leer la temperatura ambiente en grados Celsius desde el sensor de la micro . El valor se almacena en la variable <code>temperatura</code><span style="font-size: 1.05em;">.</span></li>
+</ul>
+<ol start="2">
+<li><strong>Condicionales para mostrar diferentes imágenes:</strong></li>
+</ol>
+<ul>
+<li><strong><code>if temperatura &gt; 25:</code></strong>: Si la temperatura es mayor a 25 grados Celsius, muestra un icono de un paraguas en la pantalla LED.</li>
+<li><strong><code>elif temperatura &lt; 10:</code></strong>: Si la temperatura es menor a 10 grados Celsius, muestra un icono de un cuadrado.</li>
+<li><strong><code>else:</code></strong>: Si la temperatura está entre 10 y 25 grados Celsius (incluyendo ambos límites), muestra un icono de una cara feliz.</li>
+</ul>
+<ol start="3">
+<li><strong>Ejecución continua de la función <code>on_forever</code>:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)&nbsp;</code><span style="font-size: 1.05em;">Esta línea le indica a la micro&nbsp;</span><span style="font-size: 1.05em;">que ejecute la función </span><code>on_forever</code><span style="font-size: 1.05em;"> de forma continua e indefinida. Esto hace que la micro&nbsp;</span><span style="font-size: 1.05em;">revise continuamente la temperatura y muestre la imagen correspondiente en la pantalla LED.</span></div>
+</div>
+<ol></ol>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p><span style="font-size: 14pt;"><strong>Estructura visual del código en MakeCode:</strong></span></p>
+<p><img src="MODULO5_41.png" alt="" width="718" height="260"></p>
+<p><span style="font-size: 14pt;"><strong>Explicación de la estructura en MakeCode:</strong></span></p>
+<p style="text-align: justify;">Para usar la variable <code>temperatura</code> en este código, primero debes crearla siguiendo estos pasos:</p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Acceder a la Sección de Variables:</strong></p>
+<ul>
+<li>En la columna de la izquierda, selecciona <strong>"Variables"</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Crear una Nueva Variable:</strong></p>
+<ul>
+<li>Haz clic en <strong>"Crear una variable"</strong>.</li>
+<li>Escribe <code>temperatura</code> como nombre de la variable.</li>
+<li>Haz clic en <strong>"Aceptar"</strong>.</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: justify;">Ahora, la variable <code>temperatura</code> está disponible para ser usada en el bloque <strong>"fijar a"</strong>.</p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Bloque "Para Siempre" (<code>forever</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; para siempre</code>.</li>
+<li><strong>Función:</strong> Este bloque ejecuta de forma continua el código que contiene. Es ideal para monitorear constantemente una variable, como la temperatura, y reaccionar en tiempo real a los cambios.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Fijar Variable a" (<code>set variable to</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Variables &gt; fijar a</code>.</li>
+<li><strong>Función:</strong> Este bloque asigna el valor actual de una medición a una variable. En este caso, asigna la temperatura medida por el sensor de temperatura del micro a una variable llamada <code>temperatura</code><span style="font-size: 1.05em;">.</span></li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Variable:</strong> La variable <code>temperatura</code> se utiliza para almacenar el valor actual de la temperatura en grados Celsius.</li>
+<li><strong>Valor Asignado:</strong> El valor proviene del bloque "temperatura (°C)", que mide la temperatura ambiente usando el sensor incorporado en el micro.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Si... Entonces" (<code>if... then</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Lógica &gt; Si...entonces</code>.</li>
+<li><strong>Función:</strong> Este bloque evalúa una condición lógica y, si la condición es verdadera, ejecuta el código dentro de él. Aquí se utilizan tres de estos bloques para evaluar diferentes rangos de temperatura.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Condición:</strong>
+<ul>
+<li><strong>Primera Condición:</strong> <code>si temperatura &gt; 25</code>. Esto verifica si la temperatura es mayor a 25°C.</li>
+<li><strong>Segunda Condición:</strong> <code>si no, si temperatura &lt; 10</code>. Esto verifica si la temperatura es menor a 10°C.</li>
+</ul>
+</li>
+<li><strong>Comportamiento:</strong> Dependiendo de la condición que se cumpla, el micro mostrará un ícono diferente en la pantalla.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Mostrar Ícono" (<code>show icon</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; mostrar icono</code>.</li>
+<li><strong>Función:</strong> Este bloque muestra un ícono específico en la matriz de LEDs del micro . Cada condición de temperatura tiene asignado un ícono diferente que se muestra cuando la condición es verdadera.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Primera Condición:</strong> Si la temperatura es mayor a 25°C, se muestra un ícono que podrías asociar con calor, como un sol.</li>
+<li><strong>Segunda Condición:</strong> Si la temperatura es menor a 10°C, se muestra un ícono que podrías asociar con frío, como un copo de nieve.</li>
+<li><strong>Tercera Condición:</strong> Si la temperatura está entre 10°C y 25°C, se muestra un ícono neutro o representativo de una temperatura normal.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: justify;"><span style="font-size: 14pt;">Comportamiento del Programa:</span></h3>
+<ul style="text-align: justify;">
+<li><strong>Medición y Monitoreo:</strong>
+<ul>
+<li>El programa mide continuamente la temperatura ambiente usando el sensor integrado del micro y asigna este valor a la variable <code>temperatura</code><span style="font-size: 1.05em;">.</span></li>
+</ul>
+</li>
+<li><strong>Condicionales para Evaluar Temperatura:</strong>
+<ul>
+<li><strong>Alta Temperatura:</strong> Si la temperatura supera los 25°C, se muestra un ícono que indica que hace calor.</li>
+<li><strong>Baja Temperatura:</strong> Si la temperatura es inferior a 10°C, se muestra un ícono que indica que hace frío.</li>
+<li><strong>Temperatura Moderada:</strong> Si la temperatura está entre 10°C y 25°C, se muestra un ícono neutro o que indica una temperatura normal.</li>
+</ul>
+</li>
+</ul>
+<p><img src="MODULO5_42.png" alt="" width="354" height="345" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul>
+<li style="list-style-type: none;"></li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id842">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">5.Botones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta842_834_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><!-- Prism.js CSS -->
+
+<!-- Prism.js JS -->
+<p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</p>
+<div class="exe-fx exe-accordion">
+<h2>Planteamiento del problema</h2>
+<p>Queremos crear un programa en la micro que detecte cuándo se presionan los botones A y B, y muestre una letra en la pantalla LED según el botón presionado. Si se presiona el botón A, se mostrará la letra "A". Si se presiona el botón B, se mostrará la letra "B". Si no se presiona ningún botón, la pantalla LED debe estar apagada. Este proceso debe repetirse continuamente.</p>
+<p>Explicación detallada del problema: El objetivo de esta actividad es utilizar condicionales para detectar la presión de los botones A y B en la micro y realizar diferentes acciones según el botón presionado. Dependiendo de si se presiona el botón A o B, se mostrará una letra en la pantalla LED. Si no se presiona ningún botón, la pantalla se limpiará, asegurando que no quede ningún residuo visual de las letras mostradas anteriormente. El proceso se repetirá de manera indefinida para garantizar una detección continua.</p>
+<h2>Solución con&nbsp; MICROPYTHON</h2>
+<p><span style="font-size: 14pt;"><strong>Código en Python para micro:bit:</strong></span></p>
+<p><img src="MODULO5_10.png" alt="" width="644" height="280"></p>
+<ol>
+<li><strong>Detección de la presión de los botones:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-python">
+</code></div>
+</div>
+<ul>
+<li style="text-align: justify;"><strong><code>if input.button_is_pressed(Button.A):basic.show_string("A")</code></strong>: Esta función detecta si el botón A está siendo presionado. Si es verdadero, se muestra la letra "A" en la pantalla LED.</li>
+<li style="text-align: justify;">elif input.button_is_pressed(Button.B): Esta función detecta si el botón B está siendo presionado. Si es verdadero, se muestra la letra "B" en la pantalla LED.</li>
+<li style="text-align: justify;">else:basic.clear_screen() Si ninguno de los botones está presionado, se limpia la pantalla LED.</li>
+</ul>
+<ol start="2" style="text-align: justify;">
+<li><strong>Ejecución continua de la función <code>on_forever</code>:</strong></li>
+</ol>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<ul>
+<li class="overflow-y-auto p-4" dir="ltr" style="text-align: justify;"><code class="!whitespace-pre hljs language-python">basic.forever(on_forever)&nbsp;</code><span style="font-size: 1.05em;">Esta línea le indica a la micro&nbsp;</span>que ejecute la función <code>on_forever</code><span style="font-size: 1.05em;"> de forma continua e indefinida. Esto permite que la micro&nbsp;</span>esté en un ciclo constante, detectando si se presionan los botones A o B y mostrando la letra correspondiente, o limpiando la pantalla si no se presiona ningún botón.</li>
+</ul>
+</div>
+<h2>Solución con BLOQUES MAKECODE</h2>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Estructura visual del código en MakeCode:</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong><img src="MODULO5_44.png" alt="" width="714" height="238"></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Explicación de la estructura en MakeCode:</strong></span></p>
+<div class="flex max-w-full flex-col flex-grow" style="text-align: justify;">
+<div data-message-author-role="assistant" data-message-id="128ee664-4079-4ecd-a6cd-01cc9acc4077" dir="auto" class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 break-words [.text-message+&amp;]:mt-5 overflow-x-auto whitespace-pre-wrap">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<ol>
+<li>
+<p><strong>Bloque "Para Siempre" (<code>forever</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; para siempre</code>.</li>
+<li><strong>Función:</strong> Este bloque ejecuta de forma continua el código que contiene, permitiendo que el programa esté siempre atento a las acciones que el usuario realiza, como presionar los botones del micro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Si... Entonces" (<code>if... then</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Lógica &gt; Si...entonces</code>.</li>
+<li><strong>Función:</strong> Este bloque evalúa una condición lógica y, si la condición es verdadera, ejecuta el código dentro de él. En este caso, se utiliza para verificar si uno de los botones del micro ha sido presionado.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Condición 1:</strong> <code>si botón A presionado entonces</code>. Verifica si el botón A del micro está presionado.</li>
+<li><strong>Condición 2:</strong> <code>si no, si botón B presionado entonces</code>. Si el botón A no está presionado, verifica si el botón B está presionado.</li>
+<li><strong>Condición 3:</strong> <code>si no</code>. Si ninguno de los botones está presionado, se ejecuta la acción predeterminada en este bloque.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Mostrar Cadena" (<code>show string</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; mostrar cadena</code>.</li>
+<li><strong>Función:</strong> Muestra una cadena de texto en la pantalla de LEDs del micro . Este bloque se utiliza para mostrar una letra en la pantalla cuando se presiona uno de los botones.</li>
+<li><strong>Configuración del Bloque:</strong>
+<ul>
+<li><strong>Texto:</strong> Muestra la letra "A" cuando se presiona el botón A, y la letra "B" cuando se presiona el botón B.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloque "Borrar la Pantalla" (<code>clear screen</code>)</strong></p>
+<ul>
+<li><strong>Ubicación en MakeCode:</strong> <code>Básico &gt; borrar la pantalla</code>.</li>
+<li><strong>Función:</strong> Borra cualquier imagen o texto que esté actualmente en la pantalla de LEDs del micro, dejándola en blanco.</li>
+<li><strong>Uso:</strong> Este bloque se activa cuando ninguno de los botones está presionado, limpiando la pantalla.</li>
+</ul>
+</li>
+</ol>
+<h3><span style="font-size: 14pt;">Comportamiento del Programa:</span></h3>
+<ul>
+<li><strong>Detección de Botones Presionados:</strong>
+<ul>
+<li><strong>Botón A Presionado:</strong> Si el botón A del micro está presionado, el programa mostrará la letra "A" en la pantalla de LEDs.</li>
+<li><strong>Botón B Presionado:</strong> Si el botón B del micro está presionado, el programa mostrará la letra "B" en la pantalla de LEDs.</li>
+</ul>
+</li>
+<li><strong>Ningún Botón Presionado:</strong>
+<ul>
+<li><strong>Pantalla en Blanco:</strong> Si ninguno de los botones A o B está presionado, el programa borrará la pantalla de LEDs, dejándola vacía.</li>
+</ul>
+</li>
+</ul>
+<p><img src="MODULO5_45.png" alt="" width="330" height="283" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-1 flex gap-3 empty:hidden -ml-2">
+<div class="items-center justify-start rounded-xl p-1 flex">
+<div class="flex items-center">
+<div class="flex items-center pb-0"><span class="overflow-hidden text-clip whitespace-nowrap text-sm"></span></div>
+</div>
+</div>
+</div>
+<ul>
+<li style="list-style-type: none;"></li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id843">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">TAREAS </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta843_128_2" class="block iDevice_content">
+<div class="pbl-task-description"><ul>
+<li><strong>Tarea</strong>:
+<ul>
+<li>Haz todos los ejercicios que se proponen y preséntalo a tu profesor/ra en la forma que te indique.</li>
+<li>Anota en  tu cuaderno como se resuelve cada ejercicio y preséntalo a tu profesor/ra en la forma que te indique.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id45">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta45_82" class="block iDevice_content">
+
+</div>
+<ul class='exeFileList'><li><a href='E501  Introduccion a la Programacion con la Placa Microbit.pdf' target='_blank'>E501 Introducción a la Programación con la Placa Microbit.pdf<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="mdulo_5_robo_conoce_a_dos_amigos_inseparables_microbit_y_maqueen.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="programacin_avanzada_con_microbit.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
